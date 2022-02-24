@@ -15,13 +15,15 @@ function Footer() {
 		}, 1000);
 	}, []);
 	return (
-		<Container className="footer-container">
+		<Container fluid className="footer-container">
 			<Row>
 				<Col className="footer-col">
 					<h3>By Marco Lagos</h3>
 				</Col>
 				<Col className="footer-col">
-					<h3>{dateState} | {clockState}</h3>
+					<h3>
+						{dateState} | {clockState}
+					</h3>
 				</Col>
 				<Col className="footer-col">
 					<ul className="footer-list">
@@ -36,7 +38,7 @@ function Footer() {
 							</a>
 						</li>
 						<li className="footer-icon">
-							<a href="https://www.instagram.com/s.o.u.m.y.a_j.i.t/" target="_blank">
+							<a href="https://www.instagram.com/marcollagoss/" target="_blank">
 								<AiFillInstagram />
 							</a>
 						</li>

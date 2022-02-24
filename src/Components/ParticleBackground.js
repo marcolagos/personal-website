@@ -17,14 +17,14 @@ function ParticleBackground() {
 				params={{
 					particles: {
 						number: {
-							value: 600,
+							value: 400,
 							density: {
 								enable: true,
 								value_area: 800,
 							},
 						},
 						color: {
-							value: "#ffffff",
+							value: "#FFFFFF",
 						},
 						shape: {
 							type: "circle",
@@ -47,7 +47,7 @@ function ParticleBackground() {
 							},
 						},
 						size: {
-							value: 2,
+							value: 1.5,
 							random: true,
 							anim: {
 								enable: true,

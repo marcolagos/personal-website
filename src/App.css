@@ -1,21 +1,52 @@
 /* --------------- */
+/*     General     */
+/* --------------- */
+html, body {
+    overflow-x: hidden !important;
+}
+
+/* --------------- */
+/*   Scroll Bar    */
+/* --------------- */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(29, 29, 29);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(107, 105, 105);
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(161, 159, 159);;
+  border-radius: 12px;
+}
+
+/* --------------- */
 /* Navbar Section  */
 /* --------------- */
-
 .navigation {
 	position: fixed !important;
 	transition: all 0.3s ease-out 0s !important;
 	padding: 0.3rem 2rem !important;
 	font-size: 1.2rem !important;
 	transition: all .5s ease-in-out 0s !important;
-	/* background: linear-gradient(black, #f40d30); */
-	/* background-color: black !important; */
-	backdrop-filter: unset;
-	background: none;
+	/* background: linear-gradient(#b46f1a, rgba(0, 0, 0, 0)); */
+	/* background-color: rgb(0, 0, 0, 0) !important; */
+	backdrop-filter: unset !important;
+	background: none !important;
 }
 
 .navigation:hover {
-	backdrop-filter: blur(2px);
+	/* background-color: #0b0b0b !important; */
+	backdrop-filter: blur(3px) !important;
 }
 
 /* this is what holds the hamburger icon, set it to transparent
@@ -31,7 +62,7 @@ and set the padding */
 .navbar-toggler span {
 	display: block !important;
 	background-color: white !important;
-	height: 2px !important;
+	height: 3px !important;
 	width: 23px !important;
 	margin-top: 5px !important;
 	margin-bottom: 5px !important;
@@ -93,6 +124,7 @@ to X */
 	color: white !important;
 	font-size: 2rem !important;
 	margin-bottom: 4px !important;
+	font-weight: 600 !important;
 }
 
 .logo {
@@ -138,11 +170,11 @@ to X */
 	display: block;
 	/* initial width and height, small green circle */
 	height: 3px;
-	width: 3px;
+	width: 0%;
 	/* curve the corners */
 	border-radius: 20px;
 	/* background color of after link */
-	background: #F6BE00;
+	background: #ff8c00;
 	/* position dot on the left, if middle when it collapses it will look weird */
 	left: 0;
 	/* transitions the underline out, see hover */
@@ -157,6 +189,7 @@ to X */
 	}
 }
 
+/* used to bold the header link, whichever is active */
 .boldLink {
 	/* link is clicked, it is bolded */
 	font-weight: 500 !important;
@@ -165,6 +198,8 @@ to X */
 /* --------- */
 /*   Home    */
 /* --------- */
+
+/* particles style */
 .particles {
 	position: fixed !important;
 	background-repeat: no-repeat !important;
@@ -173,62 +208,85 @@ to X */
 	height: 100% !important;
 }
 
+/* sets the background image, renders it, adds some padding */
 .home-container {
-	background-color: black !important;
+	background-color: black;
 	position: relative;
 	z-index: -1;
-	background-image: url(./Assets/home-image-3.jpg);
-	background-position: 50% 50%;
+	background-image: url(./Assets/home-image-4.jpg);
+	background-position: 0% 53% !important;
 	background-repeat: no-repeat;
-	padding-bottom: 30px !important;
-	padding-top: 30px !important;
 	height: 100vh;
 	image-rendering: pixelated !important;
 }
 
+@media (min-width: 1140px) and (max-width: 1230px) {
+	.home-container {
+		background-position: 10% 60% !important;
+	}
+}
+
+@media (min-width: 990px) and (max-width: 1140px) {
+	.home-container {
+		background-position: 20% 60% !important;
+	}
+}
+
+@media (min-width: 700px) and (max-width: 990px) {
+	.home-container {
+		background-position: 30% 60% !important;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 700px) {
+	.home-container {
+		background-position: 50% 60% !important;
+	}
+}
+
+
+/* aligns the header on the left and makes default text white */
 .home-intro {
-	text-align: center !important;
-	align-items: center !important;
+	text-align: left !important;
 	color: white !important;
 }
 
+/* moves the header down and to the left */
 .home-header {
-	padding-top: 50px !important;
+	padding-left: 4vh !important;
+	padding-top: 30vh !important;
 }
 
+/* sets header text boldness */
 .home-text {
 	font-weight: 300 !important;
 }
 
-.home-intro {
-	padding: 9rem 0 2rem !important;
-	text-align: left;
+/* makes my name different color and keeps it on the
+ same line as greeting */
+.home-name {
+	color: white;
+	font-weight: 400;
+	display: inline !important;
 }
 
-.heading {
-	font-size: 2.4em !important;
-	padding-left: 50px !important;
-}
-
-.heading-name {
-	font-size: 2.5em !important;
-	padding-left: 45px !important;
-}
-
+/* font size and color/weight */
 .Typewriter__wrapper {
-	font-size: 2.2em !important;
-	color: #F6BE00 !important;
-	font-weight: 600 !important;
-}
-.Typewriter__cursor {
-	font-size: 2.4em !important;
-	color: #f40d30 !important;
+	font-size: 1.5em !important;
+	color: #ff8c00 !important;
+	font-weight: 400 !important;
 }
 
+/* cursor size and color */
+.Typewriter__cursor {
+	font-size: 1.6em !important;
+	color: #cc8a39 !important;
+}
+
+/* removes cursor (bug), makes text smaller */
 @media (max-width: 767px) {
 	.Typewriter__wrapper {
-		font-size: 1.4em !important;
-		font-weight: 500 !important;
+		font-size: 1.2em !important;
 		position: absolute !important;
 	}
 	.Typewriter__cursor {
@@ -242,8 +300,6 @@ to X */
 .footer-container {
 	background-color: black !important;
 	bottom: 0 !important;
-	padding-top: 10px !important;
-	padding-bottom: 8px !important ;
 }
 .footer-col {
 	text-align: center !important;
@@ -260,6 +316,7 @@ to X */
 	color: white !important;
 	margin-top: 0.5em !important;
 	margin-bottom: 0.5em !important;
+	font-weight: 100;
 }
 
 .footer-icon {

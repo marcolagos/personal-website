@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ParticleBackground from "../Components/ParticleBackground";
 import Type from "../Components/Type";
-import ProfilePicture from "../Assets/profilepicture.jpg";
 
 function Home() {
 	return (
@@ -10,15 +9,14 @@ function Home() {
 			<ParticleBackground className="particles" />
 			<Container className="home-intro">
 				<Row>
-					<Col md={7} className="home-header">
+					<Col md={9} className="home-header">
 						<h1 className="home-text">
-							Hello, I am
-							<span className="home-name"> Marco Lagos!</span>
+							Hello, I am 
+							<div className="home-name"> Marco Lagos</div>
 						</h1>
-						<Type className="type" />
-					</Col>
-					<Col md={5} className="home-picture">
-						{/* <img src={ProfilePicture} alt="Marco Lagos" className="img-fluid"></img> */}
+						<div>
+							<Type className="type" />
+						</div>
 					</Col>
 				</Row>
 			</Container>
