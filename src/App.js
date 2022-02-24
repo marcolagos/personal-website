@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 // Pages
@@ -10,9 +10,11 @@ import References from "./Pages/References";
 import Resume from "./Pages/Resume";
 
 // Components
-import Navigation from "./Components/Navigation";
-import Footer from "./Components/Footer";
+import Navigation from "./Sections/Navigation";
+import Footer from "./Sections/Footer";
 
+// CSS
+import "./App.css";
 
 function App() {
 	return (
@@ -20,11 +22,11 @@ function App() {
 			<div className="App">
 				<Navigation />
 				<Routes>
-					<Route path="/" exact component={Home} />
-					<Route path="/projects" component={Projects} />
-                    <Route path="/references" component={References} />
-					<Route path="/resume" component={Resume} />
-					<Route path="/about" component={About} />
+					<Route path="/" exact element={<Home />} />
+					<Route path="/projects" element={<Projects />} />
+					<Route path="/references" element={<References />} />
+					<Route path="/resume" element={<Resume />} />
+					<Route path="/about" element={<About />} />
 				</Routes>
 				{/* <Footer /> */}
 			</div>
