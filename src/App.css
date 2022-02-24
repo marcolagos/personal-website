@@ -1,32 +1,39 @@
 /* --------------- */
 /*     General     */
 /* --------------- */
-html, body {
-    overflow-x: hidden !important;
+html,
+body {
+	overflow-x: hidden !important;
+	--section-background-color: linear-gradient(to bottom left, rgba(17, 16, 16, 0.582), rgba(12, 8, 24, 0.904));
+	--image-gradient: linear-gradient(to bottom left, rgba(17, 16, 16, 0.678), rgba(12, 10, 22, 0.863));
+	--imp-text-color: #c770f0;
 }
 
+.purple {
+	color: var(--imp-text-color) !important;
+}
 /* --------------- */
 /*   Scroll Bar    */
 /* --------------- */
 ::-webkit-scrollbar {
-  width: 7px;
+	width: 7px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgb(29, 29, 29);
+	background: rgb(29, 29, 29);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(107, 105, 105);
-  border-radius: 12px;
+	background: rgb(107, 105, 105);
+	border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(161, 159, 159);;
-  border-radius: 12px;
+	background: rgb(161, 159, 159);
+	border-radius: 12px;
 }
 
 /* --------------- */
@@ -37,7 +44,7 @@ html, body {
 	transition: all 0.3s ease-out 0s !important;
 	padding: 0.3rem 2rem !important;
 	font-size: 1.2rem !important;
-	transition: all .5s ease-in-out 0s !important;
+	transition: all 0.5s ease-in-out 0s !important;
 	/* background: linear-gradient(#b46f1a, rgba(0, 0, 0, 0)); */
 	/* background-color: rgb(0, 0, 0, 0) !important; */
 	backdrop-filter: unset !important;
@@ -159,6 +166,8 @@ to X */
 }
 
 .navbar-nav .nav-item a::after {
+	z-index: 2;
+
 	content: "";
 	/* spacing from the nav item */
 	margin-top: 2px;
@@ -185,7 +194,7 @@ to X */
 	.navbar-nav .nav-item a:hover::after {
 		/* when hovered, line extends */
 		width: 100%;
-        background: #f40d30;
+		background: #f40d30;
 	}
 }
 
@@ -210,12 +219,12 @@ to X */
 
 /* sets the background image, renders it, adds some padding */
 .home-container {
-	background-color: black;
+	background-color: black !important;
 	position: relative;
 	z-index: -1;
-	background-image: url(./Assets/home-image-4.jpg);
-	background-position: 0% 53% !important;
-	background-repeat: no-repeat;
+	background-image: var(--image-gradient), url(./Assets/home-image-4.jpg);
+	background-position: 0% 55% !important;
+	background-repeat: no-repeat !important;
 	height: 100vh;
 	image-rendering: pixelated !important;
 }
@@ -243,7 +252,6 @@ to X */
 		background-position: 50% 60% !important;
 	}
 }
-
 
 /* aligns the header on the left and makes default text white */
 .home-intro {
@@ -298,33 +306,56 @@ to X */
 /*   Footer  */
 /* --------- */
 .footer-container {
-	background-color: black !important;
-	bottom: 0 !important;
-}
-.footer-col {
-	text-align: center !important;
+	background-color: transparent !important;
+	backdrop-filter: unset !important;
+	transition: all 0.35s ease-in-out 0s;
 }
 
-@media (max-width: 767px) {
-	.footer-col {
-		text-align: center !important;
-	}
+.footer-container:hover {
+	backdrop-filter: blur(2px) !important;
+	background-color: #0912173b !important;
+}
+
+.footer-col {
+	text-align: center !important;
+	padding-top: 0.5rem !important;
+	padding-bottom: 0.5rem !important;
 }
 
 .footer-col h3 {
-	font-size: 1em;
+	font-size: 1em !important;
 	color: white !important;
 	margin-top: 0.5em !important;
 	margin-bottom: 0.5em !important;
-	font-weight: 100;
+	font-weight: 300 !important;
 }
 
 .footer-icon {
-	margin-top: 0.5em !important;
-	margin-bottom: 0.5em !important;
-	padding: 0 !important;
 	color: white !important;
 	list-style: none !important;
 	display: inline-block !important;
-	padding: 0 10px 0 10px !important;
+}
+
+.icon-1 {
+	margin-right: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+.icon-2 {
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+.icon-3 {
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+.icon-4 {
+	margin-left: 0.5rem;
+	padding-left: 0.5rem;
 }

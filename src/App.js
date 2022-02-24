@@ -12,14 +12,22 @@ import Resume from "./Pages/Resume";
 // Components
 import Navigation from "./Sections/Navigation";
 import Footer from "./Sections/Footer";
+import Loading from "./Components/Loading";
 
 // CSS
 import "./App.css";
 
 function App() {
+	// const [loader, setLoader] = useState(true);
+
+	// useEffect(() => {
+	// 	const timer = setTimeout(() => setLoader(false), 2000);
+	// }, []);
+
 	return (
 		<Router>
 			<div className="App">
+				{/* {loader ? <Loading /> : null} */}
 				<Navigation />
 				<Routes>
 					<Route path="/" exact element={<Home />} />

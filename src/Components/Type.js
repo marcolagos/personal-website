@@ -9,8 +9,8 @@ function Type(props) {
 					strings: [
 						"Low-level languages",
 						"MERN Stack Developer",
-						"Problem Solver",
 						"Open Source Contributor",
+						"Philosopher"
 					],
 					autoStart: true,
 					loop: true,
