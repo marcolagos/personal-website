@@ -73,14 +73,14 @@ function Navigation() {
 						<Nav.Item className="navigation-item">
 							<Nav.Link
 								onClick={() => {
-									setBoldLink("/resume");
+									setBoldLink("/contact");
 									setExpanded(false);
 								}}
-								className={boldLink == "/resume" ? "navigation-link boldLink" : "navigation-link"}
+								className={boldLink == "/contact" ? "navigation-link boldLink" : "navigation-link"}
 								as={Link}
-								to="/resume"
+								to="/contact"
 							>
-								<BsFileText /> Resume
+								<BsSearch /> Contact
 							</Nav.Link>
 						</Nav.Item>
 

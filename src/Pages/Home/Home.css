@@ -1,0 +1,105 @@
+/* Home */
+.home-section {
+	overflow: hidden;
+}
+.home-container {
+	background-color: var(--main-bg-color) !important;
+	position: relative !important;
+	height: 100vh !important;
+	padding-bottom: 30px !important;
+	padding-top: 30px !important;
+}
+.home-intro {
+	height: 100vh !important;
+	padding-top: 3rem !important;
+	text-align: center !important;
+	color: var(--default-text-color) !important;
+}
+.home-header {
+	margin-top: 30vh !important;
+}
+.home-text {
+	font-weight: 300 !important;
+}
+.Typewriter__wrapper {
+	font-size: 1.5em !important;
+	color: var(--alt-bright-orange) !important;
+	font-weight: 400 !important;
+}
+.Typewriter__cursor {
+	font-size: 1.6em !important;
+	color: var(--alt-dull-orange) !important;
+}
+@media (max-width: 767px) {
+	.Typewriter__wrapper {
+		font-size: 1.2em !important;
+	}
+	.Typewriter__cursor {
+		display: none !important;
+	}
+}
+/* Home About */
+.home-about-container {
+	background-color: var(--main-bg-color) !important;
+	position: relative !important;
+	height: 100vh !important;
+}
+#home-about {
+	background-color: var(--main-bg-color) !important;
+}
+.home-about-intro {
+	text-align: center !important;
+	color: var(--default-text-color) !important;
+	padding-top: 2rem !important;
+	padding-bottom: 2rem !important;
+}
+.home-about-title {
+	margin-top: 2rem;
+	font-weight: 400 !important;
+}
+.home-about-body {
+	font-weight: 300 !important;
+}
+.orange {
+	color: var(--alt-bright-orange);
+}
+/* Home Icons */
+.home-icons-title {
+	font-weight: 400;
+}
+.home-icons-col {
+	text-align: center !important;
+	color: var(--default-text-color) !important;
+	padding-top: 3rem !important;
+}
+.home-icons {
+	justify-content: center !important;
+	margin-top: 0.5rem !important;
+	display: inline-block !important;
+	position: relative !important;
+	padding-inline-start: 0 !important;
+}
+.home-icon-link {
+	position: relative !important;
+	display: inline-block !important;
+	width: 4rem !important;
+	height: 4rem !important;
+	text-align: center !important;
+	font-size: 1.75em !important;
+	line-height: 2em !important;
+	background: var(--alt-main-color) !important;
+	border-radius: 100% !important;
+	transition: var(--main-transition) !important;
+}
+
+.home-icon-link:hover {
+	box-shadow: 0 0 15px var(--alt-bright-orange);
+}
+.home-icon {
+	display: inline-block !important;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.icon-color {
+	color: var(--alt-bright-orange) !important;
+}

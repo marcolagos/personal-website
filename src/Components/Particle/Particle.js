@@ -1,7 +1,7 @@
 import React from "react";
 import Particles from "react-tsparticles";
 
-function ParticleBackground() {
+function Particle() {
 	const particlesInit = (main) => {
 		console.log(main);
 	};
@@ -17,7 +17,7 @@ function ParticleBackground() {
 				params={{
 					particles: {
 						number: {
-							value: 400,
+							value: 100,
 							density: {
 								enable: true,
 								value_area: 800,
@@ -37,11 +37,11 @@ function ParticleBackground() {
 							},
 						},
 						opacity: {
-							value: 0.5,
+							value: 0.3,
 							random: false,
 							anim: {
 								enable: false,
-								speed: 0.5,
+								speed: 0.3,
 								opacity_min: 0,
 								sync: false,
 							},
@@ -122,4 +122,4 @@ function ParticleBackground() {
 	);
 }
 
-export default ParticleBackground;
+export default Particle;

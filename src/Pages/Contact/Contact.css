@@ -1,0 +1,85 @@
+/* Contact Page */
+.contact-section {
+  overflow: hidden;
+}
+.contact-container {
+	background-color: var(--main-bg-color) !important;
+	position: relative !important;
+	height: 100% !important;
+  overflow: hidden;
+}
+.contact-intro {
+	padding-top: 2rem !important;
+	text-align: center !important;
+	color: var(--default-text-color) !important;
+}
+.contact-header {
+	margin-top: 10vh !important;
+  position: 50% 50% !important;
+}
+.contact-title {
+	font-weight: 300 !important;
+  margin: 0 !important;
+}
+
+/* Submit Button */
+.form-group {
+  position: relative !important;
+	display: inline-block !important;
+  width: 75% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+.form-label {
+  font-weight: 300 !important;
+  margin: 0 !important;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  text-align: left !important;
+}
+.form-control {
+  padding: 0.5rem !important;
+  background-color: var(--alt-main-color) !important;
+  border: 3px solid var(--alt-main-color) !important;
+  color: var(--alt-grey-color) !important;
+}
+.form-control:active,
+.form-control:checked,
+.form-control::selection,
+.form-control:focus {
+  outline: none !important;
+  border: 3px solid var(--alt-main-color) !important;
+  box-shadow: 0 0 10px var(--alt-bright-orange) !important;
+}
+.text-area {
+  height: 20vh !important;
+}
+.contact-icon-color {
+	color: var(--alt-bright-orange) !important;
+  border: none !important;
+}
+.contact-icon-button {
+	position: relative !important;
+	display: inline !important;
+	width: 5rem !important;
+	height: 2.5rem !important;
+	font-size: 1.25em !important;
+	line-height: .75em !important;
+	background: var(--alt-main-color) !important;
+	border-radius: 5% !important;
+	transition: var(--main-transition) !important;
+  margin: 1rem !important;
+}
+.contact-icon-button:focus,
+.contact-icon-button:active,
+.contact-icon-button-icon:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+.contact-icon-button:hover {
+	box-shadow: 0 0 15px var(--alt-bright-orange);
+}
+.orange {
+	color: var(--alt-bright-orange);
+}

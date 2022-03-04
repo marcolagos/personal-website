@@ -7,14 +7,13 @@ function Type(props) {
 			<Typewriter
 				options={{
 					strings: [
-						"Low-level languages",
 						"MERN Stack Developer",
 						"Open Source Contributor",
-						"Philosopher"
+						"Problem Solver",
 					],
 					autoStart: true,
 					loop: true,
-					deleteSpeed: 50,
+					deleteSpeed: 40,
 				}}
 			/>
 		</div>

@@ -1,0 +1,46 @@
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
+import { Container, Col, Row } from "react-bootstrap";
+import { AiOutlineForm } from "react-icons/ai";
+
+import { Link } from "react-router-dom";
+
+function Contact() {
+	const [show, setShow] = useState(true);
+
+	return (
+		<Container fluid className="contact-container">
+			<Container className="contact-intro">
+				<Row>
+					<Col md={12} className="contact-header">
+						<h1 className="contact-title">
+							Contact <span className="orange">Me</span>
+						</h1>
+						<form className="contact-form">
+							<div className="form-item">
+								<label className="form-label">Name:</label>
+								<input className="form-input" placeholder="Enter name" />
+							</div>
+							<div className="form-item">
+								<label className="form-label">Email:</label>
+								<input className="form-input" placeholder="Enter email" />
+							</div>
+							<div className="form-item">
+								<label className="form-label">Message:</label>
+								<textarea className="form-input" placeholder="Enter message" />
+							</div>
+							<div type="submit" to="/contact/name" className="form-item contact-icon-color contact-icon-link">
+								<AiOutlineForm />
+							</div>
+						</form>
+						<ul className={"contact-icons"}>
+							<li className="contact-icon"></li>
+						</ul>
+					</Col>
+				</Row>
+			</Container>
+		</Container>
+	);
+}
+
+export default Contact;
