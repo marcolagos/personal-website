@@ -49,7 +49,7 @@
 .form-control:focus {
   outline: none !important;
   border: 1px solid var(--alt-main-color) !important;
-  box-shadow: 0 0 10px var(--alt-bright-orange) !important;
+  box-shadow: 0 0 5px var(--alt-bright-orange) !important;
 }
 .text-area {
   height: 20vh !important;
@@ -79,7 +79,7 @@
 	box-shadow: none !important;
 }
 .contact-icon-button:hover {
-	box-shadow: 0 0 15px var(--alt-bright-orange);
+	box-shadow: 0 0 5px var(--alt-bright-orange);
 }
 .orange {
 	color: var(--alt-bright-orange);

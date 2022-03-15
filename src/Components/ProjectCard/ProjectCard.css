@@ -1,0 +1,52 @@
+.project-card-view {
+  background-color: transparent !important;
+  opacity: 0.8 !important;
+  transition: var(--main-transition) !important;
+}
+.project-card-view:hover {
+  transform: scale(1.02) !important;
+  opacity: 1 !important;
+  box-shadow: 0 0 15px var(alt-main-color-opaque);
+}
+
+/* Card */
+.card-date {
+	background-color: var(--card-background) !important;
+}
+.card-text-date {
+	color: var(--card-date);
+	font-size: 1rem;
+}
+.card-body {
+	background-color: var(--card-background) !important;
+}
+.card-text-title {
+	font-size: 1.5rem !important;
+	font-weight: 400 !important;
+}
+.card-text-body {
+	color: var(--card-body);
+	font-size: 1rem;
+	font-weight: 300;
+}
+.card-button {
+	color: var(--card-button) !important;
+	margin-left: 1rem !important;
+	margin-right: 1rem !important;
+	padding: 0.5rem 2rem 0.5rem 2rem !important;
+	background-color: var(--card-background) !important;
+	border: none !important;
+	opacity: 0.8 !important;
+	border-radius: 0 !important;
+}
+.card-button:focus,
+.card-button:active,
+.card-button-icon:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+.card-button:hover {
+	opacity: 1 !important;
+	box-shadow: 0 0 8px #000000;
+	transform: scale(1.02) !important;
+}

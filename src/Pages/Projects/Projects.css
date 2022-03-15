@@ -1,0 +1,44 @@
+.project-section {
+    overflow: hidden;
+}
+
+.project-container {
+	background-color: var(--main-bg-color) !important;
+	position: relative !important;
+	padding: 3rem !important;
+	height: 100vh !important;
+}
+.project-intro {
+	height: 100vh !important;
+	text-align: center !important;
+	color: var(--default-text-color) !important;
+}
+.project-heading {
+    margin-top: 10vh !important;
+    color: var(--default-text-color);
+    font-weight: 300 !important;
+}
+.project-comment {
+    color: var(--alt-main-color-lighter);
+}
+.dim-orange {
+	color: var(--alt-orange) !important;
+	text-decoration: none !important;
+    opacity: 0.5 !important;
+}
+.dim-orange:hover,
+.dim-orange:active {
+	color: var(--alt-bright-orange) !important;
+	text-decoration: none !important;
+    opacity: 1 !important;
+}
+/* .card-1 {
+    padding-right: 1rem !important;
+}
+.card-2 {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+.card-3 {
+    padding-left: 1rem !important;
+} */

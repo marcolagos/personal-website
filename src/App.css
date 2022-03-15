@@ -1,17 +1,19 @@
 /* CSS Imports */
 @import url("./Pages/Home/Home.css");
-@import url("./Components/Card/Card.css");
+@import url("./Components/ProjectCard/ProjectCard.css");
 @import url("./Components/Navigation/Navigation.css");
 @import url("./Components/Footer/Footer.css");
 @import url("./Components/Particle/Particle.css");
 @import url("./Components/ThreeDotsWave/ThreeDotsWave.css");
 @import url("./Pages/Contact/Contact.css");
+@import url("./Pages/Projects/Projects.css");
 
 /* Variables */
 :root {
 	--main-bg-color: #000000;
 	--alt-main-color: #111111c0;
 	--alt-main-color-opaque: #111111;
+	--alt-main-color-lighter: #313131;
 	--alt-grey-color: rgb(173, 173, 173);
 	--alt-bright-red: #f40d30;
 	--alt-bright-orange: #ff8c00;
@@ -20,11 +22,12 @@
 	--main-transition: all 0.1s linear 0s;
 	--default-text-color: #ffffff;
 	--alt-dull-orange: #cc8a39;
-	--card-background: #cc8a39;
+	--card-background: #111111;
 	--card-shadow: #ff8c00;
-	--card-text: #000000;
-	--card-date: #000000;
-	--card-body: #000000;
+	--card-text: rgb(173, 173, 173);
+	--card-date: rgb(173, 173, 173);
+	--card-body: rgb(173, 173, 173);
+	--card-button: #FFFFFF;
 	--alt-bright-blue: #3822CD;
 }
 /* Scroll Bar */

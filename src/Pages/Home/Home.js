@@ -28,12 +28,22 @@ const about = () => {
 			<Container className="home-about-intro">
 				<Row>
 					<Col md={12} className="home-about-header">
-						<h1 className="home-about-title" data-aos="fade-left" data-aos-duration="1500">
+						<h1
+							className="home-about-title"
+							data-aos="fade-left"
+							data-aos-duration="1500"
+							data-aos-delay="200"
+						>
 							About <span className="orange">Me</span>
 						</h1>
 						<br />
 						<br />
-						<h4 className="home-about-body" data-aos="fade-right" data-aos-duration="1500">
+						<h4
+							className="home-about-body"
+							data-aos="fade-right"
+							data-aos-duration="1500"
+							data-aos-delay="300"
+						>
 							I grew up in New Orleans, Louisiana, and graduated from Jesuit High School.
 							<br />
 							Currently, I am a second-year student attending{" "}
