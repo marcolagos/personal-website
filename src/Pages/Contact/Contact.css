@@ -5,17 +5,16 @@
 .contact-container {
 	background-color: var(--main-bg-color) !important;
 	position: relative !important;
-	height: 100% !important;
-  overflow: hidden;
+	padding: 3rem !important;
+	height: 100vh !important;
 }
 .contact-intro {
-	padding-top: 2rem !important;
+	height: 100vh !important;
 	text-align: center !important;
 	color: var(--default-text-color) !important;
 }
 .contact-header {
 	margin-top: 10vh !important;
-  position: 50% 50% !important;
 }
 .contact-title {
 	font-weight: 300 !important;
@@ -39,9 +38,9 @@
   text-align: left !important;
 }
 .form-control {
-  padding: 0.5rem !important;
+  padding: 0.35rem !important;
   background-color: var(--alt-main-color) !important;
-  border: 3px solid var(--alt-main-color) !important;
+  border: 1px solid var(--alt-main-color) !important;
   color: var(--alt-grey-color) !important;
 }
 .form-control:active,
@@ -49,7 +48,7 @@
 .form-control::selection,
 .form-control:focus {
   outline: none !important;
-  border: 3px solid var(--alt-main-color) !important;
+  border: 1px solid var(--alt-main-color) !important;
   box-shadow: 0 0 10px var(--alt-bright-orange) !important;
 }
 .text-area {
@@ -70,6 +69,8 @@
 	border-radius: 5% !important;
 	transition: var(--main-transition) !important;
   margin: 1rem !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 .contact-icon-button:focus,
 .contact-icon-button:active,
@@ -83,3 +84,27 @@
 .orange {
 	color: var(--alt-bright-orange);
 }
+.warning {
+  color: var(--alt-bright-red) !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: none !important;
+}
+.direct {
+  color: var(--alt-bright-orange) !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: none !important;
+}
+.display {
+  display: block !important;
+}
+@media (max-width: 767px) {
+	.form-group {
+    width: 75vw !important;
+  }
+  .form-label {
+    font-size: 1rem;
+  }
+}
+

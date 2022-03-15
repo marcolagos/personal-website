@@ -7,7 +7,8 @@ import { Link } from "react-router-dom";
 // Icons
 import { AiOutlineHome } from "react-icons/ai";
 import { IoCode } from "react-icons/io5";
-import { BsSearch, BsPersonCircle, BsFileText } from "react-icons/bs";
+import { BsSearch, BsPersonCircle } from "react-icons/bs";
+import { AiOutlineMessage } from "react-icons/ai";
 
 function Navigation() {
 	const [boldLink, setBoldLink] = useState("/");
@@ -18,15 +19,17 @@ function Navigation() {
 				<Navbar.Brand className="navigation-brand" href="/">
 					ml.
 				</Navbar.Brand>
-				<Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => {
-					setExpanded(expanded ? false : true);
-
-				}}>
+				<Navbar.Toggle
+					aria-controls="responsive-navbar-nav"
+					onClick={() => {
+						setExpanded(expanded ? false : true);
+					}}
+				>
 					<span></span>
 					<span></span>
 					<span></span>
 				</Navbar.Toggle>
-				<Navbar.Collapse  id="responsive-navbar-nav">
+				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav>
 						<Nav.Item className="navigation-item">
 							<Nav.Link
@@ -80,7 +83,7 @@ function Navigation() {
 								as={Link}
 								to="/contact"
 							>
-								<BsSearch /> Contact
+								<AiOutlineMessage /> Contact
 							</Nav.Link>
 						</Nav.Item>
 

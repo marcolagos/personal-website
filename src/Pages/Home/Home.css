@@ -5,13 +5,11 @@
 .home-container {
 	background-color: var(--main-bg-color) !important;
 	position: relative !important;
+	padding: 3rem !important;
 	height: 100vh !important;
-	padding-bottom: 30px !important;
-	padding-top: 30px !important;
 }
 .home-intro {
 	height: 100vh !important;
-	padding-top: 3rem !important;
 	text-align: center !important;
 	color: var(--default-text-color) !important;
 }
@@ -30,14 +28,6 @@
 	font-size: 1.6em !important;
 	color: var(--alt-dull-orange) !important;
 }
-@media (max-width: 767px) {
-	.Typewriter__wrapper {
-		font-size: 1.2em !important;
-	}
-	.Typewriter__cursor {
-		display: none !important;
-	}
-}
 /* Home About */
 .home-about-container {
 	background-color: var(--main-bg-color) !important;
@@ -55,10 +45,10 @@
 }
 .home-about-title {
 	margin-top: 2rem;
-	font-weight: 400 !important;
+	font-weight: 500 !important;
 }
 .home-about-body {
-	font-weight: 300 !important;
+	font-weight: 400 !important;
 }
 .orange {
 	color: var(--alt-bright-orange);
@@ -84,9 +74,9 @@
 	display: inline-block !important;
 	width: 4rem !important;
 	height: 4rem !important;
-	text-align: center !important;
 	font-size: 1.75em !important;
 	line-height: 2em !important;
+	text-align: center !important;
 	background: var(--alt-main-color) !important;
 	border-radius: 100% !important;
 	transition: var(--main-transition) !important;
@@ -102,4 +92,67 @@
 }
 .icon-color {
 	color: var(--alt-bright-orange) !important;
+}
+
+@media (max-width: 767px) {
+	.Typewriter__wrapper {
+		font-size: 1.2em !important;
+	}
+	.Typewriter__cursor {
+		display: none !important;
+	}
+	.home-about-title {
+		margin-top: 0;
+		font-size: 1.5rem;
+	}
+	.home-about-body {
+		font-size: 1.1rem;
+	}
+	.home-icons-col {
+		padding-top: 1.5rem !important;
+	}
+	.home-icons-title {
+		font-size: 1.5rem;
+	}
+	.home-icon-link {
+		width: 3rem !important;
+		height: 3rem !important;
+		font-size: 1.25em !important;
+		line-height: 2em !important;
+	}
+	.home-icon {
+		padding-right: 8px;
+		padding-left: 8px;
+	}
+}
+
+@media (max-height: 730px) and (max-width: 380px) {
+	.Typewriter__wrapper {
+		font-size: 1.2em !important;
+	}
+	.Typewriter__cursor {
+		display: none !important;
+	}
+	.home-about-title {
+		font-size: 1rem;
+	}
+	.home-about-body {
+		font-size: 0.8rem;
+	}
+	.home-icons-col {
+		padding-top: 1rem !important;
+	}
+	.home-icons-title {
+		font-size: 1rem;
+	}
+	.home-icon-link {
+		width: 2rem !important;
+		height: 2rem !important;
+		font-size: 1em !important;
+		line-height: 1.6em !important;
+	}
+	.home-icon {
+		padding-right: 8px;
+		padding-left: 8px;
+	}
 }

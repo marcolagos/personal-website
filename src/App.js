@@ -12,12 +12,22 @@ import References from "./Pages/References/References";
 import Navigation from "./Components/Navigation/Navigation";
 import Footer from "./Components/Footer/Footer";
 import Particle from "./Components/Particle/Particle";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // CSS
 import "./App.css";
 
+// Firebase/Firestore
+import { db } from './Firebase';
+
 function App() {
+
+	useEffect(() => {
+		AOS.init();
+		AOS.refresh();
+	}, []);
+
 	return (
 		<Router>
 			<div className="App">
