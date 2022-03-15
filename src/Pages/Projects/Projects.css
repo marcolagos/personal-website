@@ -1,30 +1,32 @@
 .project-section {
-    overflow: hidden;
-}
-
-.project-container {
-	background-color: var(--main-bg-color) !important;
-	position: relative !important;
-	padding: 3rem !important;
-	height: 100vh !important;
+  position: relative !important;
+  padding-top: 5vh !important;
+  padding-bottom: 5vh !important;
+  background-color: var(--main-bg-color) !important;
+  background-image: var(--section-background-color) !important;
 }
 .project-intro {
-	height: 100vh !important;
-	text-align: center !important;
-	color: var(--default-text-color) !important;
+    text-align: center !important;
 }
-.project-heading {
+.project-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+.project-title {
     margin-top: 10vh !important;
     color: var(--default-text-color);
     font-weight: 300 !important;
 }
 .project-comment {
-    color: var(--alt-main-color-lighter);
+    color: var(--alt-main-color-lighter) !important;
 }
 .dim-orange {
 	color: var(--alt-orange) !important;
 	text-decoration: none !important;
-    opacity: 0.5 !important;
+    opacity: 0.6 !important;
 }
 .dim-orange:hover,
 .dim-orange:active {
@@ -32,13 +34,3 @@
 	text-decoration: none !important;
     opacity: 1 !important;
 }
-/* .card-1 {
-    padding-right: 1rem !important;
-}
-.card-2 {
-    padding-right: 1rem !important;
-    padding-left: 1rem !important;
-}
-.card-3 {
-    padding-left: 1rem !important;
-} */

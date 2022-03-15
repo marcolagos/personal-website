@@ -1,72 +1,76 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
-import { Container, Col, Row } from "react-bootstrap";
-import { AiOutlineForm } from "react-icons/ai";
-import { Form, Button, InputGroup, FormControl } from "react-bootstrap";
+<section className="project-section">
+			<Container fluid className="project-container">
+				<Container className="project-intro">
+					<h1 className="project-title">
+						<span className="orange">My</span> Projects
+					</h1>
+					<p className="project-comment">
+						Feel free to leave comments{" "}
+						<a href="/contact" target="_blank" rel="noreferrer" className="dim-orange">
+							here
+						</a>
+						!
+					</p>
+					<Row style={{ justifyContent: "center" }}>
+						<Col md={4} className="project-card">
+							<ProjectCard
+								date={"01/31/2022"}
+								title={"Personal Website"}
+								imgUrl={Background}
+								linkA={"Link 1"}
+								linkB={"Link 2"}
+							/>
+						</Col>
 
-import { Link } from "react-router-dom";
+						<Col md={4} className="project-card">
+							<ProjectCard
+								date={"12/20/2021"}
+								title={"Bloxorz"}
+								imgUrl={Background}
+								linkA={"Link 1"}
+								linkB={"Link 2"}
+							/>
+						</Col>
 
-function Contact() {
-	const [show, setShow] = useState(true);
+						<Col md={4} className="project-card">
+							<ProjectCard
+								date={"09/18/2021"}
+								title={"Swipo"}
+								imgUrl={Background}
+								linkA={"Link 1"}
+								linkB={"Link 2"}
+							/>
+						</Col>
+						<Col md={4} className="project-card">
+							<ProjectCard
+								date={"01/31/2022"}
+								title={"Personal Website"}
+								imgUrl={Background}
+								linkA={"Link 1"}
+								linkB={"Link 2"}
+							/>
+						</Col>
 
-	return (
-		<section className="contact-section">
-			<Container fluid className="contact-container">
-				<Container className="contact-intro">
-					<Row>
-						<Col md={12} className="contact-header">
-							<h1 className="contact-title" data-aos="fade-up" data-aos-duration="1500">
-								Contact <span className="orange">Me</span>
-							</h1>
-							<Form className="form">
-								<Form.Group
-									className="form-group pt-3"
-									data-aos="fade-up"
-									data-aos-duration="1500"
-									data-aos-delay="200"
-								>
-									<Form.Label className="form-label">Name:</Form.Label>
-									<Form.Control className="form-input" type="name" placeholder="Enter name" />
-								</Form.Group>
-								<Form.Group
-									className="form-group"
-									data-aos="fade-up"
-									data-aos-duration="1000"
-									data-aos-delay="400"
-								>
-									<Form.Label className="form-label">Email:</Form.Label>
-									<Form.Control className="form-control" type="email" placeholder="Enter email" />
-								</Form.Group>
-								<Form.Group
-									className="form-group"
-									data-aos="fade-up"
-									data-aos-duration="1000"
-									data-aos-delay="600"
-								>
-									<Form.Label className="form-label">Message:</Form.Label>
-									<Form.Control
-										className="form-control text-area"
-										as="textarea"
-										placeholder="Enter message"
-									/>
-								</Form.Group>
-								<br />
-								<Button
-									className="contact-icon-color contact-icon-button"
-									type="submit"
-									data-aos="slide-up"
-									data-aos-duration="1500"
-									data-aos-delay="800"
-								>
-									<AiOutlineForm />
-								</Button>
-							</Form>
+						<Col md={4} className="project-card">
+							<ProjectCard
+								date={"12/20/2021"}
+								title={"Bloxorz"}
+								imgUrl={Background}
+								linkA={"Link 1"}
+								linkB={"Link 2"}
+							/>
+						</Col>
+
+						<Col md={4} className="project-card">
+							<ProjectCard
+								date={"09/18/2021"}
+								title={"Swipo"}
+								imgUrl={Background}
+								linkA={"Link 1"}
+								linkB={"Link 2"}
+							/>
 						</Col>
 					</Row>
 				</Container>
 			</Container>
 		</section>
-	);
-}
-
-export default Contact;

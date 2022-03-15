@@ -105,12 +105,20 @@ function Contact() {
 							<h1 className="contact-title" data-aos="fade-up" data-aos-duration="1500">
 								Contact <span className="orange">Me</span>
 							</h1>
+							<p
+								className="contact-comment"
+								data-aos="fade-up"
+								data-aos-duration="1500"
+								data-aos-delay="500"
+							>
+								Alternatively, I welcome messages through media!
+							</p>
 							<Form className="form" onSubmit={handleSubmit}>
 								<Form.Group
 									className="form-group pt-3"
-									data-aos="fade-up"
-									data-aos-duration="1500"
-									data-aos-delay="200"
+									data-aos="fade-left"
+									data-aos-duration="1000"
+									data-aos-delay="700"
 								>
 									<Form.Label className="form-label">Name:</Form.Label>
 									<Form.Control
@@ -124,9 +132,9 @@ function Contact() {
 								</Form.Group>
 								<Form.Group
 									className="form-group"
-									data-aos="fade-up"
+									data-aos="fade-left"
 									data-aos-duration="1000"
-									data-aos-delay="400"
+									data-aos-delay="900"
 								>
 									<Form.Label className="form-label">Email:</Form.Label>
 									<Form.Control
@@ -140,9 +148,9 @@ function Contact() {
 								</Form.Group>
 								<Form.Group
 									className="form-group"
-									data-aos="fade-up"
+									data-aos="fade-left"
 									data-aos-duration="1000"
-									data-aos-delay="600"
+									data-aos-delay="1100"
 								>
 									<Form.Label className="form-label">Message:</Form.Label>
 									<Form.Control

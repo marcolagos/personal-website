@@ -10,7 +10,7 @@ function ProjectCard(props) {
 	return (
 		<Tilt tiltMaxAngleX={3} tiltMaxAngleY={3} style={{ height: "auto" }}>
 			<Card className="project-card-view">
-				<Card.Img variant="top" src={props.imgUrl} alt="Project Image" />
+				<Card.Img variant="top" src={props.image} alt="Project Image" style={{height: "15rem"}}/>
 				<ListGroup>
 					<ListGroupItem className="card-date">
 						<span className="card-text-date">{props.date}</span>
@@ -22,17 +22,15 @@ function ProjectCard(props) {
 					</Card.Title>
 					<Card.Text style={{ textAlign: "justify" }}>
 						<p className="card-text-body">
-							Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime
-							quod deserunt eligendi dolor
 							{props.description}
 						</p>
 					</Card.Text>
 					<div className="card-stat-wrapper">
-						<Button className="card-button button-1" href={props.linkA}>
-							<MdZoomOutMap />
+						<Button className="card-button button-1" href={props.linkA} target="_blank">
+							<MdZoomOutMap className="icon" />
 						</Button>
-						<Button className="card-button button-2" href={props.linkB}>
-							<AiFillGithub />
+						<Button className="card-button button-2" href={props.github} target="_blank">
+							<AiFillGithub className="icon" />
 						</Button>
 					</div>
 				</Card.Body>

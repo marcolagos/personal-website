@@ -2,6 +2,7 @@
   background-color: transparent !important;
   opacity: 0.8 !important;
   transition: var(--main-transition) !important;
+  height: 100% !important;
 }
 .project-card-view:hover {
   transform: scale(1.02) !important;
@@ -23,11 +24,12 @@
 .card-text-title {
 	font-size: 1.5rem !important;
 	font-weight: 400 !important;
+	color: var(--default-text-color) !important;
 }
 .card-text-body {
-	color: var(--card-body);
-	font-size: 1rem;
-	font-weight: 300;
+	color: var(--card-body) !important;
+	font-size: 1rem !important;
+	font-weight: 300 !important;
 }
 .card-button {
 	color: var(--card-button) !important;
@@ -38,12 +40,16 @@
 	border: none !important;
 	opacity: 0.8 !important;
 	border-radius: 0 !important;
+	font-size: 1.5rem !important;
 }
 .card-button:focus,
 .card-button:active,
 .card-button-icon:focus {
 	outline: none !important;
 	box-shadow: none !important;
+}
+.icon {
+	margin-bottom: 0.4rem !important;
 }
 .card-button:hover {
 	opacity: 1 !important;

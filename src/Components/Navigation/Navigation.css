@@ -97,7 +97,7 @@
 	border-radius: 20px;
 	left: 0;
 	background: var(--alt-bright-orange);
-	transition: var(--main-transition);
+	transition: var(--long-transition);
 }
 @media (min-width: 767px) {
 	.navbar-nav .nav-item a:hover::after {

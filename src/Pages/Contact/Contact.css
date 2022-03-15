@@ -20,6 +20,9 @@
 	font-weight: 300 !important;
   margin: 0 !important;
 }
+.contact-comment {
+    color: var(--alt-main-color-lighter) !important;
+}
 
 /* Submit Button */
 .form-group {
