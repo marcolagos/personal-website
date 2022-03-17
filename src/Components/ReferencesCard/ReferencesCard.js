@@ -31,24 +31,34 @@ function ReferencesCard(props) {
 						</Card.Text>
 						<div>
 							<Button className="card-button" onClick={handleShow}>
+								{show ? (
+									<MdCloseFullscreen className="card-icon" />
+								) : (
 									<MdOpenInFull className="card-icon" />
+								)}
 							</Button>
 							<Button className="card-button">Tech</Button>
 						</div>
 					</Card.Body>
 				</Card>
 			</Tilt>
-			<Modal size="lg" show={show} onHide={handleClose}>
-				<Modal.Header closeButton>
+			<Modal
+				className="fade-scale"
+				size="xl"
+				show={show}
+				onHide={handleClose}
+				scrollable={true}
+				backdrop="true"
+				keyboard={true}
+				animation={true}
+			>
+				<Modal.Header>
 					<Modal.Title>Modal heading</Modal.Title>
 				</Modal.Header>
-				<Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+				<Modal.Body>Modal Body</Modal.Body>
 				<Modal.Footer>
 					<Button variant="secondary" onClick={handleClose}>
 						Close
-					</Button>
-					<Button variant="primary" onClick={handleClose}>
-						Save Changes
 					</Button>
 				</Modal.Footer>
 			</Modal>

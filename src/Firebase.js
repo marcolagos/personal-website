@@ -1,4 +1,5 @@
-import firebase from 'firebase';
+import firebase from 'firebase/app';
+import "firebase/firestore";
 
 var firebaseApp = firebase.initializeApp({
     apiKey: "AIzaSyAfwhJ0zZA6oZx8s4EW9NplyB5D5DSSFPA",
