@@ -1,0 +1,123 @@
+/* Card */
+.project-card-view {
+	background-color: transparent !important;
+	opacity: 0.8 !important;
+	transition: var(--main-transition) !important;
+	height: 100% !important;
+}
+.project-card-view:hover {
+	transform: scale(1.02) !important;
+	opacity: 1 !important;
+	box-shadow: 0 0 15px var(alt-main-color-opaque);
+}
+/* Card */
+.card-date {
+	background-color: var(--card-background) !important;
+}
+.card-text-date {
+	color: var(--card-date);
+	font-size: 1rem;
+}
+.card-body {
+	background-color: var(--card-background) !important;
+}
+.card-text-title {
+	font-size: 1.5rem !important;
+	font-weight: 400 !important;
+	color: var(--default-text-color) !important;
+}
+.card-text-body {
+	color: var(--card-body) !important;
+	font-size: 1rem !important;
+	font-weight: 300 !important;
+}
+.card-button {
+	color: var(--card-button) !important;
+	margin-left: 1rem !important;
+	margin-right: 1rem !important;
+	padding: 0.5rem 2rem 0.5rem 2rem !important;
+	background-color: var(--card-background) !important;
+	border: none !important;
+	opacity: 0.8 !important;
+	border-radius: 0 !important;
+	font-size: 1.5rem !important;
+}
+.card-button:focus,
+.card-button:active,
+.card-button:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+.card-icon {
+	margin-bottom: 0.4rem !important;
+}
+.card-button:hover {
+	opacity: 1 !important;
+	box-shadow: 0 0 8px #000000 !important;
+	transform: scale(1.02) !important;
+}
+
+
+
+
+
+
+/* Modal */
+.modal-project-card-view {
+	background-color: transparent !important;
+	opacity: 1 !important;
+	transition: var(--main-transition) !important;
+	height: 75vh !important;
+	width: 75vw !important;
+	box-shadow: 0 0 15px var(alt-main-color-opaque);
+	position: absolute !important;
+	z-index: 10 !important;
+}
+
+/* Card */
+.modal-card-date {
+	background-color: var(--card-background) !important;
+}
+.modal-card-text-date {
+	color: var(--card-date);
+	font-size: 1rem;
+}
+.modal-card-body {
+	background-color: var(--card-background) !important;
+}
+.modal-card-text-title {
+	font-size: 1.5rem !important;
+	font-weight: 400 !important;
+	color: var(--default-text-color) !important;
+}
+.modal-card-text-body {
+	color: var(--card-body) !important;
+	font-size: 1rem !important;
+	font-weight: 300 !important;
+}
+.modal-card-button {
+	color: var(--card-button) !important;
+	margin-left: 1rem !important;
+	margin-right: 1rem !important;
+	padding: 0.5rem 2rem 0.5rem 2rem !important;
+	background-color: var(--card-background) !important;
+	border: none !important;
+	opacity: 0.8 !important;
+	border-radius: 0 !important;
+	font-size: 1.5rem !important;
+}
+.modal-card-button:focus,
+.modal-card-button:active,
+.modal-card-button:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+.modal-card-icon {
+	margin-bottom: 0.4rem !important;
+}
+.modal-card-button:hover {
+	opacity: 1 !important;
+	box-shadow: 0 0 8px #000000 !important;
+	transform: scale(1.02) !important;
+}
+

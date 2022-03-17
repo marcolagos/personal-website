@@ -103,7 +103,7 @@ function Contact() {
 					<Row>
 						<Col md={12} className="contact-header" data-aos="zoom-in" data-aos-duration="1500">
 							<h1 className="contact-title" data-aos="fade-up" data-aos-duration="1500">
-								Contact <span className="orange">Me</span>
+								Contact
 							</h1>
 							<p
 								className="contact-comment"
@@ -111,7 +111,7 @@ function Contact() {
 								data-aos-duration="1500"
 								data-aos-delay="500"
 							>
-								Alternatively, I welcome messages through media!
+								Alternatively, messages through media are welcomed!
 							</p>
 							<Form className="form" onSubmit={handleSubmit}>
 								<Form.Group
@@ -177,6 +177,8 @@ function Contact() {
 						</Col>
 					</Row>
 				</Container>
+			</Container>
+			<Container fluid className="contact-container-2">
 			</Container>
 		</section>
 	);

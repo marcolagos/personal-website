@@ -1,12 +1,18 @@
 /* Contact Page */
 .contact-section {
-  overflow: hidden;
+	overflow: hidden;
 }
 .contact-container {
 	background-color: var(--main-bg-color) !important;
 	position: relative !important;
 	padding: 3rem !important;
 	height: 100vh !important;
+}
+.contact-container-2 {
+	background-color: var(--main-bg-color) !important;
+	position: relative !important;
+	padding: 3rem !important;
+	height: 15vh !important;
 }
 .contact-intro {
 	height: 100vh !important;
@@ -18,48 +24,49 @@
 }
 .contact-title {
 	font-weight: 300 !important;
-  margin: 0 !important;
+	margin: 0 !important;
 }
 .contact-comment {
-    color: var(--alt-main-color-lighter) !important;
+	margin-top: 5px !important;
+	color: var(--alt-main-color-lighter) !important;
 }
 
 /* Submit Button */
 .form-group {
-  position: relative !important;
+	position: relative !important;
 	display: inline-block !important;
-  width: 75% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  text-align: left !important;
+	width: 75% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	text-align: left !important;
 }
 .form-label {
-  font-weight: 300 !important;
-  margin: 0 !important;
-  padding: 0.5rem;
-  font-size: 1.25rem;
-  text-align: left !important;
+	font-weight: 300 !important;
+	margin: 0 !important;
+	padding: 0.5rem;
+	font-size: 1.25rem;
+	text-align: left !important;
 }
 .form-control {
-  padding: 0.35rem !important;
-  background-color: var(--alt-main-color) !important;
-  border: 1px solid var(--alt-main-color) !important;
-  color: var(--alt-grey-color) !important;
+	padding: 0.35rem !important;
+	background-color: var(--alt-main-color) !important;
+	border: 1px solid var(--alt-main-color) !important;
+	color: var(--alt-grey-color) !important;
 }
 .form-control:active,
 .form-control:checked,
 .form-control::selection,
 .form-control:focus {
-  outline: none !important;
-  border: 1px solid var(--alt-main-color) !important;
-  box-shadow: 0 0 5px var(--alt-bright-orange) !important;
+	outline: none !important;
+	border: 1px solid var(--alt-main-color) !important;
+	box-shadow: 0 0 5px var(--alt-bright-orange) !important;
 }
 .text-area {
-  height: 20vh !important;
+	height: 20vh !important;
 }
 .contact-icon-color {
 	color: var(--alt-bright-orange) !important;
-  border: none !important;
+	border: none !important;
 }
 .contact-icon-button {
 	position: relative !important;
@@ -67,13 +74,13 @@
 	width: 5rem !important;
 	height: 2.5rem !important;
 	font-size: 1.25em !important;
-	line-height: .75em !important;
+	line-height: 0.75em !important;
 	background: var(--alt-main-color) !important;
 	border-radius: 5% !important;
 	transition: var(--main-transition) !important;
-  margin: 1rem !important;
-  padding: 0 !important;
-  margin: 0 !important;
+	margin: 1rem !important;
+	padding: 0 !important;
+	margin: 0 !important;
 }
 .contact-icon-button:focus,
 .contact-icon-button:active,
@@ -88,26 +95,25 @@
 	color: var(--alt-bright-orange);
 }
 .warning {
-  color: var(--alt-bright-red) !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  display: none !important;
+	color: var(--alt-bright-red) !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	display: none !important;
 }
 .direct {
-  color: var(--alt-bright-orange) !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  display: none !important;
+	color: var(--alt-bright-orange) !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	display: none !important;
 }
 .display {
-  display: block !important;
+	display: block !important;
 }
 @media (max-width: 767px) {
 	.form-group {
-    width: 75vw !important;
-  }
-  .form-label {
-    font-size: 1rem;
-  }
+		width: 75vw !important;
+	}
+	.form-label {
+		font-size: 1rem;
+	}
 }
-

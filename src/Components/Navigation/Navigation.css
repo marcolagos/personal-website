@@ -7,6 +7,14 @@
 	background-color: var(--main-bg-color) !important;
 	backdrop-filter: unset;
 }
+.navigation-scroll {
+	position: fixed !important;
+	padding: 0.3rem 2rem !important;
+	font-size: 1.2rem !important;
+	transition: var(--main-transition) !important;
+	background-color: var(--alt-main-color) !important;
+	backdrop-filter: unset;
+}
 .navigation:hover {
 	background-color: var(--alt-main-color) !important;
 	backdrop-filter: blur(3px);
@@ -99,7 +107,7 @@
 	background: var(--alt-bright-orange);
 	transition: var(--long-transition);
 }
-@media (min-width: 767px) {
+@media (min-width: 992px) {
 	.navbar-nav .nav-item a:hover::after {
 		width: 100%;
 		background: var(--alt-bright-red);

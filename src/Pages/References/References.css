@@ -1,29 +1,29 @@
-.project-section {
+.references-section {
     overflow: hidden;
 }
-.project-container {
+.references-container {
   box-sizing: unset !important;
   position: relative !important;
   padding-top: 5vh !important;
   padding-bottom: 5vh !important;
   background-color: var(--main-bg-color) !important;
 }
-.project-intro {
+.references-intro {
     text-align: center !important;
 }
-.project-card {
+.references-card {
   padding-top: 50px !important;
   padding-bottom: 50px !important;
   padding-left: 25px !important;
   padding-right: 25px !important;
   height: auto !important;
 }
-.project-title {
+.references-title {
     margin-top: 10vh !important;
     color: var(--default-text-color);
     font-weight: 300 !important;
 }
-.project-comment {
+.references-comment {
     color: var(--alt-main-color-lighter) !important;
 }
 .dim-orange {

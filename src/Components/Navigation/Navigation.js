@@ -13,8 +13,20 @@ import { AiOutlineMessage } from "react-icons/ai";
 function Navigation() {
 	const [boldLink, setBoldLink] = useState("/");
 	const [expanded, setExpanded] = useState(false);
+	const [navigationColor, setNavigationColor] = useState(false);
+
+	function scrollHandler() {
+		if (window.scrollY >= 20) {
+			setNavigationColor(true);
+		} else {
+			setNavigationColor(false);
+		}
+	}
+
+	window.addEventListener("scroll", scrollHandler);
+
 	return (
-		<Navbar collapseOnSelect fixed="top" className="navigation" expand="lg" expanded={expanded}>
+		<Navbar collapseOnSelect fixed="top" className={navigationColor ? "navigation-scroll" : "navigation"} expand="lg" expanded={expanded}>
 			<Container className="navigation-container">
 				<Navbar.Brand className="navigation-brand" href="/">
 					ml.
