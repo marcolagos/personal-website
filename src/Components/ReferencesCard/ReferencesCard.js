@@ -4,7 +4,9 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { ListGroup, ListGroupItem } from "react-bootstrap";
-import { MdCloseFullscreen, MdOpenInFull } from "react-icons/md";
+import { IoMdExpand } from "react-icons/io";
+import { CgMinimize } from "react-icons/cg";
+import { RiLandscapeFill } from "react-icons/ri";
 
 function ReferencesCard(props) {
 	// tilt to 0 if expanded, button to collapse if expanded, display page if expanded, add tech icons
@@ -32,9 +34,9 @@ function ReferencesCard(props) {
 						<div>
 							<Button className="card-button" onClick={handleShow}>
 								{show ? (
-									<MdCloseFullscreen className="card-icon" />
+									<RiLandscapeFill className="card-icon" />
 								) : (
-									<MdOpenInFull className="card-icon" />
+									<IoMdExpand className="card-icon" />
 								)}
 							</Button>
 							<Button className="card-button">Tech</Button>
@@ -53,12 +55,12 @@ function ReferencesCard(props) {
 				animation={true}
 			>
 				<Modal.Header>
-					<Modal.Title>Modal heading</Modal.Title>
+					<Modal.Title>{props.title}</Modal.Title>
 				</Modal.Header>
-				<Modal.Body>Modal Body</Modal.Body>
+				<Modal.Body>{props.article}</Modal.Body>
 				<Modal.Footer>
-					<Button variant="secondary" onClick={handleClose}>
-						Close
+					<Button className="card-button" onClick={handleClose}>
+						<CgMinimize className="card-icon" />
 					</Button>
 				</Modal.Footer>
 			</Modal>

@@ -70,20 +70,24 @@
 }
 /* inner border, background color, text color, text size/weight */
 .modal-header {
-	background-color: rgb(26, 26, 26);
+	background-color: var(--card-background);
 	display: block !important;
-	text-align: left !important;
+	text-align: center !important;
 	border: black !important;
 	border-radius: 0 !important;
 	background-repeat: no-repeat;
+	padding: 20px !important;
 }
 .modal-title {
-	font-size: 3rem !important;
+	font-size: 2rem !important;
 	font-weight: 300 !important;
+	background-color: var(--card-background);
+	padding: 20px !important;
+	border: 1px solid white !important;
 }
 .modal-body {
 	padding: 40px !important;
-	background-color: rgb(26, 26, 26);
+	background-color: var(--card-background);
 	border-radius: 0 !important;
 }
 .modal-footer {
@@ -96,4 +100,6 @@
 	border: none !important;
 	border-radius: 0 !important;
 }
-
+.modal-button {
+	color: var(--alt-bright-red) !important;
+}
