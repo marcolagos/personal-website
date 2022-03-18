@@ -10,7 +10,7 @@ import { REFERENCES_LINK } from "../../../Utils/Constants.Utils";
 
 function ReferencesCard(props) {
 	return (
-		<Tilt tiltMaxAngleX={3} tiltMaxAngleY={3} style={{ height: "auto" }}>
+		<Tilt tiltMaxAngleX={5} tiltMaxAngleY={5} style={{ height: "auto" }}>
 			<Card className="project-card-view">
 				<ListGroup>
 					<ListGroupItem className="card-date">

@@ -1,0 +1,16 @@
+.references-markdown {
+    color: red !important;
+}
+.references-markdown p {
+    color: red !important;
+}
+.references-markdown h1 {
+    color: red !important;
+}
+.references-markdown h4 {
+    color: red !important
+}
+
+.references-markdown>a {
+    color: red !important
+}

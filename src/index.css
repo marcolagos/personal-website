@@ -23,6 +23,20 @@
 
 /* Variables */
 :root {
+	/* Constants */
+	--main-transition: all 0.1s ease-in-out 0s;
+	--long-transition: all 0.3s ease-in-out 0s;
+
+	/* References Post */
+	--references-post-main-font-color: #FFFFFF;
+	--references-post-outline-color: #FFFFFF;
+	--references-post-outline-size: 0px;
+	--references-post-nav-color: rgb(26, 26, 26);
+	--references-post-body-color: #111111;
+	--references-post-icon-color: #f40d30;
+
+
+
 	--main-bg-color: #000000;
 	--alt-main-color: #111111c0;
 	--alt-main-color-opaque: #111111;
@@ -31,9 +45,7 @@
 	--alt-bright-red: #f40d30;
 	--alt-bright-orange: #ff8c00;
 	--alt-orange: #ff7300;
-	--main-transition: all 0.35s ease-in-out 0s;
-	--long-transition: all 0.4s ease-in-out 0s;
-	--main-transition: all 0.1s linear 0s;
+	
 	--default-text-color: #ffffff;
 	--alt-dull-orange: #cc8a39;
 	--card-background: #111111;

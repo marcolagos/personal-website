@@ -3,25 +3,24 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { useParams, Link } from "react-router-dom";
 import { REFERENCES_LINK } from "../../../Utils/Constants.Utils";
-import { CgMinimize } from "react-icons/cg";
+import { CgCross } from "react-icons/cg";
+import { FiX } from "react-icons/fi";
 import ReferencesMarkdown from "../ReferencesMarkdown/ReferencesMarkdown";
 
 function ReferencesPost(props) {
-	const [post, setPost] = useState("");
-
+	const [postBody, setPostBody] = useState("");
 	const { fileName } = useParams();
-
-	const MarkdownFile = require(`../../../Data/References/Posts/${fileName}.md`);
+	const MarkdownFile = require(`../../../Assets/References/${fileName}/${fileName}.md`);
 
 	useEffect(() => {
-        fetch(MarkdownFile)
-            .then((res) => res.text())
-            .then((res) => setPost(res));
-    }, [MarkdownFile, fileName]);
-    
+		fetch(MarkdownFile)
+			.then((res) => res.text())
+			.then((res) => setPostBody(res));
+	}, [MarkdownFile, fileName]);
+
 	return (
 		<Modal
-			className="fade-scale"
+			className="modal"
 			show={true}
 			scrollable={true}
 			backdrop="true"
@@ -29,15 +28,25 @@ function ReferencesPost(props) {
 			animation={true}
 			fullscreen={true}
 		>
-			<Modal.Header>
-				<Modal.Title>{props.title}</Modal.Title>
+			<Modal.Header className="modal-header">
+				<Modal.Title className="modal-title">
+					<Link
+						className="modal-navigation-link"
+						to={`${REFERENCES_LINK.substring(0, REFERENCES_LINK.length - 1)}`}
+					>
+						<FiX className="modal-navigation-link-icon" />
+					</Link>
+				</Modal.Title>
 			</Modal.Header>
-			<Modal.Body>
-				{post === "" ? "Loading" : <ReferencesMarkdown content={post} fileName={fileName} />}
+			<Modal.Body className="modal-body">
+				{<ReferencesMarkdown content={postBody} fileName={fileName} />}
 			</Modal.Body>
-			<Modal.Footer>
-				<Link className="card-button" to={`${REFERENCES_LINK.substring(0, REFERENCES_LINK.length - 1)}`}>
-					<CgMinimize className="card-icon" />
+			<Modal.Footer className="modal-footer">
+				<Link
+					className="modal-navigation-link"
+					to={`${REFERENCES_LINK.substring(0, REFERENCES_LINK.length - 1)}`}
+				>
+					<CgCross className="modal-footer-link-icon" />
 				</Link>
 			</Modal.Footer>
 		</Modal>

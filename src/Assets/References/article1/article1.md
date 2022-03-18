@@ -41,7 +41,14 @@ In very basic terms, this animation is just a HTML canvas that draws a shrinking
   quite hacky and might introduce compatibility problems on older browsers, or maybe some newer browsers. Safari
    updates have caused several CSS bugs on my website before.
 
-<Latex>$$ \\frac{5}{3} \times \cup a \cap b + \mathbb{R}$$</Latex>
+<Latex>Assume that $f(x)=O(\\log_b x)$. To prove that $f(x)=O(\\log_a x)$, we must show that $\\log_b x$ and $\\log_a x$ are separated by some constant $c$ such that: 
+    $$ c \\log_b x = \\log_a x \\rightarrow c = \\frac{\\log_a x}{\\log_b x} \\rightarrow c = \\log_a b $$
+    $\\log_a b$ is a constant which satisfies the definition of big-$O$ such that $f(x) \\leq \\frac{\\log_a x}{c} = \\log_b x.$
+    Therefore, $f(x)=O(\\log_a x)$.</Latex>
+
+<br>
+<br>
+<br>
  
  My recommendation is to go with a canvas.
 
