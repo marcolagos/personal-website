@@ -12,10 +12,11 @@
 @import url("./Components/Footer/Footer.css");
 @import url("./Components/Particle/Particle.css");
 @import url("./Components/ThreeDotsWave/ThreeDotsWave.css");
-@import url("./Components/ReferencesCard/ReferencesCard.css");
+@import url("./Components/References/ReferencesCard/ReferencesCard.css");
 @import url("./Pages/Contact/Contact.css");
 @import url("./Pages/Projects/Projects.css");
 @import url("./Pages/References/References.css");
+@import url("./Components/References/ReferencesPost/ReferencesPost.css");
 
 /* Variables */
 :root {

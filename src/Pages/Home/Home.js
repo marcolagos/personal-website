@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import Type from "../../Components/Type/Type";
 import { AiFillGithub, AiFillInstagram, AiFillFacebook } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const header = () => {
 	return (

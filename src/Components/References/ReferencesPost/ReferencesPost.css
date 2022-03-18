@@ -1,0 +1,47 @@
+/* Modal */
+.modal {
+	backdrop-filter: blur(2px) !important;
+	padding: 5rem 1rem 5rem 1rem;
+	border: black !important;
+	color: white;
+}
+.modal-content {
+	border: none !important;
+	border-radius: 0 !important;
+	/* box-shadow: 0 0 15px var(--alt-bright-orange); */
+}
+/* inner border, background color, text color, text size/weight */
+.modal-header {
+	background-color: var(--card-background);
+	display: block !important;
+	text-align: center !important;
+	border: black !important;
+	border-radius: 0 !important;
+	background-repeat: no-repeat;
+	padding: 20px !important;
+}
+.modal-title {
+	font-size: 2rem !important;
+	font-weight: 300 !important;
+	background-color: var(--card-background);
+	padding: 20px !important;
+	border: 1px solid white !important;
+}
+.modal-body {
+	padding: 40px !important;
+	background-color: var(--card-background);
+	border-radius: 0 !important;
+}
+.modal-footer {
+	display: block !important;
+	text-align: center !important;
+	background-color: rgb(26, 26, 26);
+	position: relative !important;
+	/* border: red !important; */
+	box-shadow: none !important;
+	border: none !important;
+	border-radius: 0 !important;
+}
+.modal-button {
+	color: var(--alt-bright-red) !important;
+}
