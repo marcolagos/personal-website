@@ -1,5 +1,6 @@
 import firebase from 'firebase/app';
 import "firebase/firestore";
+import "firebase/analytics";
 
 var firebaseApp = firebase.initializeApp({
     apiKey: "AIzaSyAfwhJ0zZA6oZx8s4EW9NplyB5D5DSSFPA",
@@ -13,4 +14,5 @@ var firebaseApp = firebase.initializeApp({
 
 var db = firebaseApp.firestore();
 
+export const firebaseAnalytics = firebaseApp.analytics();
 export { db };

@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-
 // Pages
 import About from "./Pages/About/About";
 import Home from "./Pages/Home/Home";
@@ -18,6 +17,7 @@ import References from "./Pages/References/References";
 import Navigation from "./Components/Navigation/Navigation";
 import Footer from "./Components/Footer/Footer";
 import Particle from "./Components/Particle/Particle";
+import ReferencesPost from "./Components/References/ReferencesPost/ReferencesPost";
 
 // Simple Animations
 import AOS from "aos";
@@ -25,6 +25,10 @@ import "aos/dist/aos.css";
 
 // Firebase or Firestore database
 import { db } from "./Firebase";
+
+// Utils
+import { REFERENCES_LINK } from "./Utils/Constants.Utils";
+
 
 function App() {
 
@@ -37,11 +41,12 @@ function App() {
 		<BrowserRouter>
 			<Navigation />
 			<Routes>
-				<Route path="/" exact element={<Home />} />
-				<Route path="/projects" element={<Projects />} />
-				<Route path="/references" element={<References />} />
-				<Route path="/contact" element={<Contact />} />
-				<Route path="/about" element={<About />} />
+				<Route exact path="/" element={<Home />} />
+				<Route exact path="/projects" element={<Projects />} />
+				<Route exact path={REFERENCES_LINK} element={<References />} />
+				<Route exact path={`${REFERENCES_LINK}:fileName`} element={<ReferencesPost />} />
+				<Route exact path="/contact" element={<Contact />} />
+				<Route exact path="/about" element={<About />} />
 			</Routes>
 			<Footer />
 		</BrowserRouter>

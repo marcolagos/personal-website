@@ -17,6 +17,8 @@
 @import url("./Pages/Projects/Projects.css");
 @import url("./Pages/References/References.css");
 @import url("./Components/References/ReferencesPost/ReferencesPost.css");
+@import url("./Components/Media/Media.css");
+@import url("./Components/Code/Code.css");
 
 /* Variables */
 :root {

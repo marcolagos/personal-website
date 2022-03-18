@@ -5,28 +5,28 @@
       "date": "02/27/2022",
       "minutes": "30 min",
       "description": "This page is article 1.",
-      "post": "articleOne"
+      "post": "article1"
     },
     {
       "title": "Article 2",
       "date": "02/15/2022",
       "minutes": "20 min",
       "description": "This page is article 2.",
-      "post": "articleTwo"
+      "post": "article2"
     },
     {
       "title": "Article 3",
       "date": "02/05/2022",
       "minutes": "10 min",
       "description": "This page is article 3.",
-      "post": "articleThree"
+      "post": "article3"
     },
     {
       "title": "Article 3",
       "date": "02/05/2022",
       "minutes": "10 min",
       "description": "This page is article 3.",
-      "post": "articleThree"
+      "post": "article4"
     }
   ]
 }

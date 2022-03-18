@@ -7,7 +7,7 @@ const cardJSON = require("../../Data/References/references-cards.json");
 const headerJSON = require("../../Data/References/references-header.json");
 
 function References() {
-	const cards = cardJSON.items.map((item) => {
+	const cards = cardJSON.items.map((item, index) => {
 		return (
 			<Col md={4} className="references-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
 				<ReferencesCard
@@ -16,7 +16,7 @@ function References() {
 					minutes={item.minutes}
 					description={item.description}
 					post={item.post}
-					key={item.title}
+					key={index}
 				/>
 			</Col>
 		);
