@@ -1,13 +1,14 @@
 import React from "react";
 import { compiler } from "markdown-to-jsx";
-import Code from "../../Code/Code";
-import Media from "../../Media/Media";
+import Code from "./Code/Code";
+import Media from "./Media/Media";
+import Latex from "./Latex/Latex";
 
 const cache = new Map();
 
-const retrieveCompiledBlogPostFromCache = (content, fileName) => {
-	// don't cache react-snap SSR pass
-	if (content === "") return null;
+const getPost = (content, fileName) => {
+
+    if (content === "") return null;
 
 	const item = cache.get(fileName);
 	if (item === undefined) {
@@ -19,6 +20,9 @@ const retrieveCompiledBlogPostFromCache = (content, fileName) => {
 				Code: {
 					component: Code,
 				},
+				Latex: {
+					component: Latex,
+				},
 			},
 		});
 		cache.set(fileName, newItem);
@@ -29,7 +33,7 @@ const retrieveCompiledBlogPostFromCache = (content, fileName) => {
 };
 
 function ReferencesMarkdown({content, fileName}) {
-    return <div className="references-markdown">{retrieveCompiledBlogPostFromCache(content, fileName)}</div>;
+    return <div className="references-markdown">{getPost(content, fileName)}</div>;
 }
 
 export default ReferencesMarkdown;

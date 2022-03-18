@@ -1,0 +1,23 @@
+{
+    "items": 
+    [
+        {
+            "title": "Name:",
+            "placeholder": "Enter name",
+            "type": "name"
+        },
+        {
+            "title": "Email:",
+            "placeholder": "Enter email",
+            "type": "email"
+        },
+        {
+            "title": "Message:",
+            "placeholder": "Enter message",
+            "type": "text",
+            "as": "textarea"
+        }
+    ],
+    "warning" : "Please fill out all fields.",
+    "direction": "Type in fields again to send another message!"
+}

@@ -19,17 +19,15 @@ function ReferencesPost(props) {
             .then((res) => setPost(res));
     }, [MarkdownFile, fileName]);
     
-    console.log(post);
-
 	return (
 		<Modal
 			className="fade-scale"
-			size="xl"
 			show={true}
 			scrollable={true}
 			backdrop="true"
 			keyboard={true}
 			animation={true}
+			fullscreen={true}
 		>
 			<Modal.Header>
 				<Modal.Title>{props.title}</Modal.Title>

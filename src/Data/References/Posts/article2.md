@@ -4,6 +4,8 @@
 
 ######July 17, 2020 - 10 min read
 
+$ x^5 + x_i == 30 $
+
 I've had the opportunity to **work with** recruiters in my career. I've taken numerous interviewer trainings, done interviews and been to a broad range of company recruitment events including events in universities. In addition to that, I get 3-5 messages on LinkedIn per day from rectuiters hiring for various companies. I talk with some of them even if I'm not interested in the job to understand what they like about my CV. This allows me to create a feedback loop where I can learn more about what attracts them.
 
 Long story short, I have some understanding of what recruiters want on a CV. Here are several tips to all beginners out there:

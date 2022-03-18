@@ -5,6 +5,9 @@ import { Form, Button } from "react-bootstrap";
 import { db } from "../../Firebase";
 import ThreeDotsWave from "../../Components/ThreeDotsWave/ThreeDotsWave";
 
+const bodyJSON = require("../../Data/Contact/contact-body.json");
+const headerJSON = require("../../Data/Contact/contact-header.json");
+
 function Contact() {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
@@ -96,6 +99,23 @@ function Contact() {
 		}
 	}, []);
 
+	const areas = bodyJSON.items.map((item, index) => {
+		return (
+			<Form.Group className="form-group pt-3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
+				<Form.Label className="form-label">{item.title}</Form.Label>
+				<Form.Control
+					className={`form-input ${item.as}`}
+					type={item.type}
+					placeholder={item.placeholder}
+					value={item.type === "type" ? message : item.type === "name" ? name : email}
+					onChange={item.type === "type" ? messageChange : item.type === "name" ? nameChange : emailChange}
+					as={item.as}
+					key={index}
+				/>
+			</Form.Group>
+		);
+	});
+
 	return (
 		<section className="contact-section">
 			<Container fluid className="contact-container">
@@ -103,7 +123,7 @@ function Contact() {
 					<Row>
 						<Col md={12} className="contact-header" data-aos="zoom-in" data-aos-duration="1500">
 							<h1 className="contact-title" data-aos="fade-up" data-aos-duration="1500">
-								Contact
+								{headerJSON.title}
 							</h1>
 							<p
 								className="contact-comment"
@@ -111,63 +131,16 @@ function Contact() {
 								data-aos-duration="1500"
 								data-aos-delay="500"
 							>
-								Alternatively, messages through media are welcomed!
+								{headerJSON.comment}
+								<a href={headerJSON.to} target="_blank" rel="noreferrer" className="dim-orange">
+									{headerJSON.link}
+								</a>
 							</p>
 							<Form className="form" onSubmit={handleSubmit}>
-								<Form.Group
-									className="form-group pt-3"
-									data-aos="fade-left"
-									data-aos-duration="1000"
-									data-aos-delay="700"
-								>
-									<Form.Label className="form-label">Name:</Form.Label>
-									<Form.Control
-										className="form-input"
-										type="name"
-										placeholder="Enter name"
-										autoComplete="name"
-										value={name}
-										onChange={nameChange}
-									/>
-								</Form.Group>
-								<Form.Group
-									className="form-group"
-									data-aos="fade-left"
-									data-aos-duration="1000"
-									data-aos-delay="900"
-								>
-									<Form.Label className="form-label">Email:</Form.Label>
-									<Form.Control
-										className="form-control"
-										type="email"
-										placeholder="Enter email"
-										autoComplete="email"
-										value={email}
-										onChange={emailChange}
-									/>
-								</Form.Group>
-								<Form.Group
-									className="form-group"
-									data-aos="fade-left"
-									data-aos-duration="1000"
-									data-aos-delay="1100"
-								>
-									<Form.Label className="form-label">Message:</Form.Label>
-									<Form.Control
-										className="form-control text-area"
-										as="textarea"
-										placeholder="Enter message"
-										value={message}
-										onChange={messageChange}
-									/>
-								</Form.Group>
+								{areas}
 								<div>
-									<div className={warning ? "warning display" : "warning"}>
-										Please fill out all fields.
-									</div>
-									<div className={direct ? "direct display" : "direct"}>
-										Type in fields again to send another message!
-									</div>
+									<div className={warning ? "warning display" : "warning"}>{bodyJSON.warning}</div>
+									<div className={direct ? "direct display" : "direct"}>{bodyJSON.direction}</div>
 								</div>
 								<br />
 								<Button className="contact-icon-color contact-icon-button" type="submit">
@@ -178,8 +151,7 @@ function Contact() {
 					</Row>
 				</Container>
 			</Container>
-			<Container fluid className="contact-container-2">
-			</Container>
+			<Container fluid className="contact-container-2"></Container>
 		</section>
 	);
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import ReferencesCard from "../../Components/References/ReferencesCard/ReferencesCard";
-import Background from "../../Assets/mountain-night.jpeg";
 import { Container, Row, Col } from "react-bootstrap";
 
 const cardJSON = require("../../Data/References/references-cards.json");
@@ -36,7 +35,7 @@ function References() {
 						</a>
 						!
 					</p>
-					<Row style={{ justifyContent: "center", paddingBottom: "10px" }}>{cards}</Row>
+					<Row style={{ justifyContent: "center", paddingBottom: "10px" }}> {cards}</Row>
 				</Container>
 			</Container>
 		</section>

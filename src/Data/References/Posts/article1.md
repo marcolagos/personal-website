@@ -40,6 +40,8 @@ In very basic terms, this animation is just a HTML canvas that draws a shrinking
  Second option could be to use a div with 100% corner radius and resize it using javascript. However, this might be
   quite hacky and might introduce compatibility problems on older browsers, or maybe some newer browsers. Safari
    updates have caused several CSS bugs on my website before.
+
+<Latex>$$ \\frac{5}{3} \times \cup a \cap b + \mathbb{R}$$</Latex>
  
  My recommendation is to go with a canvas.
 
