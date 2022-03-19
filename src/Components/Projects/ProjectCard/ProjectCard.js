@@ -31,7 +31,7 @@ function ProjectCard({ title, date, image, stack, github, description }) {
 		}
 	});
 
-	const imagePath = require(`../../Assets/Projects/${image}`);
+	const imagePath = require(`../../../Assets/Projects/${image}`);
 	return (
 		<Tilt tiltMaxAngleX={3} tiltMaxAngleY={3} style={{ height: "auto" }}>
 			<Card className="project-card-view">

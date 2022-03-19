@@ -7,11 +7,11 @@
 
 /* CSS Imports */
 @import url("./Pages/Home/Home.css");
-@import url("./Components/ProjectCard/ProjectCard.css");
+@import url("./Components/Projects/ProjectCard/ProjectCard.css");
 @import url("./Components/Navigation/Navigation.css");
 @import url("./Components/Footer/Footer.css");
-@import url("./Components/Particle/Particle.css");
-@import url("./Components/ThreeDotsWave/ThreeDotsWave.css");
+@import url("./Components/Home/Particle/Particle.css");
+@import url("./Components/Contact/ThreeDotsWave/ThreeDotsWave.css");
 @import url("./Components/References/ReferencesCard/ReferencesCard.css");
 @import url("./Pages/Contact/Contact.css");
 @import url("./Pages/Projects/Projects.css");
@@ -31,7 +31,7 @@
 	--selection-background-color: #3d3d3d;
 
 	/* Home */
-	--home-background-color: #000000; /* May not do anything */
+	--home-background-color: transparent; /* May not do anything */
 	--home-introduction-font-color: #FFFFFF;
 	--home-contained-background-color: transparent;
 	--home-type-font-color: #ff8c00;

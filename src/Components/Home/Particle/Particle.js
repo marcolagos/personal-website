@@ -17,7 +17,7 @@ function Particle() {
 				params={{
 					particles: {
 						number: {
-							value: 100,
+							value: 300,
 							density: {
 								enable: true,
 								value_area: 800,
@@ -37,7 +37,7 @@ function Particle() {
 							},
 						},
 						opacity: {
-							value: 0.3,
+							value: 0.5,
 							random: false,
 							anim: {
 								enable: false,
@@ -65,7 +65,7 @@ function Particle() {
 						},
 						move: {
 							enable: true,
-							speed: 0.5,
+							speed: 0.6,
 							direction: "none",
 							random: true,
 							out_mode: "out",

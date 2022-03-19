@@ -4,6 +4,7 @@
     background-color: var(--home-background-color) !important;
 }
 .home-container {
+	z-index: -1 !important;
 	position: relative;
 	background-image: url(../../Assets//Home/home-background.jpg) !important;
 	background-position: top center;

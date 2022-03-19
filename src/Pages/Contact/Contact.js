@@ -3,7 +3,7 @@ import { Container, Col, Row } from "react-bootstrap";
 import { AiOutlineForm, AiFillCheckCircle } from "react-icons/ai";
 import { Form, Button } from "react-bootstrap";
 import { db } from "../../Firebase";
-import ThreeDotsWave from "../../Components/ThreeDotsWave/ThreeDotsWave";
+import ThreeDotsWave from "../../Components/Contact/ThreeDotsWave/ThreeDotsWave";
 
 const bodyJSON = require("../../Data/Contact/contact-body.json");
 const headerJSON = require("../../Data/Contact/contact-header.json");

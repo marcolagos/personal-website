@@ -16,7 +16,6 @@ import References from "./Pages/References/References";
 // Components
 import Navigation from "./Components/Navigation/Navigation";
 import Footer from "./Components/Footer/Footer";
-import Particle from "./Components/Particle/Particle";
 import ReferencesPost from "./Components/References/ReferencesPost/ReferencesPost";
 
 // Simple Animations

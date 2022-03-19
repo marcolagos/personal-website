@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ProjectCard from "../../Components/ProjectCard/ProjectCard";
+import ProjectCard from "../../Components/Projects/ProjectCard/ProjectCard";
 import { Container, Row, Col } from "react-bootstrap";
 
 const cardJSON = require("../../Data/Projects/projects-cards.json");
