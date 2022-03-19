@@ -9,33 +9,33 @@ function Footer() {
 		<Container fluid className="footer-container fixed-bottom">
 			<Row>
 				<Col md="4" className="footer-col"></Col>
-				<Col md="4" className="footer-col footer-col-icons">
-					<h3 className="footer-icon icon-1">
+				<Col md="4" className="footer-col"></Col>
+				<Col md="4" className="footer-col">
+					<h3 className="footer-icons icon-1">
 						<a href="https://github.com/marcolagos" target="_blank" rel="noreferrer">
-							<AiFillGithub />
+							<AiFillGithub className="footer-icon" />
 						</a>
 					</h3>
-					<h3 className="footer-icon icon-2">
+					<h3 className="footer-icons icon-2">
 						<a href="https://www.linkedin.com/in/marcolagos" target="_blank" rel="noreferrer">
-							<FaLinkedinIn />
+							<FaLinkedinIn className="footer-icon" />
 						</a>
 					</h3>
-					<h3 className="footer-icon icon-3">
+					<h3 className="footer-icons icon-3">
 						<a href="https://www.instagram.com/marcollagoss/" target="_blank" rel="noreferrer">
-							<AiFillInstagram />
+							<AiFillInstagram className="footer-icon" />
 						</a>
 					</h3>
-					<h3 className="footer-icon icon-4">
+					<h3 className="footer-icons icon-4">
 						<a
 							href="https://www.facebook.com/profile.php?id=100054551763304"
 							target="_blank"
 							rel="noreferrer"
 						>
-							<AiFillFacebook />
+							<AiFillFacebook className="footer-icon" />
 						</a>
 					</h3>
 				</Col>
-				<Col md="4" className="footer-col"></Col>
 			</Row>
 		</Container>
 	);

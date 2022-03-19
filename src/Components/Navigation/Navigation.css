@@ -4,19 +4,10 @@
 	padding: 0.3rem 2rem !important;
 	font-size: 1.2rem !important;
 	transition: var(--main-transition) !important;
-	background-color: var(--main-bg-color) !important;
-	backdrop-filter: unset;
-}
-.navigation-scroll {
-	position: fixed !important;
-	padding: 0.3rem 2rem !important;
-	font-size: 1.2rem !important;
-	transition: var(--main-transition) !important;
-	background-color: var(--alt-main-color) !important;
-	backdrop-filter: unset;
+	background-color: var(--navigation-background-color) !important;
 }
 .navigation:hover {
-	background-color: var(--alt-main-color) !important;
+	background-color: var(--navigation-background-color-hover) !important;
 	backdrop-filter: blur(3px);
 }
 .navbar-toggler {
@@ -27,7 +18,7 @@
 }
 .navbar-toggler span {
 	display: block !important;
-	background-color: var(--default-text-color) !important;
+	background-color: var(--navigation-hamburger-toggle-color) !important;
 	height: 3px !important;
 	width: 23px !important;
 	margin-top: 5px !important;
@@ -52,7 +43,7 @@
 	left: 25px !important;
 	top: 10px !important;
 	transform: rotate(135deg) !important;
-	background-color: var(--alt-bright-red) !important;
+	background-color: var(--navigation-exit-font-color) !important;
 }
 .navbar-toggler:not(.collapsed) span:nth-child(2) {
 	height: 12px !important;
@@ -64,22 +55,26 @@
 	left: 25px !important;
 	top: 10px !important;
 	transform: rotate(-135deg) !important;
-	background-color: var(--alt-bright-red) !important;
-}
-@media (max-width: 767px) {
-	.navigation {
-		padding: 1rem 2rem !important;
-	}
+	background-color: var(--navigation-exit-font-color) !important;
 }
 .navbar-brand {
-	color: var(--default-text-color) !important;
+	color: var(--navigation-brand-font-color) !important;
 	font-size: 2rem !important;
 	margin-bottom: 4px !important;
 	font-weight: 600 !important;
 	margin-right: 4rem !important;
+	margin: 4px 4rem 4px 1rem !important;
+}
+@media (max-width: 767px) {
+	.navigation {
+		padding: 0.75rem 2rem !important;
+	}
+	.navbar-brand {
+		font-size: 1.75rem !important;
+	}
 }
 .navbar-nav .nav-link {
-	color: var(--default-text-color) !important;
+	color: var(--navigation-links-font-color) !important;
 	padding-right: 1rem !important;
 	padding-left: 1rem !important;
 }
@@ -104,13 +99,13 @@
 	width: 0%;
 	border-radius: 20px;
 	left: 0;
-	background: var(--alt-bright-orange);
+	background: var(--navigation-links-underline-before);
 	transition: var(--long-transition);
 }
 @media (min-width: 992px) {
 	.navbar-nav .nav-item a:hover::after {
 		width: 100%;
-		background: var(--alt-bright-red);
+		background: var(--navigation-links-underline-after);
 	}
 }
 .boldLink {
