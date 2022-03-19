@@ -8,7 +8,7 @@ const headerJSON = require("../../Data/References/references-header.json");
 function References() {
 	const cards = cardJSON.items.map((item, index) => {
 		return (
-			<Col md={4} className="references-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+			<Col md={4} className="references-card">
 				<ReferencesCard
 					title={item.title}
 					date={item.date}
@@ -25,16 +25,16 @@ function References() {
 		<section className="references-section">
 			<Container fluid className="references-container">
 				<Container className="references-intro">
-					<h1 className="references-title" data-aos="fade-up" data-aos-duration="1500">
-						{headerJSON.title}
-					</h1>
-					<p className="references-comment" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
-						{headerJSON.comment}
-						<a href="/contact" target="_blank" rel="noreferrer" className="dim-orange">
-							{headerJSON.link}
-						</a>
-						!
-					</p>
+					<div className="references-header">
+						<h1 className="references-title">{headerJSON.title}</h1>
+						<p className="references-comment">
+							{headerJSON.comment}
+							<a href="/contact" target="_blank" rel="noreferrer" className="dim-orange">
+								{headerJSON.link}
+							</a>
+							!
+						</p>
+					</div>
 					<Row style={{ justifyContent: "center", paddingBottom: "10px" }}> {cards}</Row>
 				</Container>
 			</Container>
