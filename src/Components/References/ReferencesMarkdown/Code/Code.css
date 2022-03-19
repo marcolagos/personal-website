@@ -1,0 +1,44 @@
+.code-container {
+    position: relative !important;
+}
+.pre {
+    background-color: red !important;
+}
+.code-copy-button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+	color: white !important;
+	padding: 0.25vh 1vh 0.25vh 1vh !important;
+	background-color: black !important;
+	border: none !important;
+	opacity: 0.8 !important;
+	border-radius: 0 !important;
+	font-size: 1.5rem !important;
+    border-radius: 10% !important;
+}
+.code-copy-button:focus,
+.code-copy-button:active,
+.code-copy-button-icon:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+.code-copy-button:hover {
+	opacity: 1 !important;
+}
+.syntaxhighlighter {
+    max-height: 550px;
+    background-color: #ff0000 !important;
+    overflow-y: auto !important;
+    overflow-x: auto !important;
+  }
+  .syntaxhighlighter .line.alt1 {
+    background-color: #99ff99 !important;
+  }
+  .syntaxhighlighter .line.alt2 {
+    background-color: #99ff99 !important;
+  }
+  .syntaxhighlighter .comments, .syntaxhighlighter .comments a {
+    color: #000082 !important;
+    font-weight: bold !important;
+  }

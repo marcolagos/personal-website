@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
+import { Button, Overlay, Tooltip } from "react-bootstrap";
 
-import { atomDark} from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import { FaRegClipboard, FaRegCopy } from "react-icons/fa";
+import CodeStyle from "../../../../Utils/CodeStyle.Utils";
+
 import jsx from "react-syntax-highlighter/dist/cjs/languages/prism/jsx";
 import bash from "react-syntax-highlighter/dist/cjs/languages/prism/bash";
 import sass from "react-syntax-highlighter/dist/cjs/languages/prism/sass";
+
+import { BiCopy } from "react-icons/bi";
+import { BsCheck2 } from "react-icons/bs";
 
 SyntaxHighlighter.registerLanguage("jsx", jsx);
 SyntaxHighlighter.registerLanguage("bash", bash);
@@ -20,7 +24,7 @@ const getCode = (children, language) => {
 		const highlighter = {
 			language,
 			children: children,
-			style: atomDark,
+			style: CodeStyle,
 		};
 		SyntaxHighlighter(highlighter);
 		const cachedVar = SyntaxHighlighter(highlighter);
@@ -31,14 +35,29 @@ const getCode = (children, language) => {
 };
 
 function Code({ children, language }) {
-    const [isCopied, setIsCopied] = useState(false);
-    return (
+	const [show, setShow] = useState(false);
+	const [copied, setCopied] = useState(false);
+	const target = useRef(null);
+
+	const handleClick = () => {
+		setCopied(true);
+		setShow(true)
+		setTimeout(() => {
+			setCopied(false);
+			setShow(false);
+		}, 2000);
+	};
+
+	return (
 		<div className="code-container">
-			<CopyToClipboard onCopy={() => setIsCopied(true)} className="code-copy-button" text={children}>
-				<button type="button" aria-label="Copy to Clipboard Button">
-					{isCopied ? <FaRegClipboard /> : <FaRegCopy />}
-				</button>
+			<CopyToClipboard onCopy={handleClick} className="code-copy-button" text={children}>
+				<Button type="button" ref={target}>
+					{copied ? <BsCheck2 /> : <BiCopy />}
+				</Button>
 			</CopyToClipboard>
+			<Overlay target={target.current} show={show} placement="top">
+				<Tooltip>Copied!</Tooltip>
+			</Overlay>
 
 			{getCode(children, language)}
 		</div>

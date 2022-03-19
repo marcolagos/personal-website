@@ -33,7 +33,6 @@ const getPost = (content, fileName) => {
 };
 
 function ReferencesMarkdown({ content, fileName }) {
-	console.log(<div className="references-markdown">{getPost(content, fileName)}</div>);
     return <div className="references-markdown">{getPost(content, fileName)}</div>;
 }
 

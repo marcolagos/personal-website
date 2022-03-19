@@ -24,7 +24,7 @@ function Footer() {
 	};
 
 	const links = footerJSON.links.map((item, index) => {
-		return (<h3 className={`footer-icons icon-${index + 1}`}>
+		return (<h3 className={`footer-icons icon-${index + 1}`} key={index}>
 			<a href={item.to} target="_blank" rel="noreferrer">
 				{getIcon(item.title)}
 			</a>
