@@ -1,14 +1,14 @@
 .references-section {
     overflow-y: scroll !important;
     overflow-x: hidden !important;
-    background-color: black !important;
+    background-color: var(--references-background-color) !important;
     height: 100vh !important;
 }
 .references-container {
     box-sizing: border-box !important;
     position: relative !important;
     padding: 5vh 1vh 0vh 1vh !important;
-    background-color: black !important;
+    background-color: var(--references-background-color) !important;
     height: 100vh !important;
 }
 .references-intro {
@@ -20,24 +20,24 @@
     padding: 10vh 0vh 5vh 0vh !important;
 }
 .references-title {
-    color: var(--alt-bright-orange) !important;
+    color: var(--references-title-font-color) !important;
 }
 .references-comment {
-    color: var(--alt-main-color-lighter) !important;
+    color: var(--references-comment-font-color) !important;
 }
 .references-card {
-    background-color: var(--alt-main-color-lighter) !important;
+    background-color: var(--references-card-background-color) !important;
     margin: 2vh !important;
     padding: 1vh !important;
 }
 .dim-orange {
-	color: var(--alt-orange) !important;
+	color: var(--references-link-font-color-before) !important;
 	text-decoration: none !important;
     opacity: 0.6 !important;
 }
 .dim-orange:hover,
 .dim-orange:active {
-	color: var(--alt-bright-orange) !important;
+	color: var(--references-link-font-color-after) !important;
 	text-decoration: none !important;
     opacity: 1 !important;
 }

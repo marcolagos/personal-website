@@ -28,10 +28,24 @@
 	--main-transition: all 0.1s ease-in-out 0s;
 	--long-transition: all 0.3s ease-in-out 0s;
 
+	/* Projects */
+	--projects-background-color: #000000;
+	--projects-title-font-color: #ff8c00;
+	--projects-comment-font-color: #3d3d3d;
+	--projects-card-background-color: #3d3d3d;
+	--projects-link-font-color-before: #ff7300;
+	--projects-link-font-color-after: #ff8c00;
+
+	/* References */
+	--references-background-color: #000000;
+	--references-title-font-color: #ff8c00;
+	--references-comment-font-color: #3d3d3d;
+	--references-card-background-color: #3d3d3d;
+	--references-link-font-color-before: #ff7300;
+	--references-link-font-color-after: #ff8c00;
+
 	/* References Post */
-	--references-post-main-font-color: #FFFFFF;
-	--references-post-outline-color: #FFFFFF;
-	--references-post-outline-size: 0px;
+	--references-post-main-font-color: #FFFFFF; /* May not do anything */
 	--references-post-nav-color: rgb(26, 26, 26);
 	--references-post-body-color: #111111;
 	--references-post-icon-color: #f40d30;

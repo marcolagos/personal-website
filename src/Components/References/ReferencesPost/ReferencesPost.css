@@ -2,8 +2,7 @@
 	color: var(--references-post-main-font-color) !important;
 }
 .modal-content {
-	padding: var(--references-post-outline-size) !important;
-	background-color: var(--references-post-outline-color) !important;
+	padding: 0 !important;
 }
 .modal-header {
 	background-color: var(--references-post-nav-color) !important;

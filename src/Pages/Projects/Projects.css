@@ -1,43 +1,43 @@
-.project-section {
+.projects-section {
     overflow-y: scroll !important;
     overflow-x: hidden !important;
-    background-color: black !important;
+    background-color: var(--projects-background-color) !important;
     height: 100vh !important;
 }
-.project-container {
+.projects-container {
     box-sizing: border-box !important;
     position: relative !important;
     padding: 5vh 1vh 0vh 1vh !important;
-    background-color: black !important;
+    background-color: var(--projects-background-color) !important;
     height: 100vh !important;
 }
-.project-intro {
+.projects-intro {
     text-align: center !important;
     padding-bottom: 15vh !important;
 }
-.project-header {
+.projects-header {
     background-color: transparent !important;
     padding: 10vh 0vh 5vh 0vh !important;
 }
-.project-title {
-    color: var(--alt-bright-orange) !important;
+.projects-title {
+    color: var(--projects-title-font-color) !important;
 }
-.project-comment {
-    color: var(--alt-main-color-lighter) !important;
+.projects-comment {
+    color: var(--projects-comment-font-color) !important;
 }
-.project-card {
-    background-color: var(--alt-main-color-lighter) !important;
+.projects-card {
+    background-color: var(--projects-card-background-color) !important;
     margin: 2vh !important;
     padding: 1vh !important;
 }
 .dim-orange {
-	color: var(--alt-orange) !important;
+	color: var(--projects-link-font-color-before) !important;
 	text-decoration: none !important;
     opacity: 0.6 !important;
 }
 .dim-orange:hover,
 .dim-orange:active {
-	color: var(--alt-bright-orange) !important;
+	color: var(--projects-link-font-color-after) !important;
 	text-decoration: none !important;
     opacity: 1 !important;
 }
