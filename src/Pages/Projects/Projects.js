@@ -8,7 +8,7 @@ const headerJSON = require("../../Data/Projects/projects-header.json");
 function Projects() {
 	const cards = cardJSON.items.map((item, index) => {
 		return (
-			<Col md={4} className="project-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+			<Col md={4} className="project-card">
 				<ProjectCard
 					title={item.title}
 					date={item.date}
@@ -25,16 +25,18 @@ function Projects() {
 		<section className="project-section">
 			<Container fluid className="project-container">
 				<Container className="project-intro">
-					<h1 className="project-title" data-aos="fade-up" data-aos-duration="1500">
-						{headerJSON.title}
-					</h1>
-					<p className="project-comment" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-						{headerJSON.comment}
-						<a href="/contact" target="_blank" rel="noreferrer" className="dim-orange">
-							{headerJSON.link}
-						</a>
-						!
-					</p>
+					<div className="project-header">
+						<h1 className="project-title" data-aos="fade-up" data-aos-duration="1500">
+							{headerJSON.title}
+						</h1>
+						<p className="project-comment" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+							{headerJSON.comment}
+							<a href="/contact" target="_blank" rel="noreferrer" className="dim-orange">
+								{headerJSON.link}
+							</a>
+							!
+						</p>
+					</div>
 					<Row style={{ justifyContent: "center", paddingBottom: "10px" }}>{cards}</Row>
 				</Container>
 			</Container>

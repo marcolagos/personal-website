@@ -39,7 +39,7 @@ function App() {
 
 	return (
 		<BrowserRouter>
-			{/* <Navigation /> */}
+			<Navigation />
 			<Routes>
 				<Route exact path="/" element={<Home />} />
 				<Route exact path="/projects" element={<Projects />} />
@@ -48,7 +48,7 @@ function App() {
 				<Route exact path="/contact" element={<Contact />} />
 				<Route exact path="/about" element={<About />} />
 			</Routes>
-			{/* <Footer /> */}
+			<Footer />
 		</BrowserRouter>
 	);
 }

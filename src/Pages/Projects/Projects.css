@@ -1,30 +1,34 @@
 .project-section {
-    overflow: hidden;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    background-color: black !important;
+    height: 100vh !important;
 }
 .project-container {
-  box-sizing: unset !important;
-  position: relative !important;
-  padding-top: 5vh !important;
-  padding-bottom: 5vh !important;
-  background-color: var(--main-bg-color) !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+    padding: 5vh 1vh 0vh 1vh !important;
+    background-color: black !important;
+    height: 100vh !important;
 }
 .project-intro {
     text-align: center !important;
+    padding-bottom: 15vh !important;
 }
-.project-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
+.project-header {
+    background-color: black !important;
+    padding: 10vh 0vh 5vh 0vh !important;
 }
 .project-title {
-    margin-top: 10vh !important;
-    color: var(--default-text-color);
-    font-weight: 300 !important;
+    color: var(--alt-bright-orange) !important;
 }
 .project-comment {
     color: var(--alt-main-color-lighter) !important;
+}
+.project-card {
+    background-color: var(--alt-main-color-lighter) !important;
+    margin: 2vh !important;
+    padding: 1vh !important;
 }
 .dim-orange {
 	color: var(--alt-orange) !important;

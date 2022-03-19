@@ -26,8 +26,15 @@ function References() {
 			<Container fluid className="references-container">
 				<Container className="references-intro">
 					<div className="references-header">
-						<h1 className="references-title">{headerJSON.title}</h1>
-						<p className="references-comment">
+						<h1 className="references-title" data-aos="fade-up" data-aos-duration="1500">
+							{headerJSON.title}
+						</h1>
+						<p
+							className="references-comment"
+							data-aos="fade-up"
+							data-aos-duration="1500"
+							data-aos-delay="200"
+						>
 							{headerJSON.comment}
 							<a href="/contact" target="_blank" rel="noreferrer" className="dim-orange">
 								{headerJSON.link}

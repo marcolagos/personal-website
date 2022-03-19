@@ -11,7 +11,7 @@
     {
       "title": "Mock-up Blog",
       "date": "01/05/2022",
-      "description": "A simple blog, as a precursor to a later project coming soon. Used React,js/React.js Libraries, Express.js, and MongoDB, along with some other useful Node.js libraries.",
+      "description": "A simple blog, as a precursor to a later project coming soon. Used React,js/React.js Libraries, Express.js, and MongoDB, along with some other useful Node.js libraries, such as bycrpt and mongoose.js.",
       "image": "mock-blog.JPG",
       "github": "https://github.com/marcolagos/mock-blog",
       "stack": ["Node.js", "React.js", "MongoDB"]
