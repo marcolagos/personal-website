@@ -25,11 +25,9 @@ function Projects() {
 		<section className="project-section">
 			<Container fluid className="project-container">
 				<Container className="project-intro">
-					<div className="project-header">
-						<h1 className="project-title" data-aos="fade-up" data-aos-duration="1500">
-							{headerJSON.title}
-						</h1>
-						<p className="project-comment" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+					<div className="project-header" data-aos="fade-up" data-aos-duration="1000" data-aos-once={true}>
+						<h1 className="project-title">{headerJSON.title}</h1>
+						<p className="project-comment">
 							{headerJSON.comment}
 							<a href="/contact" target="_blank" rel="noreferrer" className="dim-orange">
 								{headerJSON.link}
