@@ -45,6 +45,8 @@
 	--footer-background-color-hover: transparent;
 	--footer-icon-color: #ff8c00;
 
+	/* Three Dots Animation */
+	--three-dots-color: #FFFFFF;
 
 	/* Home */
 	--home-background-color: transparent; /* May not do anything */

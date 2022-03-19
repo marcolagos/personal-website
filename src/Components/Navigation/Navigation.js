@@ -10,10 +10,49 @@ import { IoCode } from "react-icons/io5";
 import { BsSearch, BsPersonCircle } from "react-icons/bs";
 import { AiOutlineMessage } from "react-icons/ai";
 
+const navigationJSON = require("../../Data/Other/navigation.json");
+
 function Navigation() {
 	const [boldLink, setBoldLink] = useState("/");
 	const [expanded, setExpanded] = useState(false);
 	const [navigationColor, setNavigationColor] = useState(false);
+
+	const getIcon = (title) => {
+		if (title === "Home") {
+			return <AiOutlineHome className="navigation-icon"/>;
+		}
+		if (title === "Projects") {
+			return <IoCode className="navigation-icon" />;
+		}
+		if (title === "References") {
+			return <BsSearch className="navigation-icon" />;
+		}
+		if (title === "Contact") {
+			return <AiOutlineMessage className="navigation-icon" />;
+		}
+		if (title === "About") {
+			return <BsPersonCircle className="navigation-icon" />;
+		}
+	}
+
+	const links = navigationJSON.items.map((item, index) => {
+		return (
+			<Nav.Item className="navigation-item" key={index}>
+				<Nav.Link
+					onClick={() => {
+						setBoldLink("/");
+						setExpanded(false);
+					}}
+					className={boldLink == item.to ? "navigation-link bold-link" : "navigation-link"}
+					as={Link}
+					to={item.to}
+				>
+					{getIcon(item.title)}
+					{item.title}
+				</Nav.Link>
+			</Nav.Item>
+		);
+	});
 
 	function scrollHandler() {
 		if (window.scrollY >= 20) {
@@ -29,7 +68,7 @@ function Navigation() {
 		<Navbar collapseOnSelect fixed="top" className={navigationColor ? "navigation-scroll" : "navigation"} expand="lg" expanded={expanded}>
 			<Container className="navigation-container">
 				<Navbar.Brand className="navigation-brand" href="/">
-					ml.
+					{navigationJSON.brand}
 				</Navbar.Brand>
 				<Navbar.Toggle
 					aria-controls="responsive-navbar-nav"
@@ -43,75 +82,7 @@ function Navigation() {
 				</Navbar.Toggle>
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav>
-						<Nav.Item className="navigation-item">
-							<Nav.Link
-								onClick={() => {
-									setBoldLink("/");
-									setExpanded(false);
-								}}
-								className={boldLink == "/" ? "navigation-link boldLink" : "navigation-link"}
-								as={Link}
-								to="/"
-							>
-								<AiOutlineHome /> Home
-							</Nav.Link>
-						</Nav.Item>
-
-						<Nav.Item className="navigation-item">
-							<Nav.Link
-								onClick={() => {
-									setBoldLink("/projects");
-									setExpanded(false);
-								}}
-								className={boldLink == "/projects" ? "navigation-link boldLink" : "navigation-link"}
-								as={Link}
-								to="/projects"
-							>
-								<IoCode /> Projects
-							</Nav.Link>
-						</Nav.Item>
-
-						<Nav.Item className="navigation-item">
-							<Nav.Link
-								onClick={() => {
-									setBoldLink("/references");
-									setExpanded(false);
-								}}
-								className={boldLink == "/references" ? "navigation-link boldLink" : "navigation-link"}
-								as={Link}
-								to="/references"
-							>
-								<BsSearch /> References
-							</Nav.Link>
-						</Nav.Item>
-
-						<Nav.Item className="navigation-item">
-							<Nav.Link
-								onClick={() => {
-									setBoldLink("/contact");
-									setExpanded(false);
-								}}
-								className={boldLink == "/contact" ? "navigation-link boldLink" : "navigation-link"}
-								as={Link}
-								to="/contact"
-							>
-								<AiOutlineMessage /> Contact
-							</Nav.Link>
-						</Nav.Item>
-
-						<Nav.Item className="navigation-item">
-							<Nav.Link
-								onClick={() => {
-									setBoldLink("/about");
-									setExpanded(false);
-								}}
-								className={boldLink == "/about" ? "navigation-link boldLink" : "navigation-link"}
-								as={Link}
-								to="/about"
-							>
-								<BsPersonCircle /> About
-							</Nav.Link>
-						</Nav.Item>
+						{links}
 					</Nav>
 				</Navbar.Collapse>
 			</Container>

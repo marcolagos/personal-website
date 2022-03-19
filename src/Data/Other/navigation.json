@@ -1,0 +1,25 @@
+{
+    "brand": "ml.",
+    "items": [
+        {
+            "title": "Home",
+            "to": "/"
+        },
+        {
+            "title": "Projects",
+            "to": "/projects"
+        },
+        {
+            "title": "References",
+            "to": "/references"
+        },
+        {
+            "title": "Contact",
+            "to": "/contact"
+        },
+        {
+            "title": "About",
+            "to": "/about"
+        }
+    ] 
+}
