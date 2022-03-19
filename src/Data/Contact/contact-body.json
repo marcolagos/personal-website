@@ -14,7 +14,7 @@
         {
             "title": "Message:",
             "placeholder": "Enter message",
-            "type": "text",
+            "type": "message",
             "as": "textarea"
         }
     ],

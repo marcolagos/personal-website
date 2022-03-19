@@ -27,6 +27,29 @@
 	/* Constants */
 	--main-transition: all 0.1s ease-in-out 0s;
 	--long-transition: all 0.3s ease-in-out 0s;
+	--selection-font-color: #FFFFFF;
+	--selection-background-color: #3d3d3d;
+
+	/* Home */
+	--home-background-color: #000000; /* May not do anything */
+	--home-introduction-font-color: #FFFFFF;
+	--home-contained-background-color: transparent;
+	--home-type-font-color: #ff8c00;
+	--home-type-cursor-color: #cc8a39;
+
+	/* Contact */
+	--contact-background-color: #000000;
+	--contact-title-font-color: #ff8c00;
+	--contact-comment-font-color: #3d3d3d;
+	--contact-card-background-color: #3d3d3d;
+	--contact-link-font-color-before: #ff7300;
+	--contact-link-font-color-after: #ff8c00;
+	--form-label-font-color: #FFFFFF;
+	--form-area-background-color: rgb(26, 26, 26);
+	--form-input-font-color: rgb(173, 173, 173);
+	--form-button-shadow: rgb(173, 173, 173);
+	--form-warning-font-color: #f40d30;
+	--form-direction-font-color: #ff8c00;
 
 	/* Projects */
 	--projects-background-color: #000000;
@@ -94,4 +117,9 @@ body {
   font-family: 'Montserrat', sans-serif !important;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
+}
+
+::selection {
+	color: var(--selection-font-color);
+	background: var(--selection-background-color) ;
 }

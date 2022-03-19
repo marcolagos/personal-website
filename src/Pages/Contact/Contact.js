@@ -101,14 +101,14 @@ function Contact() {
 
 	const areas = bodyJSON.items.map((item, index) => {
 		return (
-			<Form.Group className="form-group pt-3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
+			<Form.Group className="form-group pt-3">
 				<Form.Label className="form-label">{item.title}</Form.Label>
 				<Form.Control
 					className={`form-input ${item.as}`}
 					type={item.type}
 					placeholder={item.placeholder}
-					value={item.type === "type" ? message : item.type === "name" ? name : email}
-					onChange={item.type === "type" ? messageChange : item.type === "name" ? nameChange : emailChange}
+					value={item.type === "message" ? message : item.type === "name" ? name : email}
+					onChange={item.type === "message" ? messageChange : item.type === "name" ? nameChange : emailChange}
 					as={item.as}
 					key={index}
 				/>
@@ -121,21 +121,21 @@ function Contact() {
 			<Container fluid className="contact-container">
 				<Container className="contact-intro">
 					<Row>
-						<Col md={12} className="contact-header" data-aos="zoom-in" data-aos-duration="1500">
-							<h1 className="contact-title" data-aos="fade-up" data-aos-duration="1500">
-								{headerJSON.title}
-							</h1>
-							<p
-								className="contact-comment"
-								data-aos="fade-up"
-								data-aos-duration="1500"
-								data-aos-delay="500"
-							>
+						<div
+							className="contact-header"
+							data-aos="fade-up"
+							data-aos-duration="1000"
+							data-aos-once={true}
+						>
+							<h1 className="contact-title">{headerJSON.title}</h1>
+							<p className="contact-comment">
 								{headerJSON.comment}
 								<a href={headerJSON.to} target="_blank" rel="noreferrer" className="dim-orange">
 									{headerJSON.link}
 								</a>
 							</p>
+						</div>
+						<Col md={12} style={{ justifyContent: "center", paddingBottom: "10px" }}>
 							<Form className="form" onSubmit={handleSubmit}>
 								{areas}
 								<div>
@@ -143,8 +143,16 @@ function Contact() {
 									<div className={direct ? "direct display" : "direct"}>{bodyJSON.direction}</div>
 								</div>
 								<br />
-								<Button className="contact-icon-color contact-icon-button" type="submit">
-									{loader ? check ? <AiFillCheckCircle /> : <ThreeDotsWave /> : <AiOutlineForm />}
+								<Button className="form-button" type="submit">
+									{loader ? (
+										check ? (
+											<AiFillCheckCircle className="form-icon" />
+										) : (
+											<ThreeDotsWave />
+										)
+									) : (
+										<AiOutlineForm className="form-icon" />
+									)}
 								</Button>
 							</Form>
 						</Col>

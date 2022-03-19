@@ -1,158 +1,48 @@
 /* Home */
 .home-section {
-	overflow: hidden;
+	overflow: hidden !important;
+    background-color: var(--home-background-color) !important;
 }
 .home-container {
-	background-color: var(--main-bg-color) !important;
-	position: relative !important;
-	padding: 3rem !important;
-	height: 100vh !important;
+	position: relative;
+	background-image: url(../../Assets//Home/home-background.jpg) !important;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	image-rendering: pixelated;
 }
 .home-intro {
+	text-align: left !important;
 	height: 100vh !important;
-	text-align: center !important;
-	color: var(--default-text-color) !important;
+	background-color: var(--home-contained-background-color) !important;
 }
 .home-header {
 	margin-top: 30vh !important;
 }
 .home-text {
-	font-weight: 300 !important;
+	color: var(--home-introduction-font-color) !important;
+	font-weight: 500 !important;
+	font-size: 2.5em !important;
 }
 .Typewriter__wrapper {
 	font-size: 1.5em !important;
-	color: var(--alt-bright-orange) !important;
+	color: var(--home-type-font-color) !important;
 	font-weight: 400 !important;
 }
 .Typewriter__cursor {
 	font-size: 1.6em !important;
-	color: var(--alt-dull-orange) !important;
-}
-/* Home About */
-.home-about-container {
-	background-color: var(--main-bg-color) !important;
-	position: relative !important;
-	height: 100vh !important;
-}
-#home-about {
-	background-color: var(--main-bg-color) !important;
-}
-.home-about-intro {
-	text-align: center !important;
-	color: var(--default-text-color) !important;
-	padding-top: 2rem !important;
-	padding-bottom: 2rem !important;
-}
-.home-about-title {
-	margin-top: 2rem;
-	font-weight: 500 !important;
-}
-.home-about-body {
-	font-weight: 400 !important;
-}
-.orange {
-	color: var(--alt-bright-orange);
-}
-/* Home Icons */
-.home-icons-title {
-	font-weight: 400;
-}
-.home-icons-col {
-	text-align: center !important;
-	color: var(--default-text-color) !important;
-	padding-top: 3rem !important;
-}
-.home-icons {
-	justify-content: center !important;
-	margin-top: 0.5rem !important;
-	display: inline-block !important;
-	position: relative !important;
-	padding-inline-start: 0 !important;
-}
-.home-icon-link {
-	position: relative !important;
-	display: inline-block !important;
-	width: 4rem !important;
-	height: 4rem !important;
-	font-size: 1.75em !important;
-	line-height: 2em !important;
-	text-align: center !important;
-	background: var(--alt-main-color) !important;
-	border-radius: 100% !important;
-	transition: var(--main-transition) !important;
-}
-
-.home-icon-link:hover {
-	box-shadow: 0 0 15px var(--alt-bright-orange);
-}
-.home-icon {
-	display: inline-block !important;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.icon-color {
-	color: var(--alt-bright-orange) !important;
+	color: var(--home-type-cursor-color) !important;
 }
 
 @media (max-width: 767px) {
+	.home-text {
+		font-weight: 400 !important;
+		font-size: 1.5em !important;
+	}
 	.Typewriter__wrapper {
-		font-size: 1.2em !important;
-	}
-	.Typewriter__cursor {
-		display: none !important;
-	}
-	.home-about-title {
-		margin-top: 0;
-		font-size: 1.5rem;
-	}
-	.home-about-body {
-		font-size: 1.1rem;
-	}
-	.home-icons-col {
-		padding-top: 1.5rem !important;
-	}
-	.home-icons-title {
-		font-size: 1.5rem;
-	}
-	.home-icon-link {
-		width: 3rem !important;
-		height: 3rem !important;
-		font-size: 1.25em !important;
-		line-height: 2em !important;
-	}
-	.home-icon {
-		padding-right: 8px;
-		padding-left: 8px;
-	}
-}
-
-@media (max-height: 730px) and (max-width: 380px) {
-	.Typewriter__wrapper {
-		font-size: 1.2em !important;
-	}
-	.Typewriter__cursor {
-		display: none !important;
-	}
-	.home-about-title {
-		font-size: 1rem;
-	}
-	.home-about-body {
-		font-size: 0.8rem;
-	}
-	.home-icons-col {
-		padding-top: 1rem !important;
-	}
-	.home-icons-title {
-		font-size: 1rem;
-	}
-	.home-icon-link {
-		width: 2rem !important;
-		height: 2rem !important;
 		font-size: 1em !important;
-		line-height: 1.6em !important;
 	}
-	.home-icon {
-		padding-right: 8px;
-		padding-left: 8px;
+	.Typewriter__cursor {
+		display: none !important;
 	}
 }
