@@ -1,0 +1,8 @@
+.image-container {
+	overflow-x: auto;
+	white-space: nowrap;
+}
+.image {
+    width: auto;
+	height: auto;
+}

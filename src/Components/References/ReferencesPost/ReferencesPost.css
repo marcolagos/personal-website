@@ -15,22 +15,22 @@
 	background-color: var(--references-post-nav-color);
 }
 .modal-body {
-	padding: 5vh 25vw 5vh 25vw !important;
+	padding: 5vh 30vw 5vh 30vw !important;
 	background-color: var(--references-post-body-color);
 }
 @media (max-width: 1500px) {
 	.modal-body {
-		padding: 5vh 20vw 5vh 20vw !important;
+		padding: 5vh 25vw 5vh 25vw !important;
 	}
 }
 @media (max-width: 1300px) {
 	.modal-body {
-		padding: 5vh 20vw 5vh 20vw !important;
+		padding: 5vh 21vw 5vh 21vw !important;
 	}
 }
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
 	.modal-body {
-		padding: 5vh 15vw 5vh 15vw !important;
+		padding: 5vh 14vw 5vh 14vw !important;
 	}
 }
 @media (max-width: 600px) {

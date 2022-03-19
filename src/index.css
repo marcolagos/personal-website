@@ -48,6 +48,10 @@
 	/* Three Dots Animation */
 	--three-dots-color: #FFFFFF;
 
+	/* Code Copy Button */
+	--code-copy-background-color: #000000;
+	--code-copy-font-color: #FFFFFF;
+
 	/* Home */
 	--home-background-color: transparent; /* May not do anything */
 	--home-introduction-font-color: #FFFFFF;
@@ -90,6 +94,10 @@
 	--references-post-nav-color: rgb(26, 26, 26);
 	--references-post-body-color: #111111;
 	--references-post-icon-color: #f40d30;
+
+	/* References Markdown */
+	--references-markdown-default-font-color: #FFFFFF;
+	--references-markdown-paragraph-font-color: #b1b1b1;
 
 
 

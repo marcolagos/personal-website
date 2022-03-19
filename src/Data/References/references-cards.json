@@ -1,32 +1,11 @@
 {
   "items": [
     {
-      "title": "Article 1",
-      "date": "02/27/2022",
-      "minutes": "30 min",
-      "description": "This page is article 1.",
-      "post": "article1"
-    },
-    {
-      "title": "Article 2",
-      "date": "02/15/2022",
-      "minutes": "20 min",
-      "description": "This page is article 2.",
-      "post": "article2"
-    },
-    {
-      "title": "Article 3",
-      "date": "02/05/2022",
-      "minutes": "10 min",
-      "description": "This page is article 3.",
-      "post": "article3"
-    },
-    {
-      "title": "Article 4",
-      "date": "02/05/2022",
-      "minutes": "10 min",
-      "description": "This page is article 3.",
-      "post": "article4"
+      "title": "Example Markdown",
+      "date": "00/00/0000",
+      "minutes": "0 min",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mattis velit nulla, non faucibus metus malesuada nec. Donec semper at velit id fringilla. Aenean varius purus lacinia odio lacinia dictum. Nam pharetra efficitur nisi, eu semper est mollis vitae.",
+      "post": "example-markdown"
     }
   ]
 }

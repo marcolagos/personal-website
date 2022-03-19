@@ -1,18 +1,84 @@
 .references-markdown {
-    color: red !important;
+    color: var(--references-markdown-default-font-color);
 }
-.references-markdown > p {
-    color: red !important;
+.references-markdown h1 {
+    margin-bottom: 30px !important;
+    font-weight: 500;
 }
-.references-markdown > h1 {
-    color: red !important;
+.references-markdown h2 {
+    margin-bottom: 30px !important;
+    font-weight: bolder;
 }
-.references-markdown > h4 {
-    color: red !important
+.references-markdown h3 {
+    margin-bottom: 30px !important;
+    font-weight: bolder;
 }
-
-.references-markdown > li {
-    color: red !important;
+.references-markdown h4 {
+    margin-block-start: 1rem;
+    font-size: 1rem;
+}
+.references-markdown h6 {
+    margin-bottom: 30px;
+    color: grey;
+}
+.references-markdown p {
+	font-size: 16px;
+    color: var(--references-markdown-paragraph-font-color) !important;
+}
+.references-markdown a {
+    text-decoration: none !important;
+    color: var(--alt-bright-orange);
+}
+.references-markdown code {
+	color: blue;
+}
+.references-markdown pre {
+	background: grey;
+	padding: 10px;
+	transition: var(--main-transition);
+	transition-delay: 5s;
+}
+.references-markdown blockquote {
+	background: lightgrey;
+	border-left: 10px solid lightgreen;
+	margin: 1.5em 0;
+	padding: 0.5em 10px;
+	transition: red var(--long-transition) linear;
+}
+.references-markdown blockquote p {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+.references-markdown blockquote::before {
+	color: grey;
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.28em;
+}
+.references-markdown blockquote::after {
+	color: grey;
+	content: close-quote;
+	font-size: 4em;
+	line-height: 0.8em;
+	float: right;
+}
+.references-markdown ul {
+	padding: 10px;
     list-style: none !important;
-
+}
+.references-markdown ul li a {
+	list-style: none;
+	font-size: 16px;
+}
+.references-markdown ul {
+	list-style: none;
+	font-size: 16px;
+}
+.references-markdown li::before {
+	content: "\003C \2215 \003E";
+	display: inline-block;
+	font-size: 16px;
+	width: 1em;
 }
