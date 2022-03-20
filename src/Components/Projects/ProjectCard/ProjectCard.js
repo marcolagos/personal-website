@@ -1,33 +1,29 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { ListGroup, ListGroupItem } from "react-bootstrap";
-import { MdZoomOutMap } from "react-icons/md";
+import { ListGroup, ListGroupItem, Card, Button } from "react-bootstrap";
 import { AiFillGithub } from "react-icons/ai";
 import { GrNode, GrReactjs } from "react-icons/gr";
 import { SiAdobeillustrator, SiAdobexd, SiMongodb } from "react-icons/si";
 
 function ProjectCard({ title, date, image, stack, github, description }) {
 	const techStack = stack.map((item, index) => {
-		console.log(item);
 		if (item === "JavaScript") {
-			return <GrNode className="card-icon" />;
+			return <GrNode className="card-icon" key={index} />;
 		}
 		if (item === "Node.js") {
-			return <GrNode className="card-icon" />;
+			return <GrNode className="card-icon" key={index} />;
 		}
 		if (item === "React.js") {
-			return <GrReactjs className="card-icon" />;
+			return <GrReactjs className="card-icon" key={index} />;
 		}
 		if (item === "MongoDB") {
-			return <SiMongodb className="card-icon" />;
+			return <SiMongodb className="card-icon" key={index} />;
 		}
 		if (item === "AdobeI") {
-			return <SiAdobeillustrator className="card-icon" />;
+			return <SiAdobeillustrator className="card-icon" key={index} />;
 		}
 		if (item === "AdobeXD") {
-			return <SiAdobexd className="card-icon" />;
+			return <SiAdobexd className="card-icon" key={index} />;
 		}
 	});
 

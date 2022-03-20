@@ -15,16 +15,6 @@
     text-align: center !important;
     padding-bottom: 15vh !important;
 }
-.projects-header {
-    background-color: transparent !important;
-    padding: 10vh 0vh 5vh 0vh !important;
-}
-.projects-title {
-    color: var(--projects-title-font-color) !important;
-}
-.projects-comment {
-    color: var(--projects-comment-font-color) !important;
-}
 .projects-card {
     background-color: var(--projects-card-background-color) !important;
     margin: 2vh !important;

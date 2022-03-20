@@ -10,7 +10,7 @@ import { IoCode } from "react-icons/io5";
 import { BsSearch, BsPersonCircle } from "react-icons/bs";
 import { AiOutlineMessage } from "react-icons/ai";
 
-const navigationJSON = require("../../Data/Other/navigation.json");
+const navigationJSON = require("../../../Data/Other/navigation.json");
 
 function Navigation() {
 	const [boldLink, setBoldLink] = useState("/");

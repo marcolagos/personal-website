@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { AiFillGithub, AiFillInstagram, AiFillFacebook } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
-const footerJSON = require("../../Data/Other/footer.json");
+const footerJSON = require("../../../Data/Other/footer.json");
 
 function Footer() {
 

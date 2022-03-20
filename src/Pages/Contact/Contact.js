@@ -4,6 +4,7 @@ import { AiOutlineForm, AiFillCheckCircle } from "react-icons/ai";
 import { Form, Button } from "react-bootstrap";
 import { db } from "../../Firebase";
 import ThreeDotsWave from "../../Components/Contact/ThreeDotsWave/ThreeDotsWave";
+import Header from "../../Components/Other/Header/Header";
 
 const bodyJSON = require("../../Data/Contact/contact-body.json");
 const headerJSON = require("../../Data/Contact/contact-header.json");
@@ -121,20 +122,12 @@ function Contact() {
 			<Container fluid className="contact-container">
 				<Container className="contact-intro">
 					<Row>
-						<div
-							className="contact-header"
-							data-aos="fade-up"
-							data-aos-duration="1000"
-							data-aos-once={true}
-						>
-							<h1 className="contact-title">{headerJSON.title}</h1>
-							<p className="contact-comment">
-								{headerJSON.comment}
-								<a href={headerJSON.to} target="_blank" rel="noreferrer" className="dim-orange">
-									{headerJSON.link}
-								</a>
-							</p>
-						</div>
+						<Header
+							title={headerJSON.title}
+							comment={headerJSON.comment}
+							to={headerJSON.to}
+							link={headerJSON.link}
+						/>
 						<Col md={12} style={{ justifyContent: "center", paddingBottom: "10px" }}>
 							<Form className="form" onSubmit={handleSubmit}>
 								{areas}
@@ -159,7 +152,7 @@ function Contact() {
 					</Row>
 				</Container>
 			</Container>
-			<Container fluid className="contact-container-2"></Container>
+			<Container fluid></Container>
 		</section>
 	);
 }

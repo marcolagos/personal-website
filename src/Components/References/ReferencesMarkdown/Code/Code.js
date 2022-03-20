@@ -49,7 +49,7 @@ function Code({ children, language }) {
 	};
 
 	return (
-		<div className="code-container">
+		<span className="code-container">
 			<CopyToClipboard onCopy={handleClick} className="code-copy-button" text={children}>
 				<Button type="button" ref={target}>
 					{copied ? <BsCheck2 /> : <BiCopy />}
@@ -60,7 +60,7 @@ function Code({ children, language }) {
 			</Overlay>
 
 			{getCode(children, language)}
-		</div>
+		</span>
 	);
 }
 

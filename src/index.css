@@ -3,19 +3,23 @@
 */
 
 /* Montserrat Font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* CSS Imports */
 @import url("./Pages/Home/Home.css");
-@import url("./Components/Projects/ProjectCard/ProjectCard.css");
-@import url("./Components/Navigation/Navigation.css");
-@import url("./Components/Footer/Footer.css");
-@import url("./Components/Home/Particle/Particle.css");
-@import url("./Components/Contact/ThreeDotsWave/ThreeDotsWave.css");
-@import url("./Components/References/ReferencesCard/ReferencesCard.css");
 @import url("./Pages/Contact/Contact.css");
 @import url("./Pages/Projects/Projects.css");
 @import url("./Pages/References/References.css");
+
+@import url("./Components/Projects/ProjectCard/ProjectCard.css");
+@import url("./Components/Home/Particle/Particle.css");
+@import url("./Components/Contact/ThreeDotsWave/ThreeDotsWave.css");
+@import url("./Components/References/ReferencesCard/ReferencesCard.css");
+
+@import url("./Components/Other/Navigation/Navigation.css");
+@import url("./Components/Other/Footer/Footer.css");
+@import url("./Components/Other/Header/Header.css");
+
 @import url("./Components/References//ReferencesMarkdown/ReferencesMarkdown.css");
 @import url("./Components/References/ReferencesPost/ReferencesPost.css");
 @import url("./Components/References/ReferencesMarkdown/Code/Code.css");
@@ -27,16 +31,16 @@
 	/* Constants */
 	--main-transition: all 0.1s ease-in-out 0s;
 	--long-transition: all 0.3s ease-in-out 0s;
-	--selection-font-color: #FFFFFF;
+	--selection-font-color: #ffffff;
 	--selection-background-color: #3d3d3d;
 
 	/* Navigation */
 	--navigation-background-color: transparent;
 	--navigation-background-color-hover: transparent;
-	--navigation-hamburger-toggle-color: #FFFFFF;
+	--navigation-hamburger-toggle-color: #ffffff;
 	--navigation-exit-font-color: #f40d30;
-	--navigation-brand-font-color: #FFFFFF;
-	--navigation-links-font-color: #FFFFFF; /* add8e6 */
+	--navigation-brand-font-color: #ffffff;
+	--navigation-links-font-color: #ffffff; /* add8e6 */
 	--navigation-links-underline-before: #ff8c00;
 	--navigation-links-underline-after: #10aff5;
 
@@ -46,60 +50,58 @@
 	--footer-mark-font-color: #ff7300;
 	--footer-icon-color: #ff8c00;
 
+	/* Header */
+	--main-title-font-color: #ff8c00;
+	--main-comment-font-color: #3d3d3d;
+
 	/* Three Dots Animation */
-	--three-dots-color: #FFFFFF;
+	--three-dots-color: #ffffff;
 
 	/* Code Copy Button */
 	--code-copy-background-color: #000000;
-	--code-copy-font-color: #FFFFFF;
+	--code-copy-font-color: #ffffff;
 
 	/* Home */
 	--home-background-color: transparent; /* May not change anything */
-	--home-introduction-font-color: #FFFFFF;
+	--home-introduction-font-color: #ffffff;
 	--home-contained-background-color: transparent;
 	--home-type-font-color: #ff8c00;
 	--home-type-cursor-color: #cc8a39;
 
 	/* Contact */
 	--contact-background-color: #000000;
-	--contact-title-font-color: #ff8c00;
-	--contact-comment-font-color: #3d3d3d;
 	--contact-card-background-color: #3d3d3d;
 	--contact-link-font-color-before: #ff7300;
 	--contact-link-font-color-after: #ff8c00;
-	--form-label-font-color: #FFFFFF;
+	--form-label-font-color: #ffffff;
 	--form-area-background-color: rgb(26, 26, 26);
 	--form-input-font-color: rgb(173, 173, 173);
-	--form-button-shadow: rgb(173, 173, 173);
+	--form-button-shadow: none;
 	--form-warning-font-color: #f40d30;
 	--form-direction-font-color: #ff8c00;
 
 	/* Projects */
 	--projects-background-color: #000000;
-	--projects-title-font-color: #ff8c00;
-	--projects-comment-font-color: #3d3d3d;
 	--projects-card-background-color: #3d3d3d;
 	--projects-link-font-color-before: #ff7300;
 	--projects-link-font-color-after: #ff8c00;
 
 	/* References */
 	--references-background-color: #000000;
-	--references-title-font-color: #ff8c00;
-	--references-comment-font-color: #3d3d3d;
 	--references-card-background-color: #3d3d3d;
 	--references-link-font-color-before: #ff7300;
 	--references-link-font-color-after: #ff8c00;
 
 	/* References Post */
-	--references-post-main-font-color: #FFFFFF; /* May not change anything */
+	--references-post-main-font-color: #ffffff; /* May not change anything */
 	--references-post-nav-color: #111111;
 	--references-post-body-color: #111111;
 	--references-post-icon-color: #f40d30;
 
 	/* References Markdown */
-	--references-markdown-default-font-color: #FFFFFF; /* May not change anything */
-	
-	--references-markdown-latex-font-color: #FFFFFF; /* May not change anything */
+	--references-markdown-default-font-color: #ffffff; /* May not change anything */
+
+	--references-markdown-latex-font-color: #ffffff; /* May not change anything */
 	--references-markdown-latex-border-color: #767fc2;
 	--references-markdown-latex-background-color: #242424;
 
@@ -117,7 +119,7 @@
 	--references-markdown-blockquote-border-color: rgb(132, 242, 154);
 
 	--references-markdown-list-font-color: #dfdfdf;
-	--references-markdown-ul-border-color: #FFFFFF;
+	--references-markdown-ul-border-color: #ffffff;
 
 	--references-markdown-link-font-color-before: #596cfa;
 	--references-markdown-link-font-color-after: #596cfa;
@@ -130,7 +132,7 @@
 	--alt-bright-red: #f40d30;
 	--alt-bright-orange: #ff8c00;
 	--alt-orange: #ff7300;
-	
+
 	--default-text-color: #ffffff;
 	--alt-dull-orange: #cc8a39;
 	--card-background: #111111;
@@ -138,8 +140,8 @@
 	--card-text: rgb(173, 173, 173);
 	--card-date: rgb(173, 173, 173);
 	--card-body: rgb(173, 173, 173);
-	--card-button: #FFFFFF;
-	--alt-bright-blue: #3822CD;
+	--card-button: #ffffff;
+	--alt-bright-blue: #3822cd;
 }
 
 /* Scroll Bar */
@@ -160,13 +162,13 @@
 
 /* General CSS */
 body {
-  margin: 0 !important;
-  font-family: 'Montserrat', sans-serif !important;
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale !important;
+	margin: 0 !important;
+	font-family: "Montserrat", sans-serif !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
 }
 
 ::selection {
 	color: var(--selection-font-color);
-	background: var(--selection-background-color) ;
+	background: var(--selection-background-color);
 }

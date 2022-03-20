@@ -1,6 +1,7 @@
 import React from "react";
 import ReferencesCard from "../../Components/References/ReferencesCard/ReferencesCard";
 import { Container, Row, Col } from "react-bootstrap";
+import Header from "../../Components/Other/Header/Header";
 
 const cardJSON = require("../../Data/References/references-cards.json");
 const headerJSON = require("../../Data/References/references-header.json");
@@ -25,16 +26,12 @@ function References() {
 		<section className="references-section">
 			<Container fluid className="references-container">
 				<Container className="references-intro">
-					<div className="references-header" data-aos="fade-up" data-aos-duration="1000" data-aos-once={true}>
-						<h1 className="references-title">{headerJSON.title}</h1>
-						<p className="references-comment">
-							{headerJSON.comment}
-							<a href="/contact" target="_blank" rel="noreferrer" className="dim-orange">
-								{headerJSON.link}
-							</a>
-							!
-						</p>
-					</div>
+					<Header
+						title={headerJSON.title}
+						comment={headerJSON.comment}
+						to={headerJSON.to}
+						link={headerJSON.link}
+					/>
 					<Row style={{ justifyContent: "center", paddingBottom: "10px" }}> {cards}</Row>
 				</Container>
 			</Container>

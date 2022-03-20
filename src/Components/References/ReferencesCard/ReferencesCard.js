@@ -22,8 +22,8 @@ function ReferencesCard(props) {
 					<Card.Title>
 						<h2 className="card-text-title">{props.title}</h2>
 					</Card.Title>
-					<Card.Text style={{ textAlign: "justify" }}>
-						<p className="card-text-body">{props.description}</p>
+					<Card.Text style={{ textAlign: "justify" }} className="card-text-body">
+						{props.description}
 					</Card.Text>
 					<div>
 						<Link className="card-button" to={`${REFERENCES_LINK}${props.post}`}>

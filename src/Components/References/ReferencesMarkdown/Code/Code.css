@@ -1,5 +1,6 @@
 .code-container {
     position: relative !important;
+	display: block !important;
 }
 .code-copy-button {
     position: absolute;

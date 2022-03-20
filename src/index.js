@@ -14,15 +14,15 @@ import Contact from "./Pages/Contact/Contact";
 import References from "./Pages/References/References";
 
 // Components
-import Navigation from "./Components/Navigation/Navigation";
-import Footer from "./Components/Footer/Footer";
+import Navigation from "./Components/Other/Navigation/Navigation";
+import Footer from "./Components/Other/Footer/Footer";
 import ReferencesPost from "./Components/References/ReferencesPost/ReferencesPost";
 
 // Simple Animations
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// Firebase or Firestore database
+// Firestore
 import { db } from "./Firebase";
 
 // Utils

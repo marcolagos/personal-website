@@ -7,8 +7,7 @@ import Latex from "./Latex/Latex";
 const cache = new Map();
 
 const getPost = (content, fileName) => {
-
-    if (content === "") return null;
+	if (content === "") return null;
 
 	const item = cache.get(fileName);
 	if (item === undefined) {
@@ -33,7 +32,7 @@ const getPost = (content, fileName) => {
 };
 
 function ReferencesMarkdown({ content, fileName }) {
-    return <div className="references-markdown">{getPost(content, fileName)}</div>;
+	return <div className="references-markdown">{getPost(content, fileName)}</div>;
 }
 
 export default ReferencesMarkdown;

@@ -1,6 +1,6 @@
 .contact-section {
 	overflow-y: scroll !important;
-    overflow-x: hidden !important;
+	overflow-x: hidden !important;
 	background-color: var(--contact-background-color) !important;
 	height: 100vh !important;
 }
@@ -15,25 +15,15 @@
 	text-align: center !important;
 	padding-bottom: 15vh !important;
 }
-.contact-header {
-	background-color: transparent !important;
-	padding: 10vh 0vh 0vh 0vh !important;
-}
-.contact-title {
-	color: var(--contact-title-font-color) !important;
-}
-.contact-comment {
-	color: var(--contact-comment-font-color) !important;
-}
 .form-group {
 	display: inline-block !important;
-	width: 75% !important; /* media this */
+	width: 75% !important; /* @media this */
 	text-align: left !important;
 }
 .form-label {
-	padding: 2vh 0vh 0vh 0vh;
-	font-size: 1.5rem;
-	color: var(--form-label-font-color);
+	padding: 2vh 0vh 0vh 0vh !important;
+	font-size: 1.5rem !important;
+	color: var(--form-label-font-color) !important;
 }
 .form-control {
 	padding: 1vh !important;
@@ -70,8 +60,7 @@
 }
 .form-button:hover {
 	opacity: 1 !important;
-	box-shadow: 0 0 8px var(--form-button-shadow);
-	transform: scale(1.02) !important;
+	box-shadow: 0 0 8px var(--form-button-shadow) !important;
 }
 .form-icon {
 	margin-bottom: 0.4rem !important;
@@ -101,6 +90,6 @@
 		width: 75vw !important;
 	}
 	.form-label {
-		font-size: 1rem;
+		font-size: 1rem !important;
 	}
 }
