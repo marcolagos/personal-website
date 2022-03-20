@@ -3,7 +3,7 @@ import LATEX from "react-latex";
 
 function Latex({ children }) {
 	return (
-		<div>
+		<div className="latex">
 			<LATEX>{String(children)}</LATEX>
 		</div>
 	);

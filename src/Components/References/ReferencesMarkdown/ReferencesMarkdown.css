@@ -1,81 +1,88 @@
 .references-markdown {
-    color: var(--references-markdown-default-font-color);
+	color: var(--references-markdown-default-font-color) !important;
+	box-sizing: border-box !important;
+	padding: 0 !important;
+	margin: 0 !important;
 }
 .references-markdown h1 {
-    
+	font-size: 5vh !important;
+	font-weight: 700 !important;
+	color: var(--references-markdown-title-font-color) !important;
+	padding: 0 !important;
+	margin: 0 !important;
 }
 .references-markdown h2 {
-
+	font-size: 3vh !important;
+	font-weight: 600 !important;
+	color: var(--references-markdown-subtitle-font-color) !important;
+	padding: 0 !important;
+	margin: 0 !important;
 }
 .references-markdown h3 {
-
+	font-size: 2vh !important;
+	font-weight: 500 !important;
+	color: var(--references-markdown-time-font-color) !important;
+	padding: 0 !important;
+	margin: 0 !important;
 }
 .references-markdown h4 {
-
+	font-size: 3vh !important;
+	font-weight: 500 !important;
+	color: var(--references-markdown-subheading1-font-color) !important;
+	padding: 0 !important;
+	margin: 0 !important;
 }
 .references-markdown h5 {
-
+	font-size: 2.75vh !important;
+	font-weight: 500 !important;
+	color: var(--references-markdown-subheading2-font-color) !important;
+	padding: 0 !important;
+	margin: 0 !important;
 }
 .references-markdown h6 {
-
+	font-size: 2.5vh !important;
+	font-weight: 500 !important;
+	color: var(--references-markdown-subheading3-font-color) !important;
+	padding: 0 !important;
+	margin: 0 !important;
 }
 .references-markdown p {
-	font-size: 16px;
-    color: var(--references-markdown-paragraph-font-color) !important;
-}
-.references-markdown a {
-    text-decoration: none !important;
-    color: var(--alt-bright-orange);
-}
-.references-markdown code {
-	color: blue;
-}
-.references-markdown pre {
-	background: grey;
-	padding: 10px;
-	transition: var(--main-transition);
-	transition-delay: 5s;
+	font-size: 1.75vh !important;
+	font-weight: 500 !important;
+	color: var(--references-markdown-paragraph-font-color) !important;
 }
 .references-markdown blockquote {
-	background: lightgrey;
-	border-left: 10px solid lightgreen;
-	margin: 1.5em 0;
-	padding: 0.5em 10px;
-	transition: red var(--long-transition) linear;
+	background: var(--references-markdown-blockquote-background-color) !important;
+	border-left: 3px solid var(--references-markdown-blockquote-border-color) !important;
+	margin: 1.5vh 0vh !important;
+	padding: 1vh !important;
 }
 .references-markdown blockquote p {
-	margin-top: 0;
-	margin-bottom: 10px;
-}
-.references-markdown blockquote::before {
-	color: grey;
-	content: open-quote;
-	font-size: 4em;
-	line-height: 0.1em;
-	margin-right: 0.25em;
-	vertical-align: -0.28em;
-}
-.references-markdown blockquote::after {
-	color: grey;
-	content: close-quote;
-	font-size: 4em;
-	line-height: 0.8em;
-	float: right;
+	margin: 0 !important;
+	padding: 1vh !important;
 }
 .references-markdown ul {
-	padding: 10px;
-    list-style: none !important;
+	margin: 0 0 0 3vh !important;
+	padding: 0 !important;
+	list-style: none !important;
+	border-left: 3px solid var(--references-markdown-ul-border-color) !important;
 }
-.references-markdown ul li a {
-	list-style: none;
-	font-size: 16px;
+.references-markdown ol {
+	margin: 0 0 0 4vh !important;
+	padding: 0 !important;
+	color: var(--references-markdown-list-font-color) !important;
 }
-.references-markdown ul {
-	list-style: none;
-	font-size: 16px;
+.references-markdown li {
+	font-size: 1.75vh !important;
+	margin: 1vh !important;
+	padding: 0 !important;
+	color: var(--references-markdown-list-font-color) !important;
 }
-.references-markdown li::before {
-	display: inline-block;
-	font-size: 16px;
-	width: 1em;
+.references-markdown a {
+	text-decoration: none !important;
+	color: var(--references-markdown-link-font-color-before) !important;
+	transition: var(--main-transition) !important;
+}
+.references-markdown a:hover {
+	color: var(--references-markdown-link-font-color-after) !important;
 }

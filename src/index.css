@@ -53,7 +53,7 @@
 	--code-copy-font-color: #FFFFFF;
 
 	/* Home */
-	--home-background-color: transparent; /* May not do anything */
+	--home-background-color: transparent; /* May not change anything */
 	--home-introduction-font-color: #FFFFFF;
 	--home-contained-background-color: transparent;
 	--home-type-font-color: #ff8c00;
@@ -90,16 +90,36 @@
 	--references-link-font-color-after: #ff8c00;
 
 	/* References Post */
-	--references-post-main-font-color: #FFFFFF; /* May not do anything */
-	--references-post-nav-color: rgb(26, 26, 26);
+	--references-post-main-font-color: #FFFFFF; /* May not change anything */
+	--references-post-nav-color: #111111;
 	--references-post-body-color: #111111;
 	--references-post-icon-color: #f40d30;
 
 	/* References Markdown */
-	--references-markdown-default-font-color: #FFFFFF;
-	--references-markdown-paragraph-font-color: #b1b1b1;
+	--references-markdown-default-font-color: #FFFFFF; /* May not change anything */
+	
+	--references-markdown-latex-font-color: #FFFFFF; /* May not change anything */
+	--references-markdown-latex-border-color: #767fc2;
+	--references-markdown-latex-background-color: #242424;
 
+	--references-markdown-title-font-color: #4b5cdd;
+	--references-markdown-subtitle-font-color: #767fc2;
+	--references-markdown-time-font-color: rgb(132, 242, 154);
 
+	--references-markdown-subheading1-font-color: #a2e7f7;
+	--references-markdown-subheading2-font-color: #3d96aa;
+	--references-markdown-subheading3-font-color: #3170b3;
+
+	--references-markdown-paragraph-font-color: #c7c7c7;
+
+	--references-markdown-blockquote-background-color: #242424;
+	--references-markdown-blockquote-border-color: rgb(132, 242, 154);
+
+	--references-markdown-list-font-color: #dfdfdf;
+	--references-markdown-ul-border-color: #FFFFFF;
+
+	--references-markdown-link-font-color-before: #596cfa;
+	--references-markdown-link-font-color-after: #596cfa;
 
 	--main-bg-color: #000000;
 	--alt-main-color: #111111c0;

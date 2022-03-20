@@ -28,7 +28,7 @@ Lorem ipsum ***dolor*** sit amet, consectetur ***adipiscing*** elit.
 <br>
 Blockquote (blockquote, \n blockquote \n): <br>
 
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 <br>
 <br>
@@ -74,11 +74,17 @@ export default App;
 Links (a, \[words in brackets\] (link "hover tooltip"), turn url or email into link use angle brackets<br>
 [These are the words that hold the link, hover for tooltip](https://www.youtube.com/watch?v=dQw4w9WgXcQ "Dare you to click")
 <br>
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">This opens new window</a>
+<br>
 <br>
 Media Component (Media, \<Media>, include folder={name of post}/image={filename.extension})
 <Media folder="example-markdown" image="example-picture.jpg" />
 <br>
 <br>
+<Latex>
+This is example latex. Here are some basic symbols:
+$$ \phi, \lambda, \omega,  $$
+</Latex>
 <Latex>
 This is example latex. Here are some basic symbols:
 $$ \phi, \lambda, \omega,  $$
