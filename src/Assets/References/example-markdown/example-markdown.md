@@ -49,7 +49,9 @@ Unordered List (ul-li, \n *+- \n, nest with indentations): <br>
 
 <br>
 <br>
-Code Component (Code, \<Code>, include language as props): <br>
+Code Component (Code, Code tag, include language as props):
+<br>
+
 <Code language="javascript">
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
