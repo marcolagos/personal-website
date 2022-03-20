@@ -42,7 +42,7 @@ function ReferencesPost(props) {
 			</Modal.Header>
 			<Modal.Body className="modal-body">
 				<ReferencesHeader />
-				{<ReferencesMarkdown content={postBody} fileName={fileName} />}
+				<ReferencesMarkdown content={postBody} fileName={fileName} />
 				<ReferencesFooter />
 			</Modal.Body>
 			<Modal.Footer className="modal-footer">

@@ -3,9 +3,9 @@ import LATEX from "react-latex";
 
 function Latex({ children }) {
 	return (
-		<div className="latex">
+		<span className="latex">
 			<LATEX>{String(children)}</LATEX>
-		</div>
+		</span>
 	);
 }
 

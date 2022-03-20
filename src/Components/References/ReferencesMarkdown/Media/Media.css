@@ -1,9 +1,10 @@
 .image-container {
-	overflow-x: auto;
-	white-space: nowrap;
+	overflow-x: auto !important;
+	white-space: nowrap !important;
+	display: block !important;
 }
 .image {
-    width: auto;
-	height: auto;
-	max-height: 500px;
+    width: auto !important;
+	height: auto !important;
+	max-height: 500px !important;
 }

@@ -4,4 +4,5 @@
     padding: 1vh !important;
     background-color: var(--references-markdown-latex-background-color) !important;
     font-weight: 300 !important;
+    display: block !important;
 }

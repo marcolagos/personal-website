@@ -19,19 +19,19 @@ SyntaxHighlighter.registerLanguage("sass", sass);
 const cache = new Map();
 
 const getCode = (children, language) => {
-	const cachedItem = cache.get(children);
-	if (cachedItem === undefined) {
+	const item = cache.get(children);
+	if (item === undefined) {
 		const highlighter = {
 			language,
 			children: children,
 			style: CodeStyle,
 		};
 		SyntaxHighlighter(highlighter);
-		const cachedVar = SyntaxHighlighter(highlighter);
-		cache.set(children, cachedVar);
-		return cachedVar;
+		const newItem = SyntaxHighlighter(highlighter);
+		cache.set(children, newItem);
+		return newItem;
 	}
-	return cachedItem;
+	return item;
 };
 
 function Code({ children, language }) {
@@ -41,7 +41,7 @@ function Code({ children, language }) {
 
 	const handleClick = () => {
 		setCopied(true);
-		setShow(true)
+		setShow(true);
 		setTimeout(() => {
 			setCopied(false);
 			setShow(false);
