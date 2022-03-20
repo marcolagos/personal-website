@@ -47,8 +47,8 @@ function ProjectCard({ title, date, image, stack, github, description }) {
 					<Card.Title>
 						<h2 className="card-text-title">{title}</h2>
 					</Card.Title>
-					<Card.Text style={{ textAlign: "justify" }}>
-						<p className="card-text-body">{description}</p>
+					<Card.Text style={{ textAlign: "justify" }} className="card-text-body">
+						{description}
 					</Card.Text>
 					<div className="card-stat-wrapper">
 						<Button className="card-button" href={github} target="_blank">

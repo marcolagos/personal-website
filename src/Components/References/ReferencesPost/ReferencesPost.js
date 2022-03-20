@@ -6,6 +6,8 @@ import { REFERENCES_LINK } from "../../../Utils/Constants.Utils";
 import { CgCross } from "react-icons/cg";
 import { FiX } from "react-icons/fi";
 import ReferencesMarkdown from "../ReferencesMarkdown/ReferencesMarkdown";
+import ReferencesHeader from "../ReferencesHeader/ReferencesHeader";
+import ReferencesFooter from "../ReferencesFooter/ReferencesFooter";
 
 function ReferencesPost(props) {
 	const [postBody, setPostBody] = useState("");
@@ -39,7 +41,9 @@ function ReferencesPost(props) {
 				</Modal.Title>
 			</Modal.Header>
 			<Modal.Body className="modal-body">
+				<ReferencesHeader />
 				{<ReferencesMarkdown content={postBody} fileName={fileName} />}
+				<ReferencesFooter />
 			</Modal.Body>
 			<Modal.Footer className="modal-footer">
 				<Link

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, Fragment } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -28,9 +28,7 @@ import { db } from "./Firebase";
 // Utils
 import { REFERENCES_LINK } from "./Utils/Constants.Utils";
 
-
 function App() {
-
 	useEffect(() => {
 		AOS.init();
 		AOS.refresh();
@@ -43,9 +41,9 @@ function App() {
 				<Route exact path="/" element={<Home />} />
 				<Route exact path="/projects" element={<Projects />} />
 				<Route exact path={REFERENCES_LINK} element={<References />} />
-				<Route exact path={`${REFERENCES_LINK}:fileName`} element={<ReferencesPost />} />
 				<Route exact path="/contact" element={<Contact />} />
 				<Route exact path="/about" element={<About />} />
+				<Route exact path={`${REFERENCES_LINK}:fileName`} element={<ReferencesPost />} />
 			</Routes>
 			<Footer />
 		</BrowserRouter>

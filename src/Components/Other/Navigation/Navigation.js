@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 // Icons
 import { AiOutlineHome } from "react-icons/ai";
 import { IoCode } from "react-icons/io5";
 import { BsSearch, BsPersonCircle } from "react-icons/bs";
 import { AiOutlineMessage } from "react-icons/ai";
+
+import { REFERENCES_LINK } from "../../../Utils/Constants.Utils";
 
 const navigationJSON = require("../../../Data/Other/navigation.json");
 
@@ -19,7 +21,7 @@ function Navigation() {
 
 	const getIcon = (title) => {
 		if (title === "Home") {
-			return <AiOutlineHome className="navigation-icon"/>;
+			return <AiOutlineHome className="navigation-icon" />;
 		}
 		if (title === "Projects") {
 			return <IoCode className="navigation-icon" />;
@@ -33,7 +35,7 @@ function Navigation() {
 		if (title === "About") {
 			return <BsPersonCircle className="navigation-icon" />;
 		}
-	}
+	};
 
 	const links = navigationJSON.items.map((item, index) => {
 		return (
@@ -64,30 +66,38 @@ function Navigation() {
 
 	window.addEventListener("scroll", scrollHandler);
 
-	return (
-		<Navbar collapseOnSelect fixed="top" className={navigationColor ? "navigation-scroll" : "navigation"} expand="lg" expanded={expanded}>
-			<Container className="navigation-container">
-				<Navbar.Brand className="navigation-brand" href="/">
-					{navigationJSON.brand}
-				</Navbar.Brand>
-				<Navbar.Toggle
-					aria-controls="responsive-navbar-nav"
-					onClick={() => {
-						setExpanded(expanded ? false : true);
-					}}
-				>
-					<span></span>
-					<span></span>
-					<span></span>
-				</Navbar.Toggle>
-				<Navbar.Collapse id="responsive-navbar-nav">
-					<Nav>
-						{links}
-					</Nav>
-				</Navbar.Collapse>
-			</Container>
-		</Navbar>
-	);
+	if (!(useLocation().pathname.indexOf(REFERENCES_LINK) >= 0)) {
+		return (
+			<Navbar
+				collapseOnSelect
+				fixed="top"
+				className={navigationColor ? "navigation-scroll" : "navigation"}
+				expand="lg"
+				expanded={expanded}
+			>
+				<Container className="navigation-container">
+					<Navbar.Brand className="navigation-brand" href="/">
+						{navigationJSON.brand}
+					</Navbar.Brand>
+					<Navbar.Toggle
+						aria-controls="responsive-navbar-nav"
+						onClick={() => {
+							setExpanded(expanded ? false : true);
+						}}
+					>
+						<span></span>
+						<span></span>
+						<span></span>
+					</Navbar.Toggle>
+					<Navbar.Collapse id="responsive-navbar-nav">
+						<Nav>{links}</Nav>
+					</Navbar.Collapse>
+				</Container>
+			</Navbar>
+		);
+	} else {
+		return null;
+	}
 }
 
 export default Navigation;

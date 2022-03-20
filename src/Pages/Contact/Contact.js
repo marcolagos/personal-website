@@ -102,7 +102,7 @@ function Contact() {
 
 	const areas = bodyJSON.items.map((item, index) => {
 		return (
-			<Form.Group className="form-group pt-3">
+			<Form.Group className="form-group pt-3" key={index}>
 				<Form.Label className="form-label">{item.title}</Form.Label>
 				<Form.Control
 					className={`form-input ${item.as}`}
@@ -111,7 +111,6 @@ function Contact() {
 					value={item.type === "message" ? message : item.type === "name" ? name : email}
 					onChange={item.type === "message" ? messageChange : item.type === "name" ? nameChange : emailChange}
 					as={item.as}
-					key={index}
 				/>
 			</Form.Group>
 		);
