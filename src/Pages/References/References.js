@@ -9,14 +9,13 @@ const headerJSON = require("../../Data/References/references-header.json");
 function References() {
 	const cards = cardJSON.items.map((item, index) => {
 		return (
-			<Col md={4} className="references-card">
+			<Col md={4} className="references-card" key={index}>
 				<ReferencesCard
 					title={item.title}
 					date={item.date}
 					minutes={item.minutes}
 					description={item.description}
 					post={item.post}
-					key={index}
 				/>
 			</Col>
 		);

@@ -9,7 +9,7 @@ const headerJSON = require("../../Data/Projects/projects-header.json");
 function Projects() {
 	const cards = cardJSON.items.map((item, index) => {
 		return (
-			<Col md={4} className="projects-card">
+			<Col md={4} className="projects-card" key={index}>
 				<ProjectCard
 					title={item.title}
 					date={item.date}
@@ -17,7 +17,6 @@ function Projects() {
 					stack={item.stack}
 					github={item.github}
 					description={item.description}
-					key={index}
 				/>
 			</Col>
 		);
