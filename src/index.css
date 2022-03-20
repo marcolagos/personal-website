@@ -36,13 +36,14 @@
 	--navigation-hamburger-toggle-color: #FFFFFF;
 	--navigation-exit-font-color: #f40d30;
 	--navigation-brand-font-color: #FFFFFF;
-	--navigation-links-font-color: #add8e6;
+	--navigation-links-font-color: #FFFFFF; /* add8e6 */
 	--navigation-links-underline-before: #ff8c00;
 	--navigation-links-underline-after: #10aff5;
 
 	/* Footer */
 	--footer-background-color: transparent;
 	--footer-background-color-hover: transparent;
+	--footer-mark-font-color: #ff7300;
 	--footer-icon-color: #ff8c00;
 
 	/* Three Dots Animation */

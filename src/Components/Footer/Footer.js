@@ -34,7 +34,7 @@ function Footer() {
 	return (
 		<Container fluid className="footer-container fixed-bottom">
 			<Row>
-				<Col md="4" className="footer-col"></Col>
+				<Col md="4" className="footer-col footer-mark">{footerJSON.mark}</Col>
 				<Col md="4" className="footer-col"></Col>
 				<Col md="4" className="footer-col">
 					{links}
