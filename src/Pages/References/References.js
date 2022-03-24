@@ -1,7 +1,7 @@
 import React from "react";
-import ReferencesCard from "../../Components/References/ReferencesCard/ReferencesCard";
 import { Container, Row, Col } from "react-bootstrap";
 import Header from "../../Components/Other/Header/Header";
+import Post from "../../Components/Other/Post/Post";
 
 const cardJSON = require("../../Data/References/references-cards.json");
 const headerJSON = require("../../Data/References/references-header.json");
@@ -10,11 +10,14 @@ function References() {
 	const cards = cardJSON.items.map((item, index) => {
 		return (
 			<Col md={4} className="references-card" key={index}>
-				<ReferencesCard
+				<Post
 					title={item.title}
 					date={item.date}
-					minutes={item.minutes}
 					description={item.description}
+					minutes={item.minutes}
+					image={item.image}
+					github={item.github}
+					stack={item.stack}
 					post={item.post}
 				/>
 			</Col>

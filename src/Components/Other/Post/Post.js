@@ -4,9 +4,12 @@ import { ListGroup, ListGroupItem, Card, Button } from "react-bootstrap";
 import { AiFillGithub } from "react-icons/ai";
 import { GrNode, GrReactjs } from "react-icons/gr";
 import { SiAdobeillustrator, SiAdobexd, SiMongodb } from "react-icons/si";
+import { IoMdExpand } from "react-icons/io";
+import { REFERENCES_LINK } from "../../../Utils/Constants.Utils";
+import { Link } from "react-router-dom";
 
-function ProjectCard({ title, date, image, stack, github, description }) {
-	const techStack = stack.map((item, index) => {
+function Post({ title, date, description, minutes, image, stack, github, post, posts }) {
+	const tech = stack.map((item, index) => {
 		if (item === "JavaScript") {
 			return <GrNode className="card-icon" key={index} />;
 		}
@@ -27,20 +30,29 @@ function ProjectCard({ title, date, image, stack, github, description }) {
 		}
 	});
 
-	const imagePath = require(`../../../Assets/Projects/${image}`);
+	var imagePath = null;
+	if (image) {
+		imagePath = require(`../../../Assets/Projects/${image}`);
+	}
+
 	return (
 		<Tilt tiltMaxAngleX={3} tiltMaxAngleY={3} style={{ height: "auto" }}>
 			<Card className="project-card-view">
-				<Card.Img
-					variant="top"
-					src={imagePath}
-					alt="Project Image"
-					style={{ height: "15rem" }}
-					className="card-image"
-				/>
+				{image ? (
+					<Card.Img
+						variant="top"
+						src={imagePath}
+						alt="Project Image"
+						style={{ height: "15rem" }}
+						className="card-image"
+					/>
+				) : null}
 				<ListGroup>
 					<ListGroupItem className="card-date">
-						<span className="card-text-date">{date}</span>
+						<span className="card-text-date">
+							{date}
+							{minutes ? `- ${minutes}` : null}
+						</span>
 					</ListGroupItem>
 				</ListGroup>
 				<Card.Body className="card-body">
@@ -51,10 +63,16 @@ function ProjectCard({ title, date, image, stack, github, description }) {
 						{description}
 					</Card.Text>
 					<div className="card-stat-wrapper">
-						<Button className="card-button" href={github} target="_blank">
-							<AiFillGithub className="card-icon" />
-						</Button>
-						<Button className="card-button-stack">{techStack}</Button>
+						{github ? (
+							<Button className="card-button" href={github} target="_blank">
+								<AiFillGithub className="card-icon" />
+							</Button>
+						) : (
+							<Link className="card-button" to={`${REFERENCES_LINK}${post}`}>
+								<IoMdExpand className="card-icon" />
+							</Link>
+						)}
+						<Button className="card-button-stack">{tech}</Button>
 					</div>
 				</Card.Body>
 			</Card>
@@ -62,4 +80,4 @@ function ProjectCard({ title, date, image, stack, github, description }) {
 	);
 }
 
-export default ProjectCard;
+export default Post;

@@ -4,41 +4,51 @@
       "title": "Personal Website",
       "date": "01/31/2022",
       "description": "Used React.js/React.js Libraries and Firestore, designed this website, and launched it on Netlify. Some React libraries include React Router, React Bootstrap, React Icons, and Framer Motion.",
+      "minutes": "",
       "image": "personal-website.JPG",
       "github": "https://github.com/marcolagos/marco-lagos",
-      "stack": ["React.js"]
+      "stack": ["React.js"],
+      "post": ""
     },
     {
       "title": "Mock-up Blog",
       "date": "01/05/2022",
       "description": "A simple blog, as a precursor to a later project coming soon. Used React,js/React.js Libraries, Express.js, and MongoDB, along with some other useful Node.js libraries, such as bycrpt and mongoose.js.",
+      "minutes": "",
       "image": "mock-blog.JPG",
       "github": "https://github.com/marcolagos/mock-blog",
-      "stack": ["Node.js", "React.js", "MongoDB"]
+      "stack": ["Node.js", "React.js", "MongoDB"],
+      "post": ""
     },
     {
       "title": "Bloxorz",
       "date": "12/20/2021",
       "description": "Bloxorz is my version of the game \"Bloxorz\" by Damien Clarke in 2007. I used Three.js to render the 3D figures and animations, along with Cannon.js as the physics engine.",
       "image": "bloxorz.JPG",
+      "minutes": "",
       "github": "https://github.com/marcolagos/bloxorz",
-      "stack": ["Node.js"]
+      "stack": ["Node.js"],
+      "post": ""
     },
     {
       "title": "FHK's Website",
       "date": "10/08/2022",
       "description": "For the Father's House Kids non-profit organization, designed an updated website using React.js/React.js Libraries, first designed in Adobe XD and Adobe Illustrator.",
       "image": "fathers-house-kids.JPG",
+      "minutes": "",
       "github": "https://github.com/marcolagos/fhk/commits/main",
-      "stack": ["React.js", "AdobeI", "AdobeXD"]
+      "stack": ["React.js", "AdobeI", "AdobeXD"],
+      "post": ""
     },
     {
       "title": "Swipo",
       "date": "09/18/2021",
       "description": "For HackRice 2022, created Swipo: a tinder-like app with songs and playlists instead of people. One can either dislike or like songs in a spotify playlist by swiping left or right, respectively.",
+      "minutes": "",
       "image": "swipo.jpg",
       "github": "https://github.com/marcolagos/swipo",
-      "stack": ["React.js", "AdobeI"]
+      "stack": ["React.js", "AdobeI"],
+      "post": ""
     }
   ]
 }

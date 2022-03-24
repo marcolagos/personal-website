@@ -52,12 +52,12 @@
 		font-size: 1.5em !important;
 	}
 	.footer-mark {
-		font-size: 2vh !important;
+		font-size: 1rem !important;
 	}
 }
 .footer-mark {
 	color: var(--footer-mark-font-color) !important;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	margin-top: 0.5em !important;
 	margin-bottom: 0.5em !important;
 	transform: translateY(10px) !important;

@@ -11,17 +11,17 @@
 @import url("./Pages/Projects/Projects.css");
 @import url("./Pages/References/References.css");
 
-@import url("./Components/Projects/ProjectCard/ProjectCard.css");
 @import url("./Components/Home/Particle/Particle.css");
 @import url("./Components/Contact/ThreeDotsWave/ThreeDotsWave.css");
-@import url("./Components/References/ReferencesCard/ReferencesCard.css");
 
 @import url("./Components/Other/Navigation/Navigation.css");
 @import url("./Components/Other/Footer/Footer.css");
 @import url("./Components/Other/Header/Header.css");
+@import url("./Components/Other/Post/Post.css");
 
 @import url("./Components/References//ReferencesMarkdown/ReferencesMarkdown.css");
 @import url("./Components/References/ReferencesPost/ReferencesPost.css");
+@import url("./Components/References/ReferencesHeader/ReferencesHeader.css");
 @import url("./Components/References/ReferencesMarkdown/Code/Code.css");
 @import url("./Components/References/ReferencesMarkdown/Media/Media.css");
 @import url("./Components/References/ReferencesMarkdown/Latex/Latex.css");
@@ -47,12 +47,14 @@
 	/* Footer */
 	--footer-background-color: transparent;
 	--footer-background-color-hover: transparent;
-	--footer-mark-font-color: #ff7300;
-	--footer-icon-color: #ff8c00;
+	--footer-mark-font-color: lightblue;
+	--footer-icon-color: lightblue;
 
 	/* Header */
-	--main-title-font-color: #ff8c00;
-	--main-comment-font-color: #3d3d3d;
+	--main-title-font-color: #4b5cdd;
+	--main-comment-font-color: #FFFFFF;
+	--main-comment-link-color-after: rgb(132, 242, 154);
+	--main-comment-link-color-before: rgb(65, 255, 103);
 
 	/* Three Dots Animation */
 	--three-dots-color: #ffffff;
@@ -65,8 +67,8 @@
 	--home-background-color: transparent; /* May not change anything */
 	--home-introduction-font-color: #ffffff;
 	--home-contained-background-color: transparent;
-	--home-type-font-color: #ff8c00;
-	--home-type-cursor-color: #cc8a39;
+	--home-type-font-color: rgb(132, 242, 154);
+	--home-type-cursor-color: rgb(65, 255, 103);
 
 	/* Contact */
 	--contact-background-color: #000000;
@@ -97,6 +99,11 @@
 	--references-post-nav-color: #111111;
 	--references-post-body-color: #111111;
 	--references-post-icon-color: #f40d30;
+
+	/* References Markdown Header */
+	--references-header-brand-font-color: #FFFFFF;
+	--references-header-back-font-color: #FFFFFF;
+	--references-header-border-color: #FFFFFF;
 
 	/* References Markdown */
 	--references-markdown-default-font-color: #ffffff; /* May not change anything */

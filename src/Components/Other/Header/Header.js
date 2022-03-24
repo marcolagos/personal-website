@@ -6,7 +6,7 @@ function Header({ title, comment, to, link }) {
 			<h1 className="main-title">{title}</h1>
 			<p className="main-comment">
 				{comment}
-				<a href={to} target="_blank" rel="noreferrer" className="dim-orange">
+				<a href={to} target="_blank" rel="noreferrer" className="main-link">
 					{link}
 				</a>
 			</p>

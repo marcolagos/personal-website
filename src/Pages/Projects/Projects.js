@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import ProjectCard from "../../Components/Projects/ProjectCard/ProjectCard";
 import { Container, Row, Col } from "react-bootstrap";
 import Header from "../../Components/Other/Header/Header";
+import Post from "../../Components/Other/Post/Post";
+
 
 const cardJSON = require("../../Data/Projects/projects-cards.json");
 const headerJSON = require("../../Data/Projects/projects-header.json");
@@ -10,13 +11,15 @@ function Projects() {
 	const cards = cardJSON.items.map((item, index) => {
 		return (
 			<Col md={4} className="projects-card" key={index}>
-				<ProjectCard
+				<Post
 					title={item.title}
 					date={item.date}
-					image={item.image}
-					stack={item.stack}
-					github={item.github}
 					description={item.description}
+					minutes={item.minutes}
+					image={item.image}
+					github={item.github}
+					stack={item.stack}
+					post={item.post}
 				/>
 			</Col>
 		);

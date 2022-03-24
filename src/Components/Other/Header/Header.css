@@ -8,3 +8,11 @@
 .main-comment {
 	color: var(--main-comment-font-color) !important;
 }
+.main-link {
+	color: var(--main-comment-link-color-before) !important;
+	text-decoration: none !important;
+	transition: var(--main-transition) !important;
+}
+.main-link:hover {
+	color: var(--main-comment-link-color-after) !important;
+}
