@@ -1,32 +1,25 @@
-.references-header-container {
-	display: flex !important;
-	justify-content: space-between !important;
+.references-header-col {
+	text-align: center !important;
+	color: var(--footer-mark-font-color) !important;
+	margin: 0.5rem 0rem 0.5rem 0rem !important;
+	padding: 0rem 0rem 0rem 0rem !important;
+	font-size: 1rem !important;
 }
-.references-header-item-1 {
-	display: flex !important;
-	justify-content: space-between !important;
-}
-.references-header-item-2 {
-	display: flex !important;
-	justify-content: space-between !important;
+.references-header-link {
+	color: white !important;
+	text-decoration: none !important;
+	font-size: 2rem;
+	font-weight: 600 !important;
 }
 .references-header-brand {
-    font-size: 3rem !important;
-    font-weight: 600 !important;
-    padding: 1rem 2rem 1rem 0rem !important;
-    margin: 0rem 0rem 3rem 0rem !important;
-    text-decoration: none !important;
-    color: var(--references-header-brand-font-color);
-    border-right: 2px solid var(--references-header-border-color);
+	padding: 0 2rem 0 0 !important;
+	border-right: 1px solid white !important;
 }
 .references-header-back {
-    font-size: 3rem !important;
-    font-weight: 500 !important;
-    padding: 1rem 1rem 1rem 2rem !important;
-    margin: 0rem 5rem 3rem 0rem !important;
-    text-decoration: none !important;
-    color: var(--references-header-back-font-color);
+	padding: 0 0 0 2rem !important;
 }
-.references-header-icon {
-    
+.references-header-comment {
+	font-size: 0.8rem !important;
+	font-weight: 300 !important;
+	padding: 0.25rem !important;
 }

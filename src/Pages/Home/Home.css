@@ -1,16 +1,18 @@
 /* Home */
 .home-section {
 	overflow: hidden !important;
-    background-color: var(--home-background-color) !important;
-}
-.home-container {
-	z-index: -1 !important;
-	position: relative;
+    /* background-color: var(--home-background-color) !important; */
 	background-image: url(../../Assets//Home/home-background.jpg) !important;
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	image-rendering: pixelated;
+	z-index: -1 !important;
+}
+.home-container {
+	
+	position: relative;
+	
 }
 .home-intro {
 	text-align: left !important;

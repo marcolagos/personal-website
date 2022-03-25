@@ -4,50 +4,56 @@ import { REFERENCES_LINK } from "../../../Utils/Constants.Utils";
 import { HiArrowNarrowRight, HiArrowNarrowLeft } from "react-icons/hi";
 import { AiFillGithub, AiFillInstagram, AiFillFacebook } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { Container, Row, Col } from "react-bootstrap";
 
 const headerJSON = require("../../../Data/References/references-post-header.json");
 
 function ReferencesHeader({ header }) {
 	const getIcon = (title) => {
 		if (title === "github") {
-			return <AiFillGithub className="references-header-icon" />;
+			return <AiFillGithub />;
 		}
 		if (title === "linkedin") {
-			return <FaLinkedinIn className="references-header-icon" />;
+			return <FaLinkedinIn />;
 		}
 		if (title === "instagram") {
-			return <AiFillInstagram className="references-header-icon" />;
+			return <AiFillInstagram />;
 		}
 		if (title === "facebook") {
-			return <AiFillFacebook className="references-header-icon" />;
+			return <AiFillFacebook />;
 		}
 	};
 
 	const links = headerJSON.links.map((item, index) => {
 		return (
-			<h3 className={`footer-icons icon-${index + 1}`} key={index}>
-				<a href={item.to} target="_blank" rel="noreferrer">
-					{getIcon(item.title)}
-				</a>
-			</h3>
+			<a className="footer-icon" href={item.to} target="_blank" rel="noreferrer" key={index}>
+				{getIcon(item.title)}
+			</a>
 		);
 	});
 
 	return (
-		<div className={header ? "references-header-container" : "references-header-container"}>
-			<div className={header ? "references-header-item-1" : "references-header-item-1"}>
-				<Link className={header ? "references-header-brand" : "references-header-brand"} to="/">
-					{headerJSON.brand}
-				</Link>
-				<Link
-					className={header ? "references-header-back" : "references-header-back"}
-					to={`${REFERENCES_LINK.substring(0, REFERENCES_LINK.length - 1)}`}
-				>
-					{headerJSON.back}
-				</Link>
-			</div>
-			<div className={header ? "references-header-item-2" : "references-header-item-2"}>{links}</div>
-		</div>
+		<Container>
+			<Row>
+				<Col md="6" className="references-header-col">
+					<Link className="references-header-link references-header-brand" to="/">
+						{headerJSON.brand}
+					</Link>
+					<Link
+						className="references-header-link references-header-back"
+						to={`${REFERENCES_LINK.substring(0, REFERENCES_LINK.length - 1)}`}
+					>
+						{headerJSON.back}
+					</Link>
+				</Col>
+				<Col md="6" className="references-header-col">
+					<h3>
+						{links}
+						<div className="references-header-comment">Shoot me to the moon!</div>
+					</h3>
+				</Col>
+			</Row>
+		</Container>
 	);
 }
 

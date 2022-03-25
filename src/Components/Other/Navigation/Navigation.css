@@ -7,7 +7,7 @@
 }
 .navigation:hover {
 	background-color: var(--navigation-background-color-hover) !important;
-	backdrop-filter: blur(3px);
+	backdrop-filter: blur(4px) !important;
 }
 .navbar-toggler {
 	padding: 0.3rem 1.5rem !important;

@@ -6,6 +6,8 @@ import { db } from "../../Firebase";
 import ThreeDotsWave from "../../Components/Contact/ThreeDotsWave/ThreeDotsWave";
 import Header from "../../Components/Other/Header/Header";
 
+import AnimatedPage from "../../Components/Other/AnimatedPage/AnimatedPage";
+
 const bodyJSON = require("../../Data/Contact/contact-body.json");
 const headerJSON = require("../../Data/Contact/contact-header.json");
 
@@ -117,42 +119,46 @@ function Contact() {
 	});
 
 	return (
-		<section className="contact-section">
-			<Container fluid className="contact-container">
-				<Container className="contact-intro">
-					<Row>
-						<Header
-							title={headerJSON.title}
-							comment={headerJSON.comment}
-							to={headerJSON.to}
-							link={headerJSON.link}
-						/>
-						<Col md={12} style={{ justifyContent: "center", paddingBottom: "10px" }}>
-							<Form className="form" onSubmit={handleSubmit}>
-								{areas}
-								<div>
-									<div className={warning ? "warning display" : "warning"}>{bodyJSON.warning}</div>
-									<div className={direct ? "direct display" : "direct"}>{bodyJSON.direction}</div>
-								</div>
-								<br />
-								<Button className="form-button" type="submit">
-									{loader ? (
-										check ? (
-											<AiFillCheckCircle className="form-icon" />
+		<AnimatedPage>
+			<section className="contact-section">
+				<Container fluid className="contact-container">
+					<Container className="contact-intro">
+						<Row>
+							<Header
+								title={headerJSON.title}
+								comment={headerJSON.comment}
+								to={headerJSON.to}
+								link={headerJSON.link}
+							/>
+							<Col md={12} style={{ justifyContent: "center", paddingBottom: "10px" }}>
+								<Form className="form" onSubmit={handleSubmit}>
+									{areas}
+									<div>
+										<div className={warning ? "warning display" : "warning"}>
+											{bodyJSON.warning}
+										</div>
+										<div className={direct ? "direct display" : "direct"}>{bodyJSON.direction}</div>
+									</div>
+									<br />
+									<Button className="form-button" type="submit">
+										{loader ? (
+											check ? (
+												<AiFillCheckCircle className="form-icon form-check-button" />
+											) : (
+												<ThreeDotsWave />
+											)
 										) : (
-											<ThreeDotsWave />
-										)
-									) : (
-										<AiOutlineForm className="form-icon" />
-									)}
-								</Button>
-							</Form>
-						</Col>
-					</Row>
+											<AiOutlineForm className="form-icon" />
+										)}
+									</Button>
+								</Form>
+							</Col>
+						</Row>
+					</Container>
 				</Container>
-			</Container>
-			<Container fluid></Container>
-		</section>
+				<Container fluid></Container>
+			</section>
+		</AnimatedPage>
 	);
 }
 

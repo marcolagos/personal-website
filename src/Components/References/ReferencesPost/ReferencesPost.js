@@ -8,6 +8,8 @@ import { FiX } from "react-icons/fi";
 import ReferencesMarkdown from "../ReferencesMarkdown/ReferencesMarkdown";
 import ReferencesHeader from "../ReferencesHeader/ReferencesHeader";
 
+import AnimatedPage from "../../Other/AnimatedPage/AnimatedPage";
+
 function ReferencesPost(props) {
 	const [postBody, setPostBody] = useState("");
 	const { fileName } = useParams();
@@ -20,39 +22,41 @@ function ReferencesPost(props) {
 	}, [MarkdownFile, fileName]);
 
 	return (
-		<Modal
-			className="modal"
-			show={true}
-			scrollable={true}
-			backdrop="true"
-			keyboard={true}
-			animation={true}
-			fullscreen={true}
-		>
-			<Modal.Header className="modal-header">
-				<Modal.Title className="modal-title">
+		<AnimatedPage>
+			<Modal
+				className="modal"
+				show={true}
+				scrollable={true}
+				backdrop="true"
+				keyboard={true}
+				animation={true}
+				fullscreen={true}
+			>
+				<Modal.Header className="modal-header">
+					<Modal.Title className="modal-title">
+						<Link
+							className="modal-navigation-link"
+							to={`${REFERENCES_LINK.substring(0, REFERENCES_LINK.length - 1)}`}
+						>
+							<FiX className="modal-navigation-link-icon" />
+						</Link>
+					</Modal.Title>
+				</Modal.Header>
+				<Modal.Body className="modal-body">
+					<ReferencesHeader header={true} />
+					<ReferencesMarkdown content={postBody} fileName={fileName} />
+					<ReferencesHeader header={false} />
+				</Modal.Body>
+				<Modal.Footer className="modal-footer">
 					<Link
 						className="modal-navigation-link"
 						to={`${REFERENCES_LINK.substring(0, REFERENCES_LINK.length - 1)}`}
 					>
-						<FiX className="modal-navigation-link-icon" />
+						<CgCross className="modal-footer-link-icon" />
 					</Link>
-				</Modal.Title>
-			</Modal.Header>
-			<Modal.Body className="modal-body">
-				<ReferencesHeader header={true} />
-				<ReferencesMarkdown content={postBody} fileName={fileName} />
-				<ReferencesHeader header={false}/>
-			</Modal.Body>
-			<Modal.Footer className="modal-footer">
-				<Link
-					className="modal-navigation-link"
-					to={`${REFERENCES_LINK.substring(0, REFERENCES_LINK.length - 1)}`}
-				>
-					<CgCross className="modal-footer-link-icon" />
-				</Link>
-			</Modal.Footer>
-		</Modal>
+				</Modal.Footer>
+			</Modal>
+		</AnimatedPage>
 	);
 }
 

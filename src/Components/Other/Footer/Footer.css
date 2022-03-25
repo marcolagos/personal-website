@@ -8,57 +8,40 @@
 }
 .footer-col {
 	text-align: center !important;
-}
-.footer-col h3 {
-	font-size: 2em !important;
+	color: var(--footer-mark-font-color) !important;
 	margin-top: 0.5em !important;
 	margin-bottom: 0.5em !important;
-	font-weight: 300 !important;
-}
-.footer-icons {
-	list-style: none !important;
-	display: inline-block !important;
 }
 .footer-icon {
 	color: var(--footer-icon-color) !important;
 	transition: var(--main-transition) !important;
-	opacity: 0.7 !important;
+	opacity: 0.8 !important;
+	margin-right: 0.5rem !important;
+	margin-left: 0.5rem !important;
 }
 .footer-icon:hover {
 	opacity: 1 !important;
 }
-.icon-1 {
-	margin-right: 0.5rem !important;
-	padding-right: 0.5rem !important;
+.footer-heading-mark {
+	font-size: 1rem !important;
+	padding: 1rem 0 0 0 !important;
+	margin: 0 !important;
 }
-.icon-2 {
-	margin-right: 0.5rem !important;
-	margin-left: 0.5rem !important;
-	padding-left: 0.5rem !important;
-	padding-right: 0.5rem !important;
-}
-.icon-3 {
-	margin-right: 0.5rem !important;
-	margin-left: 0.5rem !important;
-	padding-left: 0.5rem !important;
-	padding-right: 0.5rem !important;
-}
-.icon-4 {
-	margin-left: 0.5rem !important;
-	padding-left: 0.5rem !important;
+.footer-heading-links {
+	font-size: 1.5rem !important;
+	padding: 0.5rem 0 0 0 !important;
+	margin: 0 !important;
 }
 @media (max-width: 767px) {
-	.footer-col h3 {
-		font-size: 1.5em !important;
+	.footer-col-links {
+		margin-top: 0em !important;
+		margin-bottom: 0.5em !important;
 	}
-	.footer-mark {
-		font-size: 1rem !important;
+	.footer-col-mark {
+		margin-top: 0em !important;
+		margin-bottom: 0em !important;
 	}
-}
-.footer-mark {
-	color: var(--footer-mark-font-color) !important;
-	font-size: 1.25rem;
-	margin-top: 0.5em !important;
-	margin-bottom: 0.5em !important;
-	transform: translateY(10px) !important;
+	.footer-col-mid {
+		height: 0 !important;
+	}
 }

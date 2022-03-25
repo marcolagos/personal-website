@@ -81,6 +81,7 @@
 	--form-button-shadow: none;
 	--form-warning-font-color: #f40d30;
 	--form-direction-font-color: #ff8c00;
+	--form-check-button: rgb(132, 242, 154);
 
 	/* Projects */
 	--projects-background-color: #000000;
@@ -153,6 +154,7 @@
 
 /* Scroll Bar */
 ::-webkit-scrollbar {
+	display: none;
 	width: 7px;
 }
 ::-webkit-scrollbar-track {

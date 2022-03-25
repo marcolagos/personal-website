@@ -27,11 +27,9 @@ function Footer() {
 
 	const links = footerJSON.links.map((item, index) => {
 		return (
-			<h3 className={`footer-icons icon-${index + 1}`} key={index}>
-				<a href={item.to} target="_blank" rel="noreferrer">
-					{getIcon(item.title)}
-				</a>
-			</h3>
+			<a href={item.to} target="_blank" rel="noreferrer" className="footer-icon" key={index}>
+				{getIcon(item.title)}
+			</a>
 		);
 	});
 
@@ -39,12 +37,12 @@ function Footer() {
 		return (
 			<Container fluid className="footer-container fixed-bottom">
 				<Row>
-					<Col md="4" className="footer-col footer-mark">
-						{footerJSON.mark}
+					<Col md="4" className="footer-col footer-col-mark">
+						<h3 className="footer-heading-mark">{footerJSON.mark}</h3>
 					</Col>
-					<Col md="4" className="footer-col"></Col>
-					<Col md="4" className="footer-col">
-						{links}
+					<Col md="4" className="footer-col-mid"></Col>
+					<Col md="4" className="footer-col footer-col-links">
+						<h3 className="footer-heading-links">{links}</h3>
 					</Col>
 				</Row>
 			</Container>

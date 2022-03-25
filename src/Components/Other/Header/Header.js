@@ -1,8 +1,8 @@
 import React from "react";
 
 function Header({ title, comment, to, link }) {
-    return (
-		<div className="main-header" data-aos="fade-up" data-aos-duration="1000" data-aos-once={true}>
+	return (
+		<div className="main-header">
 			<h1 className="main-title">{title}</h1>
 			<p className="main-comment">
 				{comment}
