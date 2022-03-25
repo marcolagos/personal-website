@@ -3,10 +3,13 @@
 	padding: 0.3rem 2rem !important;
 	font-size: 1.2rem !important;
 	transition: var(--main-transition) !important;
-	background-color: var(--navigation-background-color) !important;
+	background-color: var(--navigation-bg) !important;
+}
+.navigation-scroll {
+	background-color: var(--navigation-bg-scroll) !important;
 }
 .navigation:hover {
-	background-color: var(--navigation-background-color-hover) !important;
+	background-color: var(--navigation-bg-hover) !important;
 	backdrop-filter: blur(4px) !important;
 }
 .navbar-toggler {
@@ -17,7 +20,7 @@
 }
 .navbar-toggler span {
 	display: block !important;
-	background-color: var(--navigation-hamburger-toggle-color) !important;
+	background-color: var(--navigation-hamburger-toggle) !important;
 	height: 3px !important;
 	width: 23px !important;
 	margin-top: 5px !important;
@@ -41,7 +44,7 @@
 	left: 25px !important;
 	top: 10px !important;
 	transform: rotate(135deg) !important;
-	background-color: var(--navigation-exit-font-color) !important;
+	background-color: var(--navigation-exit) !important;
 }
 .navbar-toggler:not(.collapsed) span:nth-child(2) {
 	height: 12px !important;
@@ -53,10 +56,10 @@
 	left: 25px !important;
 	top: 10px !important;
 	transform: rotate(-135deg) !important;
-	background-color: var(--navigation-exit-font-color) !important;
+	background-color: var(--navigation-exit) !important;
 }
 .navbar-brand {
-	color: var(--navigation-brand-font-color) !important;
+	color: var(--navigation-brand) !important;
 	font-size: 2rem !important;
 	margin-bottom: 4px !important;
 	font-weight: 600 !important;
@@ -72,7 +75,7 @@
 	}
 }
 .navbar-nav .nav-link {
-	color: var(--navigation-links-font-color) !important;
+	color: var(--navigation-links) !important;
 	padding-right: 1rem !important;
 	padding-left: 1rem !important;
 }

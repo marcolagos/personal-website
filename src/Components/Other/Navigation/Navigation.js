@@ -56,7 +56,8 @@ function Navigation() {
 		);
 	});
 
-	function scrollHandler() {
+	const scrollHandler = () => {
+		
 		if (window.scrollY >= 20) {
 			setNavigationColor(true);
 		} else {

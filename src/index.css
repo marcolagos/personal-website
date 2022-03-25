@@ -12,6 +12,7 @@
 @import url("./Pages/References/References.css");
 
 @import url("./Components/Home/Particle/Particle.css");
+@import url("./Components/Home/Type/Type.css");
 @import url("./Components/Contact/ThreeDotsWave/ThreeDotsWave.css");
 
 @import url("./Components/Other/Navigation/Navigation.css");
@@ -28,24 +29,59 @@
 
 /* Variables */
 :root {
+	/* ============= */
+	/*   Home Page   */	
+	/* ============= */
+	--home-intro-font: #FFFFFF;
+	--home-type-font: rgb(132, 242, 154);
+	--home-type-cursor: rgb(65, 255, 103);
+
+	/* ============= */
+	/* Projects Page */	
+	/* ============= */
+	--projects-bg: #000000;
+	--projects-card-bg: #3d3d3d;
+
+	/* =============== */
+	/* References Page */	
+	/* =============== */
+	--references-bg: #000000;
+	--references-card-bg: #3d3d3d;
+
+	/* ============ */
+	/* Contact Page */	
+	/* ============ */
+	--contact-bg: #000000;
+	--form-label-font: #ffffff;
+	--form-area: rgb(26, 26, 26);
+	--form-input-font: rgb(173, 173, 173);
+	--form-warning-font: #f40d30;
+	--form-direction-font: #ff8c00;
+	--form-check-button: rgb(132, 242, 154);
+	--three-dots-color: #ffffff;
+
 	/* Constants */
 	--main-transition: all 0.1s ease-in-out 0s;
 	--long-transition: all 0.3s ease-in-out 0s;
-	--selection-font-color: #ffffff;
-	--selection-background-color: #3d3d3d;
+	--selection-font: #ffffff;
+	--selection-bg: #3d3d3d;
 
 	/* Navigation */
-	--navigation-background-color: transparent;
-	--navigation-background-color-hover: transparent;
-	--navigation-hamburger-toggle-color: #ffffff;
-	--navigation-exit-font-color: #f40d30;
-	--navigation-brand-font-color: #ffffff;
-	--navigation-links-font-color: #ffffff; /* add8e6 */
+	--navigation-bg: transparent;
+	--navigation-bg-scroll: black;
+	--navigation-bg-hover: transparent;
+	--navigation-hamburger-toggle: #ffffff;
+	--navigation-exit: #f40d30;
+	--navigation-brand: #ffffff;
+	--navigation-links: #add8e6;
 	--navigation-links-underline-before: #ff8c00;
 	--navigation-links-underline-after: #10aff5;
 
+	/* Stopping point */
+	/* footer, header, markdown, post, cards, about */
+
 	/* Footer */
-	--footer-background-color: transparent;
+	--footer-bg-color: transparent;
 	--footer-background-color-hover: transparent;
 	--footer-mark-font-color: lightblue;
 	--footer-icon-color: lightblue;
@@ -56,44 +92,9 @@
 	--main-comment-link-color-after: rgb(132, 242, 154);
 	--main-comment-link-color-before: rgb(65, 255, 103);
 
-	/* Three Dots Animation */
-	--three-dots-color: #ffffff;
-
 	/* Code Copy Button */
 	--code-copy-background-color: #000000;
 	--code-copy-font-color: #ffffff;
-
-	/* Home */
-	--home-background-color: transparent; /* May not change anything */
-	--home-introduction-font-color: #ffffff;
-	--home-contained-background-color: transparent;
-	--home-type-font-color: rgb(132, 242, 154);
-	--home-type-cursor-color: rgb(65, 255, 103);
-
-	/* Contact */
-	--contact-background-color: #000000;
-	--contact-card-background-color: #3d3d3d;
-	--contact-link-font-color-before: #ff7300;
-	--contact-link-font-color-after: #ff8c00;
-	--form-label-font-color: #ffffff;
-	--form-area-background-color: rgb(26, 26, 26);
-	--form-input-font-color: rgb(173, 173, 173);
-	--form-button-shadow: none;
-	--form-warning-font-color: #f40d30;
-	--form-direction-font-color: #ff8c00;
-	--form-check-button: rgb(132, 242, 154);
-
-	/* Projects */
-	--projects-background-color: #000000;
-	--projects-card-background-color: #3d3d3d;
-	--projects-link-font-color-before: #ff7300;
-	--projects-link-font-color-after: #ff8c00;
-
-	/* References */
-	--references-background-color: #000000;
-	--references-card-background-color: #3d3d3d;
-	--references-link-font-color-before: #ff7300;
-	--references-link-font-color-after: #ff8c00;
 
 	/* References Post */
 	--references-post-main-font-color: #ffffff; /* May not change anything */
@@ -178,6 +179,6 @@ body {
 }
 
 ::selection {
-	color: var(--selection-font-color);
-	background: var(--selection-background-color);
+	color: var(--selection-font);
+	background: var(--selection-bg);
 }

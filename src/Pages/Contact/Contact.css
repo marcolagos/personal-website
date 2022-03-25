@@ -1,14 +1,14 @@
 .contact-section {
 	overflow-y: scroll !important;
 	overflow-x: hidden !important;
-	background-color: var(--contact-background-color) !important;
+	background-color: var(--contact-bg) !important;
 	height: 100vh !important;
 }
 .contact-container {
 	box-sizing: border-box !important;
 	position: relative !important;
 	padding: 5vh 1vh 0vh 1vh !important;
-	background-color: var(--contact-background-color) !important;
+	background-color: var(--contact-bg) !important;
 	height: 100vh !important;
 }
 .contact-intro {
@@ -23,13 +23,13 @@
 .form-label {
 	padding: 2vh 0vh 0vh 0vh !important;
 	font-size: 1.5rem !important;
-	color: var(--form-label-font-color) !important;
+	color: var(--form-label-font) !important;
 }
 .form-control {
 	padding: 1vh !important;
-	background-color: var(--form-area-background-color) !important;
-	border: 1px solid var(--contact-background-color) !important;
-	color: var(--form-input-font-color) !important;
+	background-color: var(--form-area) !important;
+	border: 1px solid var(--contact-bg) !important;
+	color: var(--form-input-font) !important;
 }
 .form-control:active,
 .form-control:checked,
@@ -46,7 +46,7 @@
 	margin-left: 1rem !important;
 	margin-right: 1rem !important;
 	padding: 0.5rem 2rem 0.5rem 2rem !important;
-	background-color: var(--card-background) !important;
+	background-color: var(--card-bg) !important;
 	border: none !important;
 	opacity: 0.8 !important;
 	border-radius: 0 !important;
@@ -60,7 +60,7 @@
 }
 .form-button:hover {
 	opacity: 1 !important;
-	box-shadow: 0 0 8px var(--form-button-shadow) !important;
+	box-shadow:none !important;
 }
 .form-icon {
 	margin-bottom: 0.4rem !important;
@@ -68,13 +68,13 @@
 	margin-right: 5px !important;
 }
 .warning {
-	color: var(--form-warning-font-color) !important;
+	color: var(--form-warning-font) !important;
 	padding: 0 !important;
 	margin: 0 !important;
 	display: none !important;
 }
 .direct {
-	color: var(--form-direction-font-color) !important;
+	color: var(--form-direction-font) !important;
 	padding: 0 !important;
 	margin: 0 !important;
 	display: none !important;

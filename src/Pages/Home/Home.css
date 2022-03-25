@@ -1,51 +1,29 @@
 /* Home */
 .home-section {
 	overflow: hidden !important;
-    /* background-color: var(--home-background-color) !important; */
-	background-image: url(../../Assets//Home/home-background.jpg) !important;
+	background-image: url(../../Assets/Home/home-background.jpg) !important;
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	image-rendering: pixelated;
 	z-index: -1 !important;
 }
-.home-container {
-	
-	position: relative;
-	
-}
 .home-intro {
 	text-align: left !important;
 	height: 100vh !important;
-	background-color: var(--home-contained-background-color) !important;
+	background-color: transparent !important;
 }
 .home-header {
 	margin-top: 30vh !important;
 }
 .home-text {
-	color: var(--home-introduction-font-color) !important;
+	color: var(--home-intro-font) !important;
 	font-weight: 500 !important;
 	font-size: 2.5em !important;
 }
-.Typewriter__wrapper {
-	font-size: 1.5em !important;
-	color: var(--home-type-font-color) !important;
-	font-weight: 400 !important;
-}
-.Typewriter__cursor {
-	font-size: 1.6em !important;
-	color: var(--home-type-cursor-color) !important;
-}
-
 @media (max-width: 767px) {
 	.home-text {
 		font-weight: 400 !important;
 		font-size: 1.5em !important;
-	}
-	.Typewriter__wrapper {
-		font-size: 1em !important;
-	}
-	.Typewriter__cursor {
-		display: none !important;
 	}
 }

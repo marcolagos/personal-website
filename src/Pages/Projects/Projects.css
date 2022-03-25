@@ -1,14 +1,14 @@
 .projects-section {
     overflow-y: scroll !important;
     overflow-x: hidden !important;
-    background-color: var(--projects-background-color) !important;
+    background-color: var(--projects-bg) !important;
     height: 100vh !important;
 }
 .projects-container {
     box-sizing: border-box !important;
     position: relative !important;
     padding: 5vh 1vh 0vh 1vh !important;
-    background-color: var(--projects-background-color) !important;
+    background-color: var(--projects-bg) !important;
     height: 100vh !important;
 }
 .projects-intro {
@@ -16,18 +16,7 @@
     padding-bottom: 15vh !important;
 }
 .projects-card {
-    background-color: var(--projects-card-background-color) !important;
+    background-color: var(--projects-card-bg) !important;
     margin: 2vh !important;
     padding: 1vh !important;
-}
-.dim-orange {
-	color: var(--projects-link-font-color-before) !important;
-	text-decoration: none !important;
-    opacity: 0.6 !important;
-}
-.dim-orange:hover,
-.dim-orange:active {
-	color: var(--projects-link-font-color-after) !important;
-	text-decoration: none !important;
-    opacity: 1 !important;
 }
