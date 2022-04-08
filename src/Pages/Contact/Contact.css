@@ -17,7 +17,7 @@
 }
 .form-group {
 	display: inline-block !important;
-	width: 75% !important; /* @media this */
+	width: 75% !important;
 	text-align: left !important;
 }
 .form-label {

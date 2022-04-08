@@ -8,7 +8,6 @@
 	opacity: 1 !important;
 	box-shadow: 0 0 15px var(--post-shadow);
 }
-
 /* Card */
 .card-date {
 	background-color: var(--post-date-bg) !important;
@@ -36,9 +35,7 @@
 	font-weight: 300 !important;
 }
 .card-button {
-	color: var(--post-icon-l) !important;
-	margin-left: 1rem !important;
-	margin-right: 1rem !important;
+	margin: 0 1rem 0 1rem !important;
 	padding: 0.5rem 2rem 0.5rem 2rem !important;
 	background-color: var(--post-icon-bg) !important;
 	border: none !important;
@@ -52,21 +49,15 @@
 	outline: none !important;
 	box-shadow: none !important;
 }
-.card-button:hover {
+.single-icon {
+	color: var(--post-icon) !important;
+}
+.single-icon:hover {
 	opacity: 1 !important;
 	box-shadow: 0 0 8px #000000;
-	transform: scale(1.02) !important;
 }
-.card-button-stack {
-	color:  var(--post-icon-r) !important;
-	margin-left: 1rem !important;
-	margin-right: 1rem !important;
-	padding: 0.5rem 2rem 0.5rem 2rem !important;
-	background-color: var(--post-icon-bg) !important;
-	border: none !important;
-	opacity: 0.8 !important;
-	border-radius: 0 !important;
-	font-size: 1.5rem !important;
+.stack-icon {
+	color:  var(--post-icon-stack) !important;
 	cursor: default !important;
 }
 .card-button-stack:focus,
@@ -76,7 +67,5 @@
 	box-shadow: none !important;
 }
 .card-icon {
-	margin-bottom: 0.4rem !important;
-	margin-left: 5px !important;
-	margin-right: 5px !important;
+	margin: 0 5px 0.4rem 5px !important;
 }

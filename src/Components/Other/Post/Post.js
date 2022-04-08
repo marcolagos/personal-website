@@ -64,15 +64,15 @@ function Post({ title, date, description, minutes, image, stack, github, post, p
 					</Card.Text>
 					<div className="card-stat-wrapper">
 						{github ? (
-							<Button className="card-button" href={github} target="_blank">
+							<Button className="card-button single-icon" href={github} target="_blank">
 								<AiFillGithub className="card-icon" />
 							</Button>
 						) : (
-							<Link className="card-button" to={`${REFERENCES_LINK}${post}`}>
+							<Link className="card-button single-icon" to={`${REFERENCES_LINK}${post}`}>
 								<IoMdExpand className="card-icon" />
 							</Link>
 						)}
-						<Button className="card-button-stack">{tech}</Button>
+						<Button className="card-button stack-icon">{tech}</Button>
 					</div>
 				</Card.Body>
 			</Card>
