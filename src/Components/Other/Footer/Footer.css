@@ -1,9 +1,9 @@
 .footer-container {
-	background-color: var(--footer-background-color) !important;
+	background-color: transparent !important;
 	transition: var(--main-transition) !important;
 }
 .footer-container:hover {
-	background-color: var(--footer-background-color-hover) !important;
+	background-color: transparent !important;
 	backdrop-filter: blur(3px) !important;
 }
 .footer-col {

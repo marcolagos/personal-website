@@ -1,5 +1,5 @@
 .modal {
-	color: var(--references-post-main-font-color) !important;
+	color: transparent !important;
 }
 .modal-content {
 	padding: 0 !important;

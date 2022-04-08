@@ -1,21 +1,15 @@
 import { motion } from "framer-motion";
 
 const animations = {
-	initial: { opacity: 0, y: 100 },
-	animate: { opacity: 1, y: 0 },
-	exit: { opacity: 0, y: -100 },
-};
-
-const homeAnimations = {
 	initial: { opacity: 0 },
 	animate: { opacity: 1 },
 	exit: { opacity: 0 },
 };
 
-function AnimatedPage({ children, home }) {
+function AnimatedPage({ children }) {
 	return (
 		<motion.div
-			variants={home ? homeAnimations : animations}
+			variants={animations}
 			initial="initial"
 			animate="animate"
 			exit="exit"
@@ -25,5 +19,6 @@ function AnimatedPage({ children, home }) {
 		</motion.div>
 	);
 }
+
 
 export default AnimatedPage;

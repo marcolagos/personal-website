@@ -22,7 +22,7 @@ function ReferencesPost(props) {
 	}, [MarkdownFile, fileName]);
 
 	return (
-		<AnimatedPage>
+		<AnimatedPage >
 			<Modal
 				className="modal"
 				show={true}

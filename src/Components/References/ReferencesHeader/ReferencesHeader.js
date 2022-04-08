@@ -26,7 +26,7 @@ function ReferencesHeader({ header }) {
 
 	const links = headerJSON.links.map((item, index) => {
 		return (
-			<a className="footer-icon" href={item.to} target="_blank" rel="noreferrer" key={index}>
+			<a className="references-header-icon" href={item.to} target="_blank" rel="noreferrer" key={index}>
 				{getIcon(item.title)}
 			</a>
 		);

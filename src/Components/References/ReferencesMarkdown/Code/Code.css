@@ -6,9 +6,9 @@
     position: absolute;
     right: 5px;
     top: 5px;
-	color: var(--code-copy-font-color) !important;
+	color: var(--code-copy-font) !important;
 	padding: 0.25vh 1vh 0.25vh 1vh !important;
-	background-color: var(--code-copy-background-color) !important;
+	background-color: var(--code-copy-background) !important;
 	border: none !important;
 	opacity: 0.8 !important;
 	border-radius: 0 !important;

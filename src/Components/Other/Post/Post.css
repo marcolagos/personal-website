@@ -1,46 +1,46 @@
 .project-card-view {
 	background-color: transparent !important;
-	opacity: 0.8 !important;
+	opacity: 0.6 !important;
 	transition: var(--main-transition) !important;
 	height: 100% !important;
 }
 .project-card-view:hover {
 	opacity: 1 !important;
-	box-shadow: 0 0 15px var(alt-main-color-opaque);
+	box-shadow: 0 0 15px var(--post-shadow);
 }
 
 /* Card */
 .card-date {
-	background-color: var(--card-background) !important;
+	background-color: var(--post-date-bg) !important;
 }
 .card-text-date {
-	color: var(--card-date);
+	color: var(--post-date);
 	font-size: 1rem;
 }
 .card-image {
 	padding: 3px 3px 0px 3px !important;
-	background-color: var(--card-background) !important;
+	background-color: var(--post-img-outline) !important;
 	image-rendering: -webkit-optimize-contrast !important; 
 }
 .card-body {
-	background-color: var(--card-background) !important;
+	background-color: var(--post-description-bg) !important;
 }
 .card-text-title {
 	font-size: 1.5rem !important;
 	font-weight: 400 !important;
-	color: var(--default-text-color) !important;
+	color: var(--post-text) !important;
 }
 .card-text-body {
-	color: var(--default-text-color) !important;
+	color: var(--post-text) !important;
 	font-size: 1rem !important;
 	font-weight: 300 !important;
 }
 .card-button {
-	color: var(--card-button) !important;
+	color: var(--post-icon-l) !important;
 	margin-left: 1rem !important;
 	margin-right: 1rem !important;
 	padding: 0.5rem 2rem 0.5rem 2rem !important;
-	background-color: var(--card-background) !important;
+	background-color: var(--post-icon-bg) !important;
 	border: none !important;
 	opacity: 0.8 !important;
 	border-radius: 0 !important;
@@ -58,11 +58,11 @@
 	transform: scale(1.02) !important;
 }
 .card-button-stack {
-	color: var(--card-button) !important;
+	color:  var(--post-icon-r) !important;
 	margin-left: 1rem !important;
 	margin-right: 1rem !important;
 	padding: 0.5rem 2rem 0.5rem 2rem !important;
-	background-color: var(--card-background) !important;
+	background-color: var(--post-icon-bg) !important;
 	border: none !important;
 	opacity: 0.8 !important;
 	border-radius: 0 !important;

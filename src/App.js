@@ -30,9 +30,11 @@ function App() {
 					<Route exact path={REFERENCES_LINK} element={<References />} />
 					<Route exact path="/contact" element={<Contact />} />
 					<Route exact path="/about" element={<About />} />
-					<Route exact path={`${REFERENCES_LINK}:fileName`} element={<ReferencesPost />} />
 				</Routes>
 			</AnimatePresence>
+			<Routes location={location} key={location.key}>
+				<Route exact path={`${REFERENCES_LINK}:fileName`} element={<ReferencesPost />} />
+			</Routes>
 		</div>
 	);
 }

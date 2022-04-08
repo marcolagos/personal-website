@@ -9,10 +9,10 @@ const headerJSON = require("../../Data/Home/home-header.json");
 
 function Home() {
 	return (
-		<AnimatedPage home={true}>
+		<AnimatedPage>
 			<section className="home-section">
 				<Particle />
-				<Container fluid className="home-container" id="home-container"> 
+				<Container fluid className="home-container" id="home-container">
 					<Container className="home-intro">
 						<Row>
 							<Col md={12} className="home-header">

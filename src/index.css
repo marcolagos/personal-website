@@ -39,14 +39,14 @@
 	/* ============= */
 	/* Projects Page */	
 	/* ============= */
-	--projects-bg: #000000;
-	--projects-card-bg: #3d3d3d;
+	--projects-bg: lightblue; 
+	--projects-card-bg: transparent;
 
 	/* =============== */
 	/* References Page */	
 	/* =============== */
 	--references-bg: #000000;
-	--references-card-bg: #3d3d3d;
+	--references-card-bg: transparent;
 
 	/* ============ */
 	/* Contact Page */	
@@ -57,6 +57,8 @@
 	--form-input-font: rgb(173, 173, 173);
 	--form-warning-font: #f40d30;
 	--form-direction-font: #ff8c00;
+	--form-button: white;
+	--form-button-bg: red;
 	--form-check-button: rgb(132, 242, 154);
 	--three-dots-color: #ffffff;
 
@@ -73,16 +75,11 @@
 	--navigation-hamburger-toggle: #ffffff;
 	--navigation-exit: #f40d30;
 	--navigation-brand: #ffffff;
-	--navigation-links: #add8e6;
+	--navigation-links: #FFFFFF;
 	--navigation-links-underline-before: #ff8c00;
 	--navigation-links-underline-after: #10aff5;
 
-	/* Stopping point */
-	/* footer, header, markdown, post, cards, about */
-
 	/* Footer */
-	--footer-bg-color: transparent;
-	--footer-background-color-hover: transparent;
 	--footer-mark-font-color: lightblue;
 	--footer-icon-color: lightblue;
 
@@ -92,65 +89,46 @@
 	--main-comment-link-color-after: rgb(132, 242, 154);
 	--main-comment-link-color-before: rgb(65, 255, 103);
 
-	/* Code Copy Button */
-	--code-copy-background-color: #000000;
-	--code-copy-font-color: #ffffff;
-
 	/* References Post */
-	--references-post-main-font-color: #ffffff; /* May not change anything */
 	--references-post-nav-color: #111111;
 	--references-post-body-color: #111111;
 	--references-post-icon-color: #f40d30;
-
-	/* References Markdown Header */
-	--references-header-brand-font-color: #FFFFFF;
-	--references-header-back-font-color: #FFFFFF;
-	--references-header-border-color: #FFFFFF;
+	
+	/* References Header */
+	--references-header-link: white;
+	--references-header-link-hover: blue;
+	--references-header-icon: orange;
 
 	/* References Markdown */
-	--references-markdown-default-font-color: #ffffff; /* May not change anything */
+	--references-markdown-title-font: #4b5cdd;
+	--references-markdown-subtitle-font: #767fc2;
+	--references-markdown-time-font: rgb(132, 242, 154);
+	--references-markdown-subheading1-font: #a2e7f7;
+	--references-markdown-subheading2-font: #3d96aa;
+	--references-markdown-subheading3-font: #3170b3;
+	--references-markdown-paragraph-font: #c7c7c7;
+	--references-markdown-blockquote-background: #242424;
+	--references-markdown-blockquote-border: rgb(132, 242, 154);
+	--references-markdown-list-font: #dfdfdf;
+	--references-markdown-ul-border: #ffffff;
+	--references-markdown-link-font-before: #596cfa;
+	--references-markdown-link-font-after: #596cfa;
+	--references-markdown-latex-font: #ffffff; 
+	--references-markdown-latex-border: #767fc2;
+	--references-markdown-latex-background: #242424;
+	--code-copy-background: #000000;
+	--code-copy-font: #ffffff;
 
-	--references-markdown-latex-font-color: #ffffff; /* May not change anything */
-	--references-markdown-latex-border-color: #767fc2;
-	--references-markdown-latex-background-color: #242424;
-
-	--references-markdown-title-font-color: #4b5cdd;
-	--references-markdown-subtitle-font-color: #767fc2;
-	--references-markdown-time-font-color: rgb(132, 242, 154);
-
-	--references-markdown-subheading1-font-color: #a2e7f7;
-	--references-markdown-subheading2-font-color: #3d96aa;
-	--references-markdown-subheading3-font-color: #3170b3;
-
-	--references-markdown-paragraph-font-color: #c7c7c7;
-
-	--references-markdown-blockquote-background-color: #242424;
-	--references-markdown-blockquote-border-color: rgb(132, 242, 154);
-
-	--references-markdown-list-font-color: #dfdfdf;
-	--references-markdown-ul-border-color: #ffffff;
-
-	--references-markdown-link-font-color-before: #596cfa;
-	--references-markdown-link-font-color-after: #596cfa;
-
-	--main-bg-color: #000000;
-	--alt-main-color: #111111c0;
-	--alt-main-color-opaque: #111111;
-	--alt-main-color-lighter: #3d3d3d;
-	--alt-grey-color: rgb(173, 173, 173);
-	--alt-bright-red: #f40d30;
-	--alt-bright-orange: #ff8c00;
-	--alt-orange: #ff7300;
-
-	--default-text-color: #ffffff;
-	--alt-dull-orange: #cc8a39;
-	--card-background: #111111;
-	--card-shadow: #ff8c00;
-	--card-text: rgb(173, 173, 173);
-	--card-date: rgb(173, 173, 173);
-	--card-body: rgb(173, 173, 173);
-	--card-button: #ffffff;
-	--alt-bright-blue: #3822cd;
+	/* Post */
+	--post-shadow: red;
+	--post-date-bg: red;
+	--post-date: red;
+	--post-img-outline: red;
+	--post-description-bg: red;
+	--post-text: white;
+	--post-icon-r: red;
+	--post-icon-l: red;
+	--post-icon-bg: blue;
 }
 
 /* Scroll Bar */
