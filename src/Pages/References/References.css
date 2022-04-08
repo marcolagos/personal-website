@@ -1,14 +1,20 @@
 .references-section {
     overflow-y: scroll !important;
     overflow-x: hidden !important;
-    background-color: var(--references-background-color) !important;
+    /* background-color: var(--references-bg) !important; */
+    background-image: url(../../Assets/References/references-background.jpg) !important;
+	background-position: top center;
+	background-repeat: no-repeat;
+
+	background-size: cover;
     height: 100vh !important;
 }
 .references-container {
     box-sizing: border-box !important;
     position: relative !important;
     padding: 5vh 1vh 0vh 1vh !important;
-    background-color: var(--references-bg) !important;
+    /* background-color: var(--references-bg) !important; */
+    background-color: transparent !important;
     height: 100vh !important;
 }
 .references-intro {

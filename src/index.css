@@ -29,6 +29,12 @@
 
 /* Variables */
 :root {
+	/* Constants */
+	--main-transition: all 0.1s ease-in-out 0s;
+	--long-transition: all 0.3s ease-in-out 0s;
+	--selection-font: #ffffff;
+	--selection-bg: #3d3d3d;
+
 	/* ============= */
 	/*   Home Page   */	
 	/* ============= */
@@ -51,22 +57,16 @@
 	/* ============ */
 	/* Contact Page */	
 	/* ============ */
-	--contact-bg: #000000;
-	--form-label-font: #ffffff;
-	--form-area: rgb(26, 26, 26);
-	--form-input-font: rgb(173, 173, 173);
+	--form-outline: transparent;
+	--form-label-font: #4b5cdd;
+	--form-area: rgba(255, 0, 0, 0.159);
+	--form-input-font: white;
 	--form-warning-font: #f40d30;
-	--form-direction-font: #ff8c00;
+	--form-direction-font: rgb(132, 242, 154);
 	--form-button: white;
-	--form-button-bg: red;
+	--form-button-bg: #4b5cdd;
 	--form-check-button: rgb(132, 242, 154);
 	--three-dots-color: #ffffff;
-
-	/* Constants */
-	--main-transition: all 0.1s ease-in-out 0s;
-	--long-transition: all 0.3s ease-in-out 0s;
-	--selection-font: #ffffff;
-	--selection-bg: #3d3d3d;
 
 	/* Navigation */
 	--navigation-bg: transparent;
@@ -120,15 +120,15 @@
 	--code-copy-font: #ffffff;
 
 	/* Post */
-	--post-shadow: red;
-	--post-date-bg: red;
-	--post-date: red;
-	--post-img-outline: red;
-	--post-description-bg: red;
+	--post-shadow: rgba(221, 221, 221, 0.234);
+	--post-date-bg: rgba(221, 221, 221, 0.2);
+	--post-date: white;
+	--post-img-outline: rgba(221, 221, 221, 0.2);
+	--post-description-bg: rgba(221, 221, 221, 0.22);
 	--post-text: white;
-	--post-icon: red;
-	--post-icon-stack: red;
-	--post-icon-bg: blue;
+	--post-icon: white;
+	--post-icon-stack: white;
+	--post-icon-bg: transparent;
 }
 
 /* Scroll Bar */

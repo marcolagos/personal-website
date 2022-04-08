@@ -17,7 +17,7 @@ const navigationJSON = require("../../../Data/Other/navigation.json");
 function Navigation() {
 	const [boldLink, setBoldLink] = useState("/");
 	const [expanded, setExpanded] = useState(false);
-	const [navigationColor, setNavigationColor] = useState(false);
+	const [navigationColor, setNavigationColor] = useState(useLocation().pathname.indexOf("/") >= 0);
 
 	const getIcon = (title) => {
 		if (title === "Home") {
@@ -56,23 +56,13 @@ function Navigation() {
 		);
 	});
 
-	const scrollHandler = () => {
-		
-		if (window.scrollY >= 20) {
-			setNavigationColor(true);
-		} else {
-			setNavigationColor(false);
-		}
-	}
-
-	window.addEventListener("scroll", scrollHandler);
 
 	if (!(useLocation().pathname.indexOf(REFERENCES_LINK) >= 0)) {
 		return (
 			<Navbar
 				collapseOnSelect
 				fixed="top"
-				className={navigationColor ? "navigation-scroll" : "navigation"}
+				className={navigationColor ? "navigation navigation-alt" : "navigation"}
 				expand="lg"
 				expanded={expanded}
 			>

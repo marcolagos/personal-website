@@ -14,7 +14,8 @@
 }
 .card-text-date {
 	color: var(--post-date);
-	font-size: 1rem;
+	font-size: 1rem !important;
+	font-weight: 500 !important;
 }
 .card-image {
 	padding: 3px 3px 0px 3px !important;
@@ -26,13 +27,13 @@
 }
 .card-text-title {
 	font-size: 1.5rem !important;
-	font-weight: 400 !important;
+	font-weight: 500 !important;
 	color: var(--post-text) !important;
 }
 .card-text-body {
 	color: var(--post-text) !important;
 	font-size: 1rem !important;
-	font-weight: 300 !important;
+	font-weight: 400 !important;
 }
 .card-button {
 	margin: 0 1rem 0 1rem !important;

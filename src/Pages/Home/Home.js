@@ -11,7 +11,6 @@ function Home() {
 	return (
 		<AnimatedPage>
 			<section className="home-section">
-				<Particle />
 				<Container fluid className="home-container" id="home-container">
 					<Container className="home-intro">
 						<Row>

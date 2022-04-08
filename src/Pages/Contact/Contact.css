@@ -1,14 +1,19 @@
 .contact-section {
 	overflow-y: scroll !important;
 	overflow-x: hidden !important;
-	background-color: var(--contact-bg) !important;
+	/* background-color: var(--contact-bg) !important; */
+	background-image: url(../../Assets/Contact/contact-background.jpg) !important;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	height: 100vh !important;
 }
 .contact-container {
 	box-sizing: border-box !important;
 	position: relative !important;
 	padding: 5vh 1vh 0vh 1vh !important;
-	background-color: var(--contact-bg) !important;
+	/* background-color: var(--contact-bg) !important; */
+	background-color: transparent !important;
 	height: 100vh !important;
 }
 .contact-intro {
@@ -28,7 +33,8 @@
 .form-control {
 	padding: 1vh !important;
 	background-color: var(--form-area) !important;
-	border: 1px solid var(--contact-bg) !important;
+	backdrop-filter: blur(5px) !important;
+	border: 1px solid var(--form-outline) !important;
 	color: var(--form-input-font) !important;
 }
 .form-control:active,
@@ -72,6 +78,7 @@
 	padding: 0 !important;
 	margin: 0 !important;
 	display: none !important;
+	font-weight: 500 !important;
 }
 .direct {
 	color: var(--form-direction-font) !important;

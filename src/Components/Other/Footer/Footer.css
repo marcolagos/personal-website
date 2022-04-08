@@ -2,9 +2,12 @@
 	background-color: transparent !important;
 	transition: var(--main-transition) !important;
 }
+.footer-container-alt {
+	backdrop-filter: blur(7px) !important;
+}
 .footer-container:hover {
 	background-color: transparent !important;
-	backdrop-filter: blur(3px) !important;
+	backdrop-filter: blur(7px) !important;
 }
 .footer-col {
 	text-align: center !important;
@@ -24,7 +27,7 @@
 }
 .footer-heading-mark {
 	font-size: 1rem !important;
-	padding: 1rem 0 0 0 !important;
+	padding: 0.5rem 0 0.5rem 0 !important;
 	margin: 0 !important;
 }
 .footer-heading-links {

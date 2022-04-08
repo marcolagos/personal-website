@@ -8,6 +8,7 @@ import Projects from "./Pages/Projects/Projects";
 import Contact from "./Pages/Contact/Contact";
 import References from "./Pages/References/References";
 import { AnimatePresence } from "framer-motion";
+import Particle from "./Components/Home/Particle/Particle";
 
 // Components
 import ReferencesPost from "./Components/References/ReferencesPost/ReferencesPost";
@@ -23,6 +24,7 @@ function App() {
 
 	return (
 		<div style={{ backgroundColor: "black" }}>
+			<Particle/>
 			<AnimatePresence exitBeforeEnter>
 				<Routes location={location} key={location.key}>
 					<Route exact path="/" element={<Home />} />

@@ -5,12 +5,12 @@
 	transition: var(--main-transition) !important;
 	background-color: var(--navigation-bg) !important;
 }
-.navigation-scroll {
-	background-color: var(--navigation-bg-scroll) !important;
+.navigation-alt {
+	backdrop-filter: blur(7px) !important;
 }
 .navigation:hover {
 	background-color: var(--navigation-bg-hover) !important;
-	backdrop-filter: blur(4px) !important;
+	backdrop-filter: blur(7px) !important;
 }
 .navbar-toggler {
 	padding: 0.3rem 1.5rem !important;
