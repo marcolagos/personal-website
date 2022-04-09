@@ -2,7 +2,7 @@
 	overflow-y: scroll !important;
 	overflow-x: hidden !important;
 	/* background-color: var(--contact-bg) !important; */
-	background-image: url(../../Assets/Home/home-background-blur.jpg) !important;
+	background-image: url(../../Assets/home-background-blur.jpg) !important;
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;

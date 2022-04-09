@@ -3,8 +3,20 @@ import { Container, Row, Col } from "react-bootstrap";
 import Type from "../../Components/Home/Type/Type";
 import Particle from "../../Components/Home/Particle/Particle";
 
-import { IoLogoJavascript } from "react-icons/io"
-import { SiJava } from "react-icons/si";
+import { FaGitAlt, FaNpm } from "react-icons/fa";
+import { IoLogoJavascript, IoLogoNodejs } from "react-icons/io";
+import {
+	SiJava,
+	SiPython,
+	SiReact,
+	SiMongodb,
+	SiBootstrap,
+	SiCss3,
+	SiHtml5,
+	SiAdobeillustrator,
+	SiAdobexd,
+	SiLatex,
+} from "react-icons/si";
 
 import AnimatedPage from "../../Components/Other/AnimatedPage/AnimatedPage";
 
@@ -41,10 +53,46 @@ function About() {
 									<div className="about-description">{bodyJSON.description}</div>
 									<div className="about-skills">
 										<div className="about-skill">
+											<SiJava />
+										</div>
+										<div className="about-skill">
 											<IoLogoJavascript />
 										</div>
 										<div className="about-skill">
-											<SiJava />
+											<SiPython />
+										</div>
+										<div className="about-skill">
+											<SiHtml5 />
+										</div>
+										<div className="about-skill">
+											<SiCss3 />
+										</div>
+										<div className="about-skill">
+											<FaGitAlt />
+										</div>
+										<div className="about-skill">
+											<IoLogoNodejs />
+										</div>
+										<div className="about-skill">
+											<FaNpm />
+										</div>
+										<div className="about-skill">
+											<SiReact />
+										</div>
+										<div className="about-skill">
+											<SiMongodb />
+										</div>
+										<div className="about-skill">
+											<SiBootstrap />
+										</div>
+										<div className="about-skill">
+											<SiAdobexd />
+										</div>
+										<div className="about-skill">
+											<SiAdobeillustrator />
+										</div>
+										<div className="about-skill">
+											<SiLatex />
 										</div>
 									</div>
 								</div>
