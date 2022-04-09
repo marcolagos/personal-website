@@ -12,11 +12,11 @@
 @import url("./Pages/References/References.css");
 @import url("./Pages/About/About.css");
 
-@import url("./Components/Home/Particle/Particle.css");
 @import url("./Components/Home/Type/Type.css");
 @import url("./Components/Contact/ThreeDotsWave/ThreeDotsWave.css");
 
 @import url("./Components/Other/Navigation/Navigation.css");
+@import url("./Components/Other/Particle/Particle.css");
 @import url("./Components/Other/Footer/Footer.css");
 @import url("./Components/Other/Header/Header.css");
 @import url("./Components/Other/Post/Post.css");
@@ -66,7 +66,7 @@
 	--form-warning-font: #f40d30;
 	--form-direction-font: rgb(4, 0, 246);
 	--form-button: white;
-	--form-button-bg: rgba(255, 255, 255, 0.4);
+	--form-button-bg: #4b5cdd;
 	--form-check-button: white;
 	--three-dots-color: #ffffff;
 
@@ -96,8 +96,8 @@
 	/* Header */
 	--main-title-font-color: #4b5cdd;
 	--main-comment-font-color: #FFFFFF;
-	--main-comment-link-color-after: rgb(132, 242, 154);
 	--main-comment-link-color-before: rgb(65, 255, 103);
+	--main-comment-link-color-after: rgb(65, 255, 103);
 
 	/* References Post */
 	--references-post-nav-color: #171E30;
@@ -138,7 +138,7 @@
 	--post-description-bg: var(--card-color);
 	--post-text: white;
 	--post-icon: white;
-	--post-icon-stack: rgb(132, 242, 154);
+	--post-icon-stack: rgb(65, 255, 103);
 	--post-icon-bg: transparent;
 }
 
