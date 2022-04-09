@@ -8,7 +8,7 @@ import Projects from "./Pages/Projects/Projects";
 import Contact from "./Pages/Contact/Contact";
 import References from "./Pages/References/References";
 import { AnimatePresence } from "framer-motion";
-import Particle from "./Components/Home/Particle/Particle";
+import Particle from "./Components/Other/Particle/Particle";
 
 // Components
 import ReferencesPost from "./Components/References/ReferencesPost/ReferencesPost";

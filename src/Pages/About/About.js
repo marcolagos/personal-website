@@ -1,8 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Type from "../../Components/Home/Type/Type";
-import Particle from "../../Components/Home/Particle/Particle";
+import Particle from "../../Components/Other/Particle/Particle";
 
+import { AiOutlineGithub } from "react-icons/ai";
 import { FaGitAlt, FaNpm } from "react-icons/fa";
 import { IoLogoJavascript, IoLogoNodejs } from "react-icons/io";
 import {
@@ -66,6 +67,9 @@ function About() {
 										</div>
 										<div className="about-skill">
 											<SiCss3 />
+										</div>
+										<div className="about-skill">
+											<AiOutlineGithub />
 										</div>
 										<div className="about-skill">
 											<FaGitAlt />

@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Type from "../../Components/Home/Type/Type";
-import Particle from "../../Components/Home/Particle/Particle";
 
 import AnimatedPage from "../../Components/Other/AnimatedPage/AnimatedPage";
 

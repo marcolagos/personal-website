@@ -75,6 +75,8 @@
 	/* ============ */
 	--about-description-bg: #171E30;
 	--about-description: white;
+	--about-type-font: rgb(132, 242, 154);
+	--about-intro-font: #FFFFFF;
 
 	/* Navigation */
 	--navigation-bg: transparent;
