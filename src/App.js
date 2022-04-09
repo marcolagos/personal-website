@@ -8,13 +8,9 @@ import Projects from "./Pages/Projects/Projects";
 import Contact from "./Pages/Contact/Contact";
 import References from "./Pages/References/References";
 import { AnimatePresence } from "framer-motion";
-import Particle from "./Components/Other/Particle/Particle";
 
 // Components
 import ReferencesPost from "./Components/References/ReferencesPost/ReferencesPost";
-
-// Firestore
-import { db } from "./Firebase";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -32,7 +28,6 @@ function App() {
 
 	return (
 		<div style={{ backgroundColor: "#171E30" }}>
-			<Particle />
 			<AnimatePresence exitBeforeEnter>
 				<Routes location={location} key={location.key}>
 					<Route exact path="/" element={<Home />} />
@@ -42,7 +37,7 @@ function App() {
 					<Route exact path="/about" element={<About />} />
 				</Routes>
 			</AnimatePresence>
-			<Routes location={location} key={location.key}>
+			<Routes>
 				<Route exact path={`${REFERENCES_LINK}:fileName`} element={<ReferencesPost />} />
 			</Routes>
 		</div>

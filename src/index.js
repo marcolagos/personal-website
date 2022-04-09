@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import Particle from "./Components/Other/Particle/Particle";
 
 import App from "./App";
 import Navigation from "./Components/Other/Navigation/Navigation";
@@ -11,6 +12,7 @@ import Footer from "./Components/Other/Footer/Footer";
 ReactDOM.render(
 	<BrowserRouter>
 		<Navigation />
+		<Particle />
 		<App />
 		<Footer />
 	</BrowserRouter>,
