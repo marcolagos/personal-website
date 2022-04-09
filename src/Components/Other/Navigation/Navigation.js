@@ -17,7 +17,7 @@ const navigationJSON = require("../../../Data/Other/navigation.json");
 function Navigation() {
 	const [boldLink, setBoldLink] = useState("/");
 	const [expanded, setExpanded] = useState(false);
-	const [navigationColor, setNavigationColor] = useState(useLocation().pathname.indexOf("/") >= 0);
+	const [navigationColor, setNavigationColor] = useState(false);
 
 	const getIcon = (title) => {
 		if (title === "Home") {

@@ -1,0 +1,74 @@
+
+/* about */
+.about-section {
+    overflow: hidden !important;
+    background-image: url(../../Assets/Home/home-background-blur.jpg) !important;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+    z-index: -1 !important;
+}
+
+.about-intro {
+    height: 100vh !important;
+    background-color: transparent !important;
+}
+.about-intro-1 {
+    text-align: center !important;
+}
+.about-intro-2 {
+    text-align: left !important;
+}
+
+.about-subtitle {
+    font-size: 1.6em !important;
+    color: var(--home-type-font) !important;
+    font-weight: 400 !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+}
+
+.about-description {
+    font-size: 1em !important;
+    color: lightblue !important;
+    font-weight: 400 !important;
+}
+
+.about-description-container {
+    background-color: var(--about-description-bg);
+    padding: 1.5rem 2rem 1.5rem 2rem !important;
+    border-radius: 1% !important;
+}
+
+.about-header {
+    margin-top: 20vh !important;
+}
+.about-header-description {
+    margin-top: 10vh !important;
+}
+.about-description {
+    color: var(--about-description) !important;
+}
+.about-text {
+    color: var(--home-intro-font) !important;
+    font-weight: 500 !important;
+    font-size: 2.5em !important;
+}
+
+@media (max-width: 767px) {
+    .about-text {
+        font-weight: 400 !important;
+        font-size: 1.5em !important;
+    }
+}
+
+.about-skills {
+
+}
+
+.about-skill {
+    color: ;
+    border: 2px solid white;
+    padding: 1rem 1rem 1rem 1rem !important;
+}

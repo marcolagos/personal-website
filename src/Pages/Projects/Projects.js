@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Header from "../../Components/Other/Header/Header";
 import Post from "../../Components/Other/Post/Post";

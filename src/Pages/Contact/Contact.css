@@ -2,7 +2,7 @@
 	overflow-y: scroll !important;
 	overflow-x: hidden !important;
 	/* background-color: var(--contact-bg) !important; */
-	background-image: url(../../Assets/Contact/contact-background.jpg) !important;
+	background-image: url(../../Assets/Home/home-background-blur.jpg) !important;
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -29,6 +29,7 @@
 	padding: 2vh 0vh 0vh 0vh !important;
 	font-size: 1.5rem !important;
 	color: var(--form-label-font) !important;
+	font-weight: 500 !important;
 }
 .form-control {
 	padding: 1vh !important;
@@ -54,7 +55,7 @@
 	padding: 0.5rem 2rem 0.5rem 2rem !important;
 	background-color: var(--form-button-bg) !important;
 	border: none !important;
-	opacity: 0.8 !important;
+	opacity: 0.7 !important;
 	border-radius: 0 !important;
 	font-size: 1.5rem !important;
 }
@@ -78,13 +79,14 @@
 	padding: 0 !important;
 	margin: 0 !important;
 	display: none !important;
-	font-weight: 500 !important;
+	font-weight: 700 !important;
 }
 .direct {
 	color: var(--form-direction-font) !important;
 	padding: 0 !important;
 	margin: 0 !important;
 	display: none !important;
+	font-weight: 700 !important;
 }
 .display {
 	display: block !important;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 // Pages
@@ -16,15 +16,23 @@ import ReferencesPost from "./Components/References/ReferencesPost/ReferencesPos
 // Firestore
 import { db } from "./Firebase";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 // Utils
 import { REFERENCES_LINK } from "./Utils/Constants.Utils";
 
 function App() {
 	const location = useLocation();
 
+	useEffect(() => {
+		AOS.init();
+		AOS.refresh();
+	}, []);
+
 	return (
-		<div style={{ backgroundColor: "black" }}>
-			<Particle/>
+		<div style={{ backgroundColor: "#171E30" }}>
+			<Particle />
 			<AnimatePresence exitBeforeEnter>
 				<Routes location={location} key={location.key}>
 					<Route exact path="/" element={<Home />} />

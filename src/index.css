@@ -10,6 +10,7 @@
 @import url("./Pages/Contact/Contact.css");
 @import url("./Pages/Projects/Projects.css");
 @import url("./Pages/References/References.css");
+@import url("./Pages/About/About.css");
 
 @import url("./Components/Home/Particle/Particle.css");
 @import url("./Components/Home/Type/Type.css");
@@ -40,7 +41,7 @@
 	/* ============= */
 	--home-intro-font: #FFFFFF;
 	--home-type-font: rgb(132, 242, 154);
-	--home-type-cursor: rgb(65, 255, 103);
+	--home-type-cursor: rgb(0, 255, 51);
 
 	/* ============= */
 	/* Projects Page */	
@@ -58,15 +59,22 @@
 	/* Contact Page */	
 	/* ============ */
 	--form-outline: transparent;
-	--form-label-font: #4b5cdd;
-	--form-area: rgba(255, 0, 0, 0.159);
+	--form-label-font: white;
+	--form-area: #171E30;
+	--form-placeholder: rgba(255, 255, 255, 0.541);
 	--form-input-font: white;
 	--form-warning-font: #f40d30;
-	--form-direction-font: rgb(132, 242, 154);
+	--form-direction-font: rgb(4, 0, 246);
 	--form-button: white;
-	--form-button-bg: #4b5cdd;
-	--form-check-button: rgb(132, 242, 154);
+	--form-button-bg: rgba(255, 255, 255, 0.4);
+	--form-check-button: white;
 	--three-dots-color: #ffffff;
+
+	/* ============ */
+	/* About Page   */
+	/* ============ */
+	--about-description-bg: #171E30;
+	--about-description: white;
 
 	/* Navigation */
 	--navigation-bg: transparent;
@@ -90,13 +98,13 @@
 	--main-comment-link-color-before: rgb(65, 255, 103);
 
 	/* References Post */
-	--references-post-nav-color: #111111;
-	--references-post-body-color: #111111;
+	--references-post-nav-color: #171E30;
+	--references-post-body-color: #171E30;
 	--references-post-icon-color: #f40d30;
 	
 	/* References Header */
 	--references-header-link: white;
-	--references-header-link-hover: blue;
+	--references-header-link-hover: #4b5cdd;
 	--references-header-icon: orange;
 
 	/* References Markdown */
@@ -120,14 +128,15 @@
 	--code-copy-font: #ffffff;
 
 	/* Post */
-	--post-shadow: rgba(221, 221, 221, 0.234);
-	--post-date-bg: rgba(221, 221, 221, 0.2);
+	--post-shadow: black;
+	--card-color: #171E30;
+	--post-date-bg: var(--card-color);
 	--post-date: white;
-	--post-img-outline: rgba(221, 221, 221, 0.2);
-	--post-description-bg: rgba(221, 221, 221, 0.22);
+	--post-img-outline: var(--card-color);
+	--post-description-bg: var(--card-color);
 	--post-text: white;
 	--post-icon: white;
-	--post-icon-stack: white;
+	--post-icon-stack: rgb(132, 242, 154);
 	--post-icon-bg: transparent;
 }
 
@@ -159,4 +168,9 @@ body {
 ::selection {
 	color: var(--selection-font);
 	background: var(--selection-bg);
+}
+
+::placeholder {
+	color: var(--form-placeholder) !important;
+	opacity: 1 !important;
 }

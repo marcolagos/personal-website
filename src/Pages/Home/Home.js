@@ -14,7 +14,13 @@ function Home() {
 				<Container fluid className="home-container" id="home-container">
 					<Container className="home-intro">
 						<Row>
-							<Col md={12} className="home-header">
+							<Col
+								md={12}
+								className="home-header"
+								data-aos="fade-right"
+								data-aos-duration="1000"
+								data-aos-delay="0"
+							>
 								<h1 className="home-text">{headerJSON.introduction}</h1>
 								<div className="type">
 									<Type words={headerJSON.words} />

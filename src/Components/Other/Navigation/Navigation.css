@@ -1,16 +1,16 @@
 .navigation {
 	position: fixed !important;
 	padding: 0.3rem 2rem !important;
-	font-size: 1.2rem !important;
+	font-size: 0.9rem !important;
 	transition: var(--main-transition) !important;
 	background-color: var(--navigation-bg) !important;
 }
 .navigation-alt {
-	backdrop-filter: blur(7px) !important;
+	backdrop-filter: blur(5px) !important;
 }
 .navigation:hover {
 	background-color: var(--navigation-bg-hover) !important;
-	backdrop-filter: blur(7px) !important;
+	backdrop-filter: blur(5px) !important;
 }
 .navbar-toggler {
 	padding: 0.3rem 1.5rem !important;

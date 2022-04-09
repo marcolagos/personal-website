@@ -83,7 +83,7 @@ function Contact() {
 				setEmail("");
 				setMessage("");
 				localStorage.clear();
-			}, 3000);
+			}, 2000);
 		}
 	};
 

@@ -3,11 +3,11 @@
 	transition: var(--main-transition) !important;
 }
 .footer-container-alt {
-	backdrop-filter: blur(7px) !important;
+	backdrop-filter: blur(5px) !important;
 }
 .footer-container:hover {
 	background-color: transparent !important;
-	backdrop-filter: blur(7px) !important;
+	backdrop-filter: blur(5px) !important;
 }
 .footer-col {
 	text-align: center !important;

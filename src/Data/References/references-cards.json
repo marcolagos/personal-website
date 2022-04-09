@@ -7,18 +7,8 @@
       "minutes": "0 min",
       "image": "",
       "github": "",
-      "stack": ["React.js", "MongoDB"],
+      "stack": ["MongoDB"],
       "post": "example-markdown"
-    },
-    {
-      "title": "Seam Carving Algorithm",
-      "date": "00/00/0000",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mattis velit nulla, non faucibus metus malesuada nec. Donec semper at velit id fringilla. Aenean varius purus lacinia odio lacinia dictum. Nam pharetra efficitur nisi, eu semper est mollis vitae.",
-      "minutes": "0 min",
-      "image": "",
-      "github": "",
-      "stack": ["React.js", "MongoDB"],
-      "post": "seam-carving-algorithm"
     }
   ]
 }

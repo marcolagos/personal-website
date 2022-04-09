@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,  useEffect } from "react";
 
 import { Container, Row, Col } from "react-bootstrap";
 import { AiFillGithub, AiFillInstagram, AiFillFacebook } from "react-icons/ai";
@@ -10,8 +10,8 @@ import { REFERENCES_LINK } from "../../../Utils/Constants.Utils";
 const footerJSON = require("../../../Data/Other/footer.json");
 
 function Footer() {
-	const [footerColor, setFooterColor] = useState(useLocation().pathname.indexOf("/") >= 0);
-
+	const [footerColor, setFooterColor] = useState(false);
+	
 	const getIcon = (title) => {
 		if (title === "github") {
 			return <AiFillGithub className="footer-icon" />;

@@ -1,11 +1,12 @@
 .project-card-view {
 	background-color: transparent !important;
-	opacity: 0.6 !important;
+	opacity: 0.5 !important;
 	transition: var(--main-transition) !important;
 	height: 100% !important;
 }
 .project-card-view:hover {
 	opacity: 1 !important;
+	transform: scale(1.02) !important;
 	box-shadow: 0 0 15px var(--post-shadow);
 }
 /* Card */
@@ -42,7 +43,7 @@
 	border: none !important;
 	opacity: 0.8 !important;
 	border-radius: 0 !important;
-	font-size: 1.5rem !important;
+	font-size: 1.75rem !important;
 }
 .card-button:focus,
 .card-button:active,
