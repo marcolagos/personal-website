@@ -137,7 +137,6 @@ function Contact() {
 										<div className={warning ? "warning display" : "warning"}>
 											{bodyJSON.warning}
 										</div>
-										<div className={direct ? "direct display" : "direct"}>{bodyJSON.direction}</div>
 									</div>
 									<br />
 									<Button className="form-button" type="submit">
