@@ -19,7 +19,6 @@ const navigationJSON = require("../../../Data/Other/navigation.json");
 function Navigation() {
 	const [boldLink, setBoldLink] = useState("/");
 	const [expanded, setExpanded] = useState(false);
-	const [navigationColor, setNavigationColor] = useState(false);
 
 	const getIcon = (title) => {
 		if (title === "Home") {
@@ -47,7 +46,7 @@ function Navigation() {
 						setBoldLink("/");
 						setExpanded(false);
 					}}
-					className={boldLink == item.to ? "navigation-link bold-link" : "navigation-link"}
+					className={boldLink === item.to ? "navigation-link bold-link" : "navigation-link"}
 					as={Link}
 					to={item.to}
 				>
@@ -64,7 +63,7 @@ function Navigation() {
 			<Navbar
 				collapseOnSelect
 				fixed="top"
-				className={navigationColor ? "navigation navigation-alt" : "navigation"}
+				className={"navigation"}
 				expand="lg"
 				expanded={expanded}
 			>

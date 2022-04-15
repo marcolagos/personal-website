@@ -28,6 +28,7 @@ function Post({ title, date, description, minutes, image, stack, github, post, p
 		if (item === "AdobeXD") {
 			return <SiAdobexd className="card-icon" key={index} />;
 		}
+		return null;
 	});
 
 	var imagePath = null;
