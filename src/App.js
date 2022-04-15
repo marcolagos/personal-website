@@ -1,21 +1,17 @@
 import React, { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
-// Pages
 import About from "./Pages/About/About";
 import Home from "./Pages/Home/Home";
 import Projects from "./Pages/Projects/Projects";
 import Contact from "./Pages/Contact/Contact";
 import References from "./Pages/References/References";
-import { AnimatePresence } from "framer-motion";
-
-// Components
 import ReferencesPost from "./Components/References/ReferencesPost/ReferencesPost";
 
+import { AnimatePresence } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// Utils
 import { REFERENCES_LINK } from "./Utils/Constants.Utils";
 
 function App() {

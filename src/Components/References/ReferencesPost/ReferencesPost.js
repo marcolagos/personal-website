@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
+
 import { useParams, Link } from "react-router-dom";
 import { REFERENCES_LINK } from "../../../Utils/Constants.Utils";
-import { CgCross } from "react-icons/cg";
-import { FiX } from "react-icons/fi";
+
+import Modal from "react-bootstrap/Modal";
+
+import { FiX } from "@react-icons/all-files/fi/FiX";
+import { CgCross } from "@react-icons/all-files/cg/CgCross";
+
 import ReferencesMarkdown from "../ReferencesMarkdown/ReferencesMarkdown";
 import ReferencesHeader from "../ReferencesHeader/ReferencesHeader";
 

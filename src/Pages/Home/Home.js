@@ -1,7 +1,10 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import Type from "../../Components/Home/Type/Type";
 
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
+import Type from "../../Components/Home/Type/Type";
 import AnimatedPage from "../../Components/Other/AnimatedPage/AnimatedPage";
 
 const headerJSON = require("../../Data/Home/home-header.json");

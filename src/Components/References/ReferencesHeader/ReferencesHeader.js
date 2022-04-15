@@ -1,10 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { REFERENCES_LINK } from "../../../Utils/Constants.Utils";
-import { HiArrowNarrowRight, HiArrowNarrowLeft } from "react-icons/hi";
-import { AiFillGithub, AiFillInstagram, AiFillFacebook } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
-import { Container, Row, Col } from "react-bootstrap";
+
+import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
+import { AiFillFacebook } from "@react-icons/all-files/ai/AiFillFacebook";
+import { AiFillInstagram } from "@react-icons/all-files/ai/AiFillInstagram";
+import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
+
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const headerJSON = require("../../../Data/References/references-post-header.json");
 

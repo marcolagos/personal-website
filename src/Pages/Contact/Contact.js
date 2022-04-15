@@ -1,11 +1,18 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Container, Col, Row } from "react-bootstrap";
-import { AiOutlineForm, AiFillCheckCircle } from "react-icons/ai";
-import { Form, Button } from "react-bootstrap";
+import React, { useState, useEffect } from "react";
+
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+
+import { AiOutlineForm } from "@react-icons/all-files/ai/AiOutlineForm";
+import { AiFillCheckCircle } from "@react-icons/all-files/ai/AiFillCheckCircle";
+
 import { db } from "../../Firebase";
+
 import ThreeDotsWave from "../../Components/Contact/ThreeDotsWave/ThreeDotsWave";
 import Header from "../../Components/Other/Header/Header";
-
 import AnimatedPage from "../../Components/Other/AnimatedPage/AnimatedPage";
 
 const bodyJSON = require("../../Data/Contact/contact-body.json");

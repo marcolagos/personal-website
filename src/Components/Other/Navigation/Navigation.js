@@ -1,14 +1,16 @@
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import { Link, useLocation } from "react-router-dom";
 
-// Icons
-import { AiOutlineHome } from "react-icons/ai";
-import { IoCode } from "react-icons/io5";
-import { BsSearch, BsPersonCircle } from "react-icons/bs";
-import { AiOutlineMessage } from "react-icons/ai";
+
+import { AiOutlineHome } from "@react-icons/all-files/ai/AiOutlineHome";
+import { AiOutlineMessage } from "@react-icons/all-files/ai/AiOutlineMessage";
+import { IoIosCode } from "@react-icons/all-files/io/IoIosCode";
+import { BsSearch } from "@react-icons/all-files/bs/BsSearch";
+import { BsPeopleCircle } from "@react-icons/all-files/bs/BsPeopleCircle";
 
 import { REFERENCES_LINK } from "../../../Utils/Constants.Utils";
 
@@ -24,7 +26,7 @@ function Navigation() {
 			return <AiOutlineHome className="navigation-icon" />;
 		}
 		if (title === "Projects") {
-			return <IoCode className="navigation-icon" />;
+			return <IoIosCode className="navigation-icon" />;
 		}
 		if (title === "References") {
 			return <BsSearch className="navigation-icon" />;
@@ -33,7 +35,7 @@ function Navigation() {
 			return <AiOutlineMessage className="navigation-icon" />;
 		}
 		if (title === "About") {
-			return <BsPersonCircle className="navigation-icon" />;
+			return <BsPeopleCircle className="navigation-icon" />;
 		}
 	};
 

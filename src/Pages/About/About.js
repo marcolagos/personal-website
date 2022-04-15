@@ -1,23 +1,22 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Type from "../../Components/Home/Type/Type";
-import Particle from "../../Components/Other/Particle/Particle";
 
-import { AiOutlineGithub } from "react-icons/ai";
-import { FaGitAlt, FaNpm } from "react-icons/fa";
-import { IoLogoJavascript, IoLogoNodejs } from "react-icons/io";
-import {
-	SiJava,
-	SiPython,
-	SiReact,
-	SiMongodb,
-	SiBootstrap,
-	SiCss3,
-	SiHtml5,
-	SiAdobeillustrator,
-	SiAdobexd,
-	SiLatex,
-} from "react-icons/si";
+import { AiOutlineGithub } from "@react-icons/all-files/ai/AiOutlineGithub";
+import { FaGitAlt } from "@react-icons/all-files/fa/FaGitAlt";
+import { FaNpm } from "@react-icons/all-files/fa/FaNpm";
+import { IoLogoJavascript } from "@react-icons/all-files/io/IoLogoJavascript";
+import { GrNode } from "@react-icons/all-files/gr/GrNode";
+
+import { SiJava } from "@react-icons/all-files/si/SiJava";
+import { SiPython } from "@react-icons/all-files/si/SiPython";
+import { SiReact } from "@react-icons/all-files/si/SiReact";
+import { SiMongodb } from "@react-icons/all-files/si/SiMongodb";
+import { SiBootstrap } from "@react-icons/all-files/si/SiBootstrap";
+import { SiCss3 } from "@react-icons/all-files/si/SiCss3";
+import { SiHtml5 } from "@react-icons/all-files/si/SiHtml5";
+import { SiAdobeillustrator } from "@react-icons/all-files/si/SiAdobeillustrator";
+import { SiAdobexd } from "@react-icons/all-files/si/SiAdobexd";
+import { SiLatex } from "@react-icons/all-files/si/SiLatex";
 
 import AnimatedPage from "../../Components/Other/AnimatedPage/AnimatedPage";
 
@@ -75,7 +74,7 @@ function About() {
 											<FaGitAlt />
 										</div>
 										<div className="about-skill">
-											<IoLogoNodejs />
+											<GrNode />
 										</div>
 										<div className="about-skill">
 											<FaNpm />

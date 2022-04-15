@@ -1,8 +1,13 @@
-import React, { useState,  useEffect } from "react";
+import React, { useState } from "react";
 
-import { Container, Row, Col } from "react-bootstrap";
-import { AiFillGithub, AiFillInstagram, AiFillFacebook } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
+import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
+import { AiFillFacebook } from "@react-icons/all-files/ai/AiFillFacebook";
+import { AiFillInstagram } from "@react-icons/all-files/ai/AiFillInstagram";
+import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
 
 import { useLocation } from "react-router-dom";
 import { REFERENCES_LINK } from "../../../Utils/Constants.Utils";
@@ -10,8 +15,7 @@ import { REFERENCES_LINK } from "../../../Utils/Constants.Utils";
 const footerJSON = require("../../../Data/Other/footer.json");
 
 function Footer() {
-	const [footerColor, setFooterColor] = useState(false);
-	
+
 	const getIcon = (title) => {
 		if (title === "github") {
 			return <AiFillGithub className="footer-icon" />;
@@ -37,12 +41,7 @@ function Footer() {
 
 	if (!(useLocation().pathname.indexOf(REFERENCES_LINK) >= 0)) {
 		return (
-			<Container
-				fluid
-				className={
-					footerColor ? "footer-container footer-container-alt fixed-bottom" : "footer-container fixed-bottom"
-				}
-			>
+			<Container fluid className={"footer-container fixed-bottom"}>
 				<Row>
 					<Col md="4" className="footer-col footer-col-mark">
 						<h3 className="footer-heading-mark">{footerJSON.mark}</h3>
