@@ -1,8 +1,8 @@
 {
 	"hash": "5ec4e0d1d62b90e05790",
 	"version": "5.67.0",
-	"time": 300,
-	"builtAt": 1650059216638,
+	"time": 192,
+	"builtAt": 1650060925802,
 	"publicPath": "auto",
 	"outputPath": "C:\\Users\\marco\\Desktop\\marco-lagos\\dist",
 	"assetsByChunkName": { "main": ["main.js"] },

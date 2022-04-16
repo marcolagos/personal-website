@@ -20,6 +20,7 @@
 @import url("./Components/Other/Footer/Footer.css");
 @import url("./Components/Other/Header/Header.css");
 @import url("./Components/Other/Post/Post.css");
+@import url("./Components/Other/Loading/Loading.css");
 
 @import url("./Components/References//ReferencesMarkdown/ReferencesMarkdown.css");
 @import url("./Components/References/ReferencesPost/ReferencesPost.css");
@@ -36,12 +37,16 @@
 	--selection-font: #ffffff;
 	--selection-bg: lightblue;
 
+	/* Loading */
+	--loading-bg: #171E30;
+	--loading: white;
+
 	/* ============= */
 	/*   Home Page   */	
 	/* ============= */
 	--home-intro-font: #FFFFFF;
-	--home-type-font: rgb(132, 242, 154);
-	--home-type-cursor: rgb(0, 255, 51);
+	--home-type-font: #84f29a;
+	--home-type-cursor: #00ff33;
 
 	/* ============= */
 	/* Projects Page */	
