@@ -40,7 +40,7 @@ function App() {
 						path="/"
 						element={
 							<React.Suspense fallback={<Loading />}>
-								<Loading />
+								<LazyHome />
 							</React.Suspense>
 						}
 					/>
