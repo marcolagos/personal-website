@@ -4,15 +4,14 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import Header from "../../Components/Other/Header/Header";
-import Post from "../../Components/Other/Post/Post";
+import Header from "../Components/Header";
+import Post from "../Components/Post";
 
-import AnimatedPage from "../../Components/Other/AnimatedPage/AnimatedPage";
+import AnimatedPage from "../Components/AnimatedPage";
 
-const cardJSON = require("../../Data/References/references-cards.json");
-const headerJSON = require("../../Data/References/references-header.json");
 
 function References() {
+	const cardJSON = require("../Data/references-cards.json");
 	const cards = cardJSON.items.map((item, index) => {
 		return (
 			<Col md={4} className="references-card" key={index}>
@@ -36,10 +35,10 @@ function References() {
 				<Container fluid className="references-container">
 					<Container className="references-intro">
 						<Header
-							title={headerJSON.title}
-							comment={headerJSON.comment}
-							to={headerJSON.to}
-							link={headerJSON.link}
+							title={"References"}
+							comment={"Feel free to send comments "}
+							to={"/contact"}
+							link={"here"}
 						/>
 						<Row style={{ justifyContent: "center", paddingBottom: "10px" }}> {cards}</Row>
 					</Container>

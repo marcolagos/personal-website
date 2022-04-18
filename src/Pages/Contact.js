@@ -9,14 +9,11 @@ import Button from "react-bootstrap/Button";
 import { AiOutlineForm } from "@react-icons/all-files/ai/AiOutlineForm";
 import { AiFillCheckCircle } from "@react-icons/all-files/ai/AiFillCheckCircle";
 
-import { db } from "../../Firebase";
+import { db } from "../Firebase";
 
-import ThreeDotsWave from "../../Components/Contact/ThreeDotsWave/ThreeDotsWave";
-import Header from "../../Components/Other/Header/Header";
-import AnimatedPage from "../../Components/Other/AnimatedPage/AnimatedPage";
-
-const bodyJSON = require("../../Data/Contact/contact-body.json");
-const headerJSON = require("../../Data/Contact/contact-header.json");
+import ThreeDotsWave from "../Components/ThreeDotsWave";
+import Header from "../Components/Header";
+import AnimatedPage from "../Components/AnimatedPage";
 
 function Contact() {
 	const [name, setName] = useState("");
@@ -109,7 +106,26 @@ function Contact() {
 		}
 	}, []);
 
-	const areas = bodyJSON.items.map((item, index) => {
+	const items = [
+		{
+			title: "Name:",
+			placeholder: "Enter name",
+			type: "name",
+		},
+		{
+			title: "Email:",
+			placeholder: "Enter email",
+			type: "email",
+		},
+		{
+			title: "Message:",
+			placeholder: "Enter message",
+			type: "message",
+			as: "textarea",
+		},
+	];
+
+	const areas = items.map((item, index) => {
 		return (
 			<Form.Group className="form-group pt-3" key={index}>
 				<Form.Label className="form-label">{item.title}</Form.Label>
@@ -132,17 +148,17 @@ function Contact() {
 					<Container className="contact-intro">
 						<Row>
 							<Header
-								title={headerJSON.title}
-								comment={headerJSON.comment}
-								to={headerJSON.to}
-								link={headerJSON.link}
+								title={"Contact"}
+								comment={"Alternatively, messages through media are welcomed!"}
+								to={""}
+								link={""}
 							/>
 							<Col md={12} style={{ justifyContent: "center", paddingBottom: "10px" }}>
 								<Form className="form" onSubmit={handleSubmit}>
 									{areas}
 									<div>
 										<div className={warning ? "warning display" : "warning"}>
-											{bodyJSON.warning}
+											{"Please fill out all fields."}
 										</div>
 									</div>
 									<br />

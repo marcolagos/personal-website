@@ -4,15 +4,14 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import Header from "../../Components/Other/Header/Header";
-import Post from "../../Components/Other/Post/Post";
+import Header from "../Components/Header";
+import Post from "../Components/Post";
 
-import AnimatedPage from "../../Components/Other/AnimatedPage/AnimatedPage";
+import AnimatedPage from "../Components/AnimatedPage";
 
-const cardJSON = require("../../Data/Projects/projects-cards.json");
-const headerJSON = require("../../Data/Projects/projects-header.json");
 
 function Projects() {
+	const cardJSON = require("../Data/projects-cards.json");
 	const cards = cardJSON.items.map((item, index) => {
 		return (
 			<Col md={4} className="projects-card" key={index}>
@@ -35,10 +34,10 @@ function Projects() {
 				<Container fluid className="projects-container">
 					<Container className="projects-intro">
 						<Header
-							title={headerJSON.title}
-							comment={headerJSON.comment}
-							to={headerJSON.to}
-							link={headerJSON.link}
+							title={"Projects"}
+							comment={"Feel free to send commments "}
+							to={"/contact"}
+							link={"here"}
 						/>
 						<Row style={{ justifyContent: "center", paddingBottom: "10px" }}>{cards}</Row>
 					</Container>

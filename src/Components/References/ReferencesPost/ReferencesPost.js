@@ -11,7 +11,7 @@ import { CgCross } from "@react-icons/all-files/cg/CgCross";
 import ReferencesMarkdown from "../ReferencesMarkdown/ReferencesMarkdown";
 import ReferencesHeader from "../ReferencesHeader/ReferencesHeader";
 
-import AnimatedPage from "../../Other/AnimatedPage/AnimatedPage";
+import AnimatedPage from "../../AnimatedPage";
 
 function ReferencesPost(props) {
 	const [postBody, setPostBody] = useState("");

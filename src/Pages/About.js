@@ -18,10 +18,8 @@ import { SiAdobeillustrator } from "@react-icons/all-files/si/SiAdobeillustrator
 import { SiAdobexd } from "@react-icons/all-files/si/SiAdobexd";
 import { SiLatex } from "@react-icons/all-files/si/SiLatex";
 
-import AnimatedPage from "../../Components/Other/AnimatedPage/AnimatedPage";
+import AnimatedPage from "../Components/AnimatedPage";
 
-const headerJSON = require("../../Data/About/about-header.json");
-const bodyJSON = require("../../Data/About/about-body.json");
 
 function About() {
 	return (
@@ -37,9 +35,9 @@ function About() {
 								data-aos-duration="1000"
 								data-aos-delay="0"
 							>
-								<h1 className="about-text">{headerJSON.introduction}</h1>
+								<h1 className="about-text">About Me</h1>
 								<div className="type">
-									<div className="about-subtitle">{headerJSON.name}</div>
+									<div className="about-subtitle">Marco Lagos</div>
 								</div>
 							</Col>
 							<Col
@@ -50,7 +48,13 @@ function About() {
 								data-aos-delay="0"
 							>
 								<div className="about-description-container">
-									<div className="about-description">{bodyJSON.description}</div>
+									<div className="about-description">
+										I am a second-year student at Rice University, studying for a BS in Computer
+										Science. I would describe myself as diligent, candid, and skeptical. I am
+										interested in Computer Science and Computer Programming and enjoy solving
+										problems. In my free time, you can find me reading, solving puzzles, investing,
+										exercising, teaching, and playing chess. My professional skillset includes:
+									</div>
 									<div className="about-skills">
 										<div className="about-skill">
 											<SiJava />

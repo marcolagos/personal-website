@@ -7,7 +7,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 // import Contact from "./Pages/Contact/Contact";
 // import References from "./Pages/References/References";
 // import ReferencesPost from "./Components/References/ReferencesPost/ReferencesPost";
-import Loading from "./Components/Other/Loading/Loading";
+import Loading from "./Components/Loading";
 
 
 import { AnimatePresence } from "framer-motion";
@@ -16,11 +16,11 @@ import "aos/dist/aos.css";
 
 import { REFERENCES_LINK } from "./Utils/Constants.Utils";
 
-const LazyAbout = React.lazy(() => import("./Pages/About/About"));
-const LazyHome = React.lazy(() => import("./Pages/Home/Home"));
-const LazyProjects = React.lazy(() => import("./Pages/Projects/Projects"));
-const LazyContact = React.lazy(() => import("./Pages/Contact/Contact"));
-const LazyReferences = React.lazy(() => import("./Pages/References/References"));
+const LazyAbout = React.lazy(() => import("./Pages/About"));
+const LazyHome = React.lazy(() => import("./Pages/Home"));
+const LazyProjects = React.lazy(() => import("./Pages/Projects"));
+const LazyContact = React.lazy(() => import("./Pages/Contact"));
+const LazyReferences = React.lazy(() => import("./Pages/References"));
 const LazyReferencesPost = React.lazy(() => import("./Components/References/ReferencesPost/ReferencesPost"));
 
 function App() {

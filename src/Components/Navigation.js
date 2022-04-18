@@ -12,9 +12,7 @@ import { IoIosCode } from "@react-icons/all-files/io/IoIosCode";
 import { BsSearch } from "@react-icons/all-files/bs/BsSearch";
 import { BsPeopleCircle } from "@react-icons/all-files/bs/BsPeopleCircle";
 
-import { REFERENCES_LINK } from "../../../Utils/Constants.Utils";
-
-const navigationJSON = require("../../../Data/Other/navigation.json");
+import { REFERENCES_LINK } from "../Utils/Constants.Utils";
 
 function Navigation() {
 	const [boldLink, setBoldLink] = useState("/");
@@ -38,7 +36,30 @@ function Navigation() {
 		}
 	};
 
-	const links = navigationJSON.items.map((item, index) => {
+	const items = [
+		{
+			title: "Home",
+			to: "/",
+		},
+		{
+			title: "Projects",
+			to: "/projects",
+		},
+		{
+			title: "References",
+			to: "/references",
+		},
+		{
+			title: "Contact",
+			to: "/contact",
+		},
+		{
+			title: "About",
+			to: "/about",
+		},
+	];
+
+	const links = items.map((item, index) => {
 		return (
 			<Nav.Item className="navigation-item" key={index}>
 				<Nav.Link
@@ -69,7 +90,7 @@ function Navigation() {
 			>
 				<Container className="navigation-container">
 					<Navbar.Brand className="navigation-brand" href="/">
-						{navigationJSON.brand}
+						ml.
 					</Navbar.Brand>
 					<Navbar.Toggle
 						aria-controls="responsive-navbar-nav"

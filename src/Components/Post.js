@@ -5,7 +5,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { GrNode, GrReactjs } from "react-icons/gr";
 import { SiAdobeillustrator, SiAdobexd, SiMongodb } from "react-icons/si";
 import { IoMdExpand } from "react-icons/io";
-import { REFERENCES_LINK } from "../../../Utils/Constants.Utils";
+import { REFERENCES_LINK } from "../Utils/Constants.Utils";
 import { Link } from "react-router-dom";
 
 function Post({ title, date, description, minutes, image, stack, github, post, posts }) {
@@ -33,7 +33,7 @@ function Post({ title, date, description, minutes, image, stack, github, post, p
 
 	var imagePath = null;
 	if (image) {
-		imagePath = require(`../../../Assets/Projects/${image}`);
+		imagePath = require(`../Assets/Projects/${image}`);
 	}
 
 	return (

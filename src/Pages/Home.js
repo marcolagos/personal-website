@@ -4,10 +4,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import Type from "../../Components/Home/Type/Type";
-import AnimatedPage from "../../Components/Other/AnimatedPage/AnimatedPage";
-
-const headerJSON = require("../../Data/Home/home-header.json");
+import Type from "../Components/Type";
+import AnimatedPage from "../Components/AnimatedPage";
 
 function Home() {
 	return (
@@ -23,9 +21,15 @@ function Home() {
 								data-aos-duration="1000"
 								data-aos-delay="0"
 							>
-								<h1 className="home-text">{headerJSON.introduction}</h1>
+								<h1 className="home-text">Hello, I'm Marco Lagos</h1>
 								<div className="type">
-									<Type words={headerJSON.words} />
+									<Type
+										words={[
+											"Full-stack Developer",
+											"Open-source Contributor",
+											"Computer Scientist",
+										]}
+									/>
 								</div>
 							</Col>
 						</Row>

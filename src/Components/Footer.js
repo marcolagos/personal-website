@@ -10,9 +10,7 @@ import { AiFillInstagram } from "@react-icons/all-files/ai/AiFillInstagram";
 import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
 
 import { useLocation } from "react-router-dom";
-import { REFERENCES_LINK } from "../../../Utils/Constants.Utils";
-
-const footerJSON = require("../../../Data/Other/footer.json");
+import { REFERENCES_LINK } from "../Utils/Constants.Utils";
 
 function Footer() {
 
@@ -31,7 +29,26 @@ function Footer() {
 		}
 	};
 
-	const links = footerJSON.links.map((item, index) => {
+	const items = [
+		{
+			title: "github",
+			to: "https://github.com/marcolagos",
+		},
+		{
+			title: "linkedin",
+			to: "https://www.linkedin.com/in/marcolagos",
+		},
+		{
+			title: "instagram",
+			to: "https://www.instagram.com/marcollagoss/",
+		},
+		{
+			title: "facebook",
+			to: "https://www.facebook.com/profile.php?id=100054551763304",
+		},
+	];
+
+	const links = items.map((item, index) => {
 		return (
 			<a href={item.to} target="_blank" rel="noreferrer" className="footer-icon" key={index}>
 				{getIcon(item.title)}
@@ -44,7 +61,7 @@ function Footer() {
 			<Container fluid className={"footer-container fixed-bottom"}>
 				<Row>
 					<Col md="4" className="footer-col footer-col-mark">
-						<h3 className="footer-heading-mark">{footerJSON.mark}</h3>
+						<h3 className="footer-heading-mark">by Marco Lagos</h3>
 					</Col>
 					<Col md="4" className="footer-col-mid"></Col>
 					<Col md="4" className="footer-col footer-col-links">

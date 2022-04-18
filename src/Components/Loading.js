@@ -1,12 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-const loadingJSON = require("../../../Data/Other/loading.json");
+import ThreeDotsWave from "./ThreeDotsWave";
 
 function Loading() {
 	return (
 		<div className="loading">
-			<span>Loading...</span>
+			<span><ThreeDotsWave/></span>
 		</div>
 	);
 }
