@@ -1,8 +1,8 @@
 import React from "react";
 import { compiler } from "markdown-to-jsx";
-import Code from "./Code/Code";
-import Media from "./Media/Media";
-import Latex from "./Latex/Latex";
+import Code from "./Code";
+import Media from "./Media";
+import Latex from "./Latex";
 
 const cache = new Map();
 

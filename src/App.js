@@ -21,7 +21,7 @@ const LazyHome = React.lazy(() => import("./Pages/Home"));
 const LazyProjects = React.lazy(() => import("./Pages/Projects"));
 const LazyContact = React.lazy(() => import("./Pages/Contact"));
 const LazyReferences = React.lazy(() => import("./Pages/References"));
-const LazyReferencesPost = React.lazy(() => import("./Components/References/ReferencesPost/ReferencesPost"));
+const LazyReferencesPost = React.lazy(() => import("./Components/References/ReferencesPost"));
 
 function App() {
 	const location = useLocation();

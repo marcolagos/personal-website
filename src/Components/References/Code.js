@@ -7,7 +7,7 @@ import Overlay from "react-bootstrap/Overlay";
 import Tooltip from "react-bootstrap/Tooltip";
 
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import CodeStyle from "../../../../Utils/CodeStyle.Utils";
+import CodeStyle from "../../Utils/CodeStyle.Utils";
 
 import jsx from "react-syntax-highlighter/dist/cjs/languages/prism/jsx";
 import bash from "react-syntax-highlighter/dist/cjs/languages/prism/bash";

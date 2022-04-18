@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { REFERENCES_LINK } from "../../../Utils/Constants.Utils";
+import { REFERENCES_LINK } from "../../Utils/Constants.Utils";
 
 import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
 import { AiFillFacebook } from "@react-icons/all-files/ai/AiFillFacebook";

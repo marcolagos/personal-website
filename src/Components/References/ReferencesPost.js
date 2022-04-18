@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from "react";
 
 import { useParams, Link } from "react-router-dom";
-import { REFERENCES_LINK } from "../../../Utils/Constants.Utils";
+import { REFERENCES_LINK } from "../../Utils/Constants.Utils";
 
 import Modal from "react-bootstrap/Modal";
 
 import { FiX } from "@react-icons/all-files/fi/FiX";
 import { CgCross } from "@react-icons/all-files/cg/CgCross";
 
-import ReferencesMarkdown from "../ReferencesMarkdown/ReferencesMarkdown";
-import ReferencesHeader from "../ReferencesHeader/ReferencesHeader";
+import ReferencesMarkdown from "./ReferencesMarkdown";
+import ReferencesHeader from "./ReferencesHeader";
 
-import AnimatedPage from "../../AnimatedPage";
+import AnimatedPage from "../AnimatedPage";
 
 function ReferencesPost(props) {
 	const [postBody, setPostBody] = useState("");
 	const { fileName } = useParams();
-	const MarkdownFile = require(`../../../Assets/References/${fileName}/${fileName}.md`);
+	const MarkdownFile = require(`../../Assets/References/${fileName}/${fileName}.md`);
 
 	useEffect(() => {
 		fetch(MarkdownFile)

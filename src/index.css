@@ -817,5 +817,253 @@ body {
 	margin: 0 5px 0.4rem 5px !important;
 }
 
+/* References Header */
+.references-header-col {
+	text-align: center !important;
+	color: white !important;
+	margin: 0.5rem 0rem 0.5rem 0rem !important;
+	padding: 0rem 0rem 0rem 0rem !important;
+	font-size: 1rem !important;
+}
+.references-header-link {
+	color: var(--references-header-link) !important;
+	text-decoration: none !important;
+	font-size: 2rem;
+	font-weight: 600 !important;
+}
+.references-header-link:hover {
+	color: var(--references-header-link-hover) !important; 
+}
+.references-header-brand {
+	padding: 0 2rem 0 0 !important;
+	border-right: 1px solid var(--references-header-link) !important;
+}
+.references-header-back {
+	padding: 0 0 0 2rem !important;
+}
+.references-header-comment {
+	font-size: 0.8rem !important;
+	font-weight: 300 !important;
+	padding: 0.25rem !important;
+}
+.references-header-icon {
+	color: var(--references-header-icon) !important;
+	transition: var(--main-transition) !important;
+	opacity: 0.8 !important;
+	margin-right: 0.5rem !important;
+	margin-left: 0.5rem !important;
+}
+.references-header-icon:hover {
+	opacity: 1 !important;
+}
+
+/* References Markdown */
+.references-markdown {
+	color: white !important;
+	box-sizing: border-box !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.references-markdown h1 {
+	font-size: 3rem !important;
+	font-weight: 700 !important;
+	color: var(--references-markdown-title-font) !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.references-markdown h2 {
+	font-size: 2.25rem !important;
+	font-weight: 600 !important;
+	color: var(--references-markdown-subtitle-font) !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.references-markdown h3 {
+	font-size: 1.5rem !important;
+	font-weight: 500 !important;
+	color: var(--references-markdown-time-font) !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.references-markdown h4 {
+	font-size: 2.25rem !important;
+	font-weight: 500 !important;
+	color: var(--references-markdown-subheading1-font) !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.references-markdown h5 {
+	font-size: 2rem !important;
+	font-weight: 500 !important;
+	color: var(--references-markdown-subheading2-font) !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.references-markdown h6 {
+	font-size: 1.75rem !important;
+	font-weight: 500 !important;
+	color: var(--references-markdown-subheading3-font) !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.references-markdown p {
+	font-size: 1.1rem !important;
+	font-weight: 500 !important;
+	color: var(--references-markdown-paragraph-font) !important;
+}
+.references-markdown blockquote {
+	background: var(--references-markdown-blockquote-background) !important;
+	border-left: 3px solid var(--references-markdown-blockquote-border) !important;
+	margin: 0.75rem 0vh !important;
+	padding: 0.5rem !important;
+}
+.references-markdown blockquote p {
+	margin: 0 !important;
+	padding: 0.5rem !important;
+}
+.references-markdown ul {
+	margin: 0 0 0 1.5rem !important;
+	padding: 0 !important;
+	list-style: none !important;
+	border-left: 3px solid var(--references-markdown-ul-border) !important;
+}
+.references-markdown ol {
+	margin: 0 0 0 2rem !important;
+	padding: 0 !important;
+	color: var(--references-markdown-list-font) !important;
+}
+.references-markdown li {
+	font-size: 1.1rem !important;
+	margin: 0.5rem !important;
+	padding: 0 !important;
+	color: var(--references-markdown-list-font) !important;
+}
+.references-markdown a {
+	text-decoration: none !important;
+	color: var(--references-markdown-link-font-before) !important;
+	transition: var(--main-transition) !important;
+}
+.references-markdown a:hover {
+	color: var(--references-markdown-link-font-after) !important;
+}
+
+/* Latex */
+.latex {
+    color: var(--references-markdown-latex-font-color) !important;
+    border-left: 3px solid var(--references-markdown-latex-border-color) !important;
+    padding: 1vh !important;
+    background-color: var(--references-markdown-latex-background-color) !important;
+    font-weight: 300 !important;
+    display: block !important;
+}
+
+/* Code */
+.code-container {
+    position: relative !important;
+	display: block !important;
+}
+.code-copy-button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+	color: var(--code-copy-font) !important;
+	padding: 0.25vh 1vh 0.25vh 1vh !important;
+	background-color: var(--code-copy-background) !important;
+	border: none !important;
+	opacity: 0.8 !important;
+	border-radius: 0 !important;
+	font-size: 1.5rem !important;
+    border-radius: 10% !important;
+}
+.code-copy-button:focus,
+.code-copy-button:active,
+.code-copy-button-icon:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+.code-copy-button:hover {
+	opacity: 1 !important;
+}
+
+/* Media */
+.image-container {
+	overflow-x: auto !important;
+	white-space: nowrap !important;
+	display: block !important;
+}
+.image {
+    width: auto !important;
+	height: auto !important;
+	max-height: 500px !important;
+}
+
+/* References Post */
+.modal {
+	color: transparent !important;
+}
+.modal-content {
+	padding: 0 !important;
+}
+.modal-header {
+	background-color: var(--references-post-nav-color) !important;
+	display: block !important;
+	text-align: right !important;
+	border: none !important;
+	padding: 15px 30px 15px 15px !important;
+}
+.modal-title {
+	background-color: var(--references-post-nav-color);
+}
+.modal-body {
+	padding: 5vh 30vw 5vh 30vw !important;
+	background-color: var(--references-post-body-color);
+}
+@media (max-width: 1500px) {
+	.modal-body {
+		padding: 5vh 25vw 5vh 25vw !important;
+	}
+}
+@media (max-width: 1300px) {
+	.modal-body {
+		padding: 5vh 21vw 5vh 21vw !important;
+	}
+}
+@media (max-width: 1000px) {
+	.modal-body {
+		padding: 5vh 14vw 5vh 14vw !important;
+	}
+}
+@media (max-width: 600px) {
+	.modal-body {
+		padding: 5vh 10vw 5vh 10vw !important;
+	}
+}
+.modal-footer {
+	display: block !important;
+	text-align: right !important;
+	background-color: var(--references-post-nav-color) !important;
+	border: none !important;
+	padding: 15px 30px 15px 15px !important;
+}
+
+.modal-navigation-link-icon {
+	color: var(--references-post-icon-color) !important;
+	font-size: 2rem !important;
+	transition: var(--main-transition);
+}
+.modal-navigation-link-icon:hover {
+	transform: rotateZ(-90deg) !important;
+}
+.modal-footer-link-icon {
+	color: var(--references-post-icon-color) !important;
+	font-size: 2rem !important;
+	opacity: 0 !important;
+	transition: var(--main-transition) !important;
+}
+.modal-footer-link-icon:hover {
+	opacity: 1 !important;
+}
+
+
 
 

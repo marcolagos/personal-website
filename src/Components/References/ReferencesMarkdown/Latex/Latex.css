@@ -1,8 +1,0 @@
-.latex {
-    color: var(--references-markdown-latex-font-color) !important;
-    border-left: 3px solid var(--references-markdown-latex-border-color) !important;
-    padding: 1vh !important;
-    background-color: var(--references-markdown-latex-background-color) !important;
-    font-weight: 300 !important;
-    display: block !important;
-}
