@@ -62,7 +62,7 @@ function App() {
 							</React.Suspense>
 						}
 					/>
-					{/* <Route
+					<Route
 						exact
 						path="/contact"
 						element={
@@ -70,7 +70,7 @@ function App() {
 								<LazyContact />
 							</React.Suspense>
 						}
-					/> */}
+					/>
 					<Route
 						exact
 						path="/about"
