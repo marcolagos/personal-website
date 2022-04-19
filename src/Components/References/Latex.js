@@ -1,10 +1,10 @@
 import React from "react";
-import LATEX from "react-latex";
+// import LATEX from "react-latex";
 
 function Latex({ children }) {
 	return (
 		<span className="latex">
-			<LATEX>{String(children)}</LATEX>
+			<div>{String(children)}</div>
 		</span>
 	);
 }
