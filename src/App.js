@@ -26,11 +26,6 @@ const LazyReferencesPost = React.lazy(() => import("./Components/References/Refe
 function App() {
 	const location = useLocation();
 
-	useEffect(() => {
-		AOS.init();
-		AOS.refresh();
-	}, []);
-
 	return (
 		<div style={{ backgroundColor: "#171E30" }}>
 			<AnimatePresence exitBeforeEnter>

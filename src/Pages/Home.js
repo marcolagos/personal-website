@@ -14,13 +14,7 @@ function Home() {
 				<Container fluid className="home-container" id="home-container">
 					<Container className="home-intro">
 						<Row>
-							<Col
-								md={12}
-								className="home-header"
-								data-aos="fade-right"
-								data-aos-duration="1000"
-								data-aos-delay="0"
-							>
+							<Col md={12} className="home-header">
 								<h1 className="home-text">Hello, I'm Marco Lagos</h1>
 								<div className="type">
 									<Type

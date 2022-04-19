@@ -2,7 +2,7 @@ import React from "react";
 
 function Header({ title, comment, to, link }) {
 	return (
-		<div className="main-header" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="0">
+		<div className="main-header">
 			<h1 className="main-title">{title}</h1>
 			<p className="main-comment">
 				{comment}
