@@ -49,10 +49,10 @@ function Navigation() {
 			title: "References",
 			to: "/references",
 		},
-		{
-			title: "Contact",
-			to: "/contact",
-		},
+		// {
+		// 	title: "Contact",
+		// 	to: "/contact",
+		// },
 		{
 			title: "About",
 			to: "/about",
