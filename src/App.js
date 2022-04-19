@@ -7,12 +7,9 @@ import { Routes, Route, useLocation } from "react-router-dom";
 // import Contact from "./Pages/Contact/Contact";
 // import References from "./Pages/References/References";
 // import ReferencesPost from "./Components/References/ReferencesPost/ReferencesPost";
+
 import Loading from "./Components/Loading";
-
-
 import { AnimatePresence } from "framer-motion";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 import { REFERENCES_LINK } from "./Utils/Constants.Utils";
 
