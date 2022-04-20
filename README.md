@@ -1,7 +1,6 @@
 # My Personal Website
 
-This project was finished in another repository; however, this repository contains the majority of the development process. In the other repository, I 
-removed dependencies, altered code format and file directory, and added Firestore Analytics. In addition, I fixed lengthy initial load time, reduced bundle size,
+This project was finished in another repository; however, this repository contains the majority of the development process. In the other repository, I removed dependencies, altered code format and file directory, and added Firestore Analytics. In addition, I fixed lengthy initial load time, reduced bundle size,
 and addressed any bugs.
 
 ## Description
